@@ -1,0 +1,5 @@
+here in services we handle operations like 
+umm adding users or products to make our components less clutter
+
+
+CRUD operations happens here

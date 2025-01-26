@@ -1,0 +1,2 @@
+Models is like a blue print of out data
+we can call it data Structure, or how our data gonna look like 😚😁.
