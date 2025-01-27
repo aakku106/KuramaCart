@@ -3,7 +3,10 @@ using OnlineStore.Components;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorComponents();
+builder.Services.AddRazorComponents()
+.AddInteractiveServerComponents()
+
+            ;
 
 var app = builder.Build();
 
@@ -17,10 +20,15 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// This is necessary to serve static files from the wwwroot folder.
 
 app.UseAntiforgery();
 
 app.MapStaticAssets();
-app.MapRazorComponents<App>();
+app.UseStaticFiles();
+app.MapRazorComponents<App>()
+.AddInteractiveServerRenderMode()
+
+;
 
 app.Run();
