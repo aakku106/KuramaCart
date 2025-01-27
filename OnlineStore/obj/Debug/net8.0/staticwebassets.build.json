@@ -1,0 +1,1361 @@
+{
+  "Version": 1,
+  "Hash": "3pe1/gVqa24pjvgrI2+bWbiiiZcFf6WoZBGA6lRCw8g=",
+  "Source": "OnlineStore",
+  "BasePath": "_content/OnlineStore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "OnlineStore/wwwroot",
+      "Source": "OnlineStore",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/bundle/OnlineStore.styles.css",
+      "SourceId": "OnlineStore",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/bundle/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "OnlineStore#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "p8ycv8y070",
+      "Integrity": "pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/bundle/OnlineStore.styles.css"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
+      "SourceId": "OnlineStore",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/projectbundle/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "OnlineStore#[.{fingerprint}]!.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "p8ycv8y070",
+      "Integrity": "pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jyml9wwgbl",
+      "Integrity": "e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/app.css"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/UserLoginPage.css",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "css/UserLoginPage#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0c2qmv64qb",
+      "Integrity": "sF/2Dk1fDcjz0j9035VWQo/eJTD6kGaPTKlN12T37ys=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/UserLoginPage.css"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/apple-touch-icon.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/apple-touch-icon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9btjmf1zmw",
+      "Integrity": "JV0pbayVBB1Na3lDCvW29rpe35E6WBe3XkM/afUlbW4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/apple-touch-icon.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon-96x96.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/favicon-96x96#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rbses9swge",
+      "Integrity": "56bd+VtlfTwQhRaRuyDZNASAtv2E3cfeqJkcIiMp8so=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/favicon-96x96.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.ico",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4e30byv6x9",
+      "Integrity": "LDQBN8ffGMQyx5LPIIUMc2HKZpbLhC8e0mBQ+I9Ocjs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/favicon.ico"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.svg",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/favicon#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ynwu57l7o8",
+      "Integrity": "Ik6nYGnuEoaQCvZelhmmMcOU1LW0YTWVILKd4SGFDfA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/favicon.svg"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/site#[.{fingerprint}]?.webmanifest",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sejp7jvwrm",
+      "Integrity": "fE4i8cTikpL/aJkmpWPOZ1kFhikP2lIXVKTbrot74Zk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/site.webmanifest"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-192x192.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/web-app-manifest-192x192#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "t0r83iddt3",
+      "Integrity": "zbVIgx/ZQBt2BwWCc/CUt5OetdCKn+VSBJxppPqkFbU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/web-app-manifest-192x192.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-512x512.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "favicon/web-app-manifest-512x512#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vmf74b828y",
+      "Integrity": "GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon/web-app-manifest-512x512.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/log.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/log#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zrt4yftpis",
+      "Integrity": "QYIaPlmqYCTnuh2YxoNelZF0K38LBjLwchL2K7U5QDU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/log.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/register.svg",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/register#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dxvfe60u0i",
+      "Integrity": "n4oKL7QumXnc/eg3+GjjoIFZX1gEAjjhx6OV/m2Fzpk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/register.svg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "app.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+        }
+      ]
+    },
+    {
+      "Route": "app.jyml9wwgbl.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2464"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:41:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jyml9wwgbl"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+        }
+      ]
+    },
+    {
+      "Route": "css/UserLoginPage.0c2qmv64qb.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/UserLoginPage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sF/2Dk1fDcjz0j9035VWQo/eJTD6kGaPTKlN12T37ys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:38:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0c2qmv64qb"
+        },
+        {
+          "Name": "label",
+          "Value": "css/UserLoginPage.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sF/2Dk1fDcjz0j9035VWQo/eJTD6kGaPTKlN12T37ys="
+        }
+      ]
+    },
+    {
+      "Route": "css/UserLoginPage.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/UserLoginPage.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6506"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sF/2Dk1fDcjz0j9035VWQo/eJTD6kGaPTKlN12T37ys=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:38:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sF/2Dk1fDcjz0j9035VWQo/eJTD6kGaPTKlN12T37ys="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/apple-touch-icon.9btjmf1zmw.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JV0pbayVBB1Na3lDCvW29rpe35E6WBe3XkM/afUlbW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9btjmf1zmw"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/apple-touch-icon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JV0pbayVBB1Na3lDCvW29rpe35E6WBe3XkM/afUlbW4="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/apple-touch-icon.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/apple-touch-icon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21364"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JV0pbayVBB1Na3lDCvW29rpe35E6WBe3XkM/afUlbW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JV0pbayVBB1Na3lDCvW29rpe35E6WBe3XkM/afUlbW4="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-96x96.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon-96x96.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"56bd+VtlfTwQhRaRuyDZNASAtv2E3cfeqJkcIiMp8so=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-56bd+VtlfTwQhRaRuyDZNASAtv2E3cfeqJkcIiMp8so="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon-96x96.rbses9swge.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon-96x96.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11152"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"56bd+VtlfTwQhRaRuyDZNASAtv2E3cfeqJkcIiMp8so=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rbses9swge"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon-96x96.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-56bd+VtlfTwQhRaRuyDZNASAtv2E3cfeqJkcIiMp8so="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.4e30byv6x9.ico",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDQBN8ffGMQyx5LPIIUMc2HKZpbLhC8e0mBQ+I9Ocjs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4e30byv6x9"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDQBN8ffGMQyx5LPIIUMc2HKZpbLhC8e0mBQ+I9Ocjs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.ico",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LDQBN8ffGMQyx5LPIIUMc2HKZpbLhC8e0mBQ+I9Ocjs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LDQBN8ffGMQyx5LPIIUMc2HKZpbLhC8e0mBQ+I9Ocjs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.svg",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ik6nYGnuEoaQCvZelhmmMcOU1LW0YTWVILKd4SGFDfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ik6nYGnuEoaQCvZelhmmMcOU1LW0YTWVILKd4SGFDfA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/favicon.ynwu57l7o8.svg",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "489900"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ik6nYGnuEoaQCvZelhmmMcOU1LW0YTWVILKd4SGFDfA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ynwu57l7o8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/favicon.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ik6nYGnuEoaQCvZelhmmMcOU1LW0YTWVILKd4SGFDfA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.sejp7jvwrm.webmanifest",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "435"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fE4i8cTikpL/aJkmpWPOZ1kFhikP2lIXVKTbrot74Zk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sejp7jvwrm"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/site.webmanifest"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fE4i8cTikpL/aJkmpWPOZ1kFhikP2lIXVKTbrot74Zk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/site.webmanifest",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "435"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/manifest+json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fE4i8cTikpL/aJkmpWPOZ1kFhikP2lIXVKTbrot74Zk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fE4i8cTikpL/aJkmpWPOZ1kFhikP2lIXVKTbrot74Zk="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/web-app-manifest-192x192.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zbVIgx/ZQBt2BwWCc/CUt5OetdCKn+VSBJxppPqkFbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zbVIgx/ZQBt2BwWCc/CUt5OetdCKn+VSBJxppPqkFbU="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/web-app-manifest-192x192.t0r83iddt3.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-192x192.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "27786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zbVIgx/ZQBt2BwWCc/CUt5OetdCKn+VSBJxppPqkFbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "t0r83iddt3"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/web-app-manifest-192x192.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zbVIgx/ZQBt2BwWCc/CUt5OetdCKn+VSBJxppPqkFbU="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/web-app-manifest-512x512.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
+      "Route": "favicon/web-app-manifest-512x512.vmf74b828y.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-512x512.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "140473"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 17:24:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vmf74b828y"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon/web-app-manifest-512x512.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
+      "Route": "images/log.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/log.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QYIaPlmqYCTnuh2YxoNelZF0K38LBjLwchL2K7U5QDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QYIaPlmqYCTnuh2YxoNelZF0K38LBjLwchL2K7U5QDU="
+        }
+      ]
+    },
+    {
+      "Route": "images/log.zrt4yftpis.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/log.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160545"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QYIaPlmqYCTnuh2YxoNelZF0K38LBjLwchL2K7U5QDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zrt4yftpis"
+        },
+        {
+          "Name": "label",
+          "Value": "images/log.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QYIaPlmqYCTnuh2YxoNelZF0K38LBjLwchL2K7U5QDU="
+        }
+      ]
+    },
+    {
+      "Route": "images/register.dxvfe60u0i.svg",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/register.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4oKL7QumXnc/eg3+GjjoIFZX1gEAjjhx6OV/m2Fzpk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:25:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dxvfe60u0i"
+        },
+        {
+          "Name": "label",
+          "Value": "images/register.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4oKL7QumXnc/eg3+GjjoIFZX1gEAjjhx6OV/m2Fzpk="
+        }
+      ]
+    },
+    {
+      "Route": "images/register.svg",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/register.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "92071"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"n4oKL7QumXnc/eg3+GjjoIFZX1gEAjjhx6OV/m2Fzpk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 18:25:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-n4oKL7QumXnc/eg3+GjjoIFZX1gEAjjhx6OV/m2Fzpk="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.bundle.scp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 07:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.p8ycv8y070.bundle.scp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 07:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p8ycv8y070"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineStore.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.p8ycv8y070.styles.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/bundle/OnlineStore.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 07:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p8ycv8y070"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineStore.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.styles.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net8.0/scopedcss/bundle/OnlineStore.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 07:45:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pwgwcXqt8vigoM8d4D0OluiZjUXtpjJvctTn1iOFpYU="
+        }
+      ]
+    }
+  ]
+}
