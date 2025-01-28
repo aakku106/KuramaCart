@@ -5,7 +5,8 @@ namespace OnlineStore.Services;
 
 public class ProductServices
 {
-    private List<Product> products = [
+    private List<Product> products =
+    [
     new(){
 ProductId=123,
 ProductName="kuramaPack",

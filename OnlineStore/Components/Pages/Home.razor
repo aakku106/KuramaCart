@@ -23,7 +23,10 @@
     }
 </style>
 
-@if (products is null) { }
+@if (products is null)
+{
+    <p>Nothin to Show</p>
+}
 else
 {
 
@@ -31,7 +34,7 @@ else
     <tr>
         <th>ProductName</th>
         <th>ProductId</th>
-        <th>Price</th>
+        <th>Price'$'</th>
         <th>Date</th>
     </tr>
     @foreach (var i in products)
