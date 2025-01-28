@@ -1,6 +1,7 @@
 ﻿@page "/"
 
-@* <PageTitle>Home</PageTitle> *@
+@* <PageTitle> KuramaCart🦊 - Home</PageTitle> *@
+@using OnlineStore.Services
 @using OnlineStore.Models
 
 @* <LoginPage></LoginPage> *@
@@ -22,7 +23,11 @@
     }
 </style>
 
-<table>
+@if (products is null) { }
+else
+{
+
+    <table class="mt-5 table table-stripped table-border table-hover">
     <tr>
         <th>ProductName</th>
         <th>ProductId</th>
@@ -30,24 +35,23 @@
         <th>Date</th>
     </tr>
     @foreach (var i in products)
-    {
-        <tr>
-            <td>@i.ProductName</td>
-            <td>@i.ProductId</td>
-            <td>@i.Price</td>
-            <td>@i.Date</td>
-        </tr>
-    }
-</table>
-
-@code {
-    private Product[] products = [
-    new(){
-ProductId=123,
-ProductName="kuramaPack",
-Price=106,
-Date= new DateOnly(2025,01,26)
+        {
+            <tr>
+                <td>@i.ProductName</td>
+                <td>@i.ProductId</td>
+                <td>@i.Price</td>
+                <td>@i.Date</td>
+            </tr>
+        }
+    </table>
 }
-    ];
+@code {
+    private ProductServices product = new();
+    private Product[]? products;
+
+    protected override void OnInitialized()
+    {
+        products = product.GetProduct();
+    }
 
 }
