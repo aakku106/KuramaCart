@@ -16,5 +16,6 @@ public class UserData
             DidUserLogIn=false
         }
     ];
+    public User[] GetUsers() => [.. users];
 
 }

@@ -6,7 +6,7 @@ namespace OnlineStore.Data;
 public class ProductData
 {
 
-    private List<Product> products =
+    private readonly List<Product> products =
     [
     new(){
 ProductId=123,
@@ -17,7 +17,8 @@ Date= new DateOnly(2025,01,26)
 new(){
     ProductId=321,
     ProductName="SonGoku",
-    Price=1314
+    Price=1314,
+    Date=null
 }
     ];
 
