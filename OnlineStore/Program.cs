@@ -9,7 +9,7 @@ builder.Services.AddRazorComponents()
 
 // Register your services
 builder.Services.AddScoped<User, User>();
-// builder.Services.AddScoped<, User>();
+builder.Services.AddSingleton<OnlineStore.Data.UserData>();
 
 
 var app = builder.Build();

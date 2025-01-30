@@ -1,11 +1,12 @@
 ﻿@page "/"
 @using OnlineStore.Models
+@rendermode InteractiveServer
 @inject User userDetails
 
 <PageTitle> KuramaCart🦊 - Home</PageTitle>
 @if (!userDetails.DidUserLogIn)
 {
-    <LoginPage />
+    <LoginPage @rendermode="InteractiveServer" />
 }
 else
 {

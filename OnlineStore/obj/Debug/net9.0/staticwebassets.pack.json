@@ -9,10 +9,6 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
-      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/UserLoginPage.css",
-      "PackagePath": "staticwebassets/css/UserLoginPage.css"
-    },
-    {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/apple-touch-icon.png",
       "PackagePath": "staticwebassets/favicon/apple-touch-icon.png"
     },
@@ -39,14 +35,6 @@
     {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-512x512.png",
       "PackagePath": "staticwebassets/favicon/web-app-manifest-512x512.png"
-    },
-    {
-      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/log.png",
-      "PackagePath": "staticwebassets/images/log.png"
-    },
-    {
-      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/register.svg",
-      "PackagePath": "staticwebassets/images/register.svg"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
