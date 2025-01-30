@@ -1,6 +1,9 @@
-﻿@page "/LoginPage"
-@* @rendermode InteractiveServer *@
+﻿@page "/"
+@rendermode InteractiveServer
 <PageTitle>KuramaCart 🦊 --> LoginPage</PageTitle>
+
+@using Microsoft.AspNetCore.Components.Routing
+
 
 @inject OnlineStore.Models.User userDetails
 @inject OnlineStore.Data.UserData userData
@@ -127,6 +130,9 @@
                             @loginMessage
                         </div>
                     }
+                    <Navigating>
+                        <p>Loading the requested page&hellip;</p>
+                    </Navigating>
 
                     <div class="text-center mt-3">
                         <p class="text-white">Don't have an account? <label for="register"
@@ -188,10 +194,10 @@
         if (user != null)
         {
             loginMessage = $"🎉 Login successful! Welcome, {user.UserName}";
-            ClearInputs();
+            @* ClearInputs(); *@
             user.DidUserLogIn = true;
             userDetails.DidUserLogIn = true;
-            Navigation.NavigateTo("/");
+            Navigation.NavigateTo("/Home");
         }
         else
         {
