@@ -1,12 +1,16 @@
 using OnlineStore.Components;
+using OnlineStore.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Add services to the container **before** building the app.
 builder.Services.AddRazorComponents()
-.AddInteractiveServerComponents()
+    .AddInteractiveServerComponents();
 
-            ;
+// Register your services
+builder.Services.AddScoped<User, User>();
+// builder.Services.AddScoped<, User>();
+
 
 var app = builder.Build();
 
@@ -14,21 +18,14 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
-// This is necessary to serve static files from the wwwroot folder.
-
 app.UseAntiforgery();
-
-// app.MapStaticAssets();
 app.UseStaticFiles();
-app.MapRazorComponents<App>()
-.AddInteractiveServerRenderMode()
 
-;
+app.MapRazorComponents<App>()
+    .AddInteractiveServerRenderMode();
 
 app.Run();

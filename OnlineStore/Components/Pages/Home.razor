@@ -1,60 +1,13 @@
 ﻿@page "/"
-
-@* <PageTitle> KuramaCart🦊 - Home</PageTitle> *@
-@using OnlineStore.Services
 @using OnlineStore.Models
+@inject User userDetails
 
-@* <LoginPage></LoginPage> *@
-<style>
-    body {
-        background-color: black;
-        color: aqua;
-        align-items: center;
-        text-align: center;
-    }
-
-    table,
-    td,
-    tr,
-    th {
-        border: 2px solid rgb(29, 153, 33);
-        text-align: center;
-        margin: auto;
-    }
-</style>
-
-@if (products is null)
+<PageTitle> KuramaCart🦊 - Home</PageTitle>
+@if (!userDetails.DidUserLogIn)
 {
-    <p>Nothin to Show</p>
+    <LoginPage />
 }
 else
 {
-
-    <table class="mt-5 table table-stripped table-border table-hover">
-    <tr>
-        <th>ProductName</th>
-        <th>ProductId</th>
-        <th>Price'$'</th>
-        <th>Date</th>
-    </tr>
-    @foreach (var i in products)
-        {
-            <tr>
-                <td>@i.ProductName</td>
-                <td>@i.ProductId</td>
-                <td>@i.Price</td>
-                <td>@i.Date</td>
-            </tr>
-        }
-    </table>
-}
-@code {
-    private ProductServices product = new();
-    private Product[]? products;
-
-    protected override void OnInitialized()
-    {
-        products = product.GetProduct();
-    }
-
+    <p>weeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
 }
