@@ -1,9 +1,3 @@
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.GeneratedMSBuildEditorConfig.editorconfig
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.AssemblyInfoInputs.cache
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.AssemblyInfo.cs
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.csproj.CoreCompileInputs.cache
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.MvcApplicationPartsAssemblyInfo.cache
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.sourcelink.json
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/appsettings.Development.json
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/appsettings.json
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/OnlineStore.staticwebassets.runtime.json
@@ -13,6 +7,12 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/OnlineStore.runtimeconfig.json
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/OnlineStore.dll
 /Users/aakku/Documents/onlineStore/OnlineStore/bin/Debug/net9.0/OnlineStore.pdb
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.AssemblyInfoInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.AssemblyInfo.cs
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.csproj.CoreCompileInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.MvcApplicationPartsAssemblyInfo.cache
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.sourcelink.json
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css
