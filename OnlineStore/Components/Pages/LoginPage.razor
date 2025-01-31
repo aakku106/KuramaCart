@@ -3,12 +3,11 @@
 <PageTitle>KuramaCart 🦊 --> LoginPage</PageTitle>
 
 @using Microsoft.AspNetCore.Components.Routing
-
+@inject NavigationManager Navigation
 
 @inject OnlineStore.Models.User userDetails
 @inject OnlineStore.Data.UserData userData
 
-@inject NavigationManager Navigation
 
 
 
@@ -130,9 +129,9 @@
                             @loginMessage
                         </div>
                     }
-                    <Navigating>
-                        <p>Loading the requested page&hellip;</p>
-                    </Navigating>
+                    @* <Navigating>
+                        <p>Logging In.....</p>
+                    </Navigating> *@
 
                     <div class="text-center mt-3">
                         <p class="text-white">Don't have an account? <label for="register"
@@ -185,7 +184,6 @@
     email = string.Empty,
     conformPassword = string.Empty;
     private string? loginMessage;
-    @* private OnlineStore.Models.User? loggedUser = null; *@
 
     private void Login()
     {

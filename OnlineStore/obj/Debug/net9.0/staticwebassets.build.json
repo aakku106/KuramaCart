@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nI+P5P/GlDKXGLOGhaLkqKk1DK9I/hC6hszfZIV4A+o=",
+  "Hash": "U2nrXEU15eq10g5LtUOQX29QVy1hmQeYxHCmIxw5haE=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -351,6 +351,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon/web-app-manifest-512x512.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/cloths/Jeens#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pmv5l1jmeq",
+      "Integrity": "Ybg2VRIYNLQV4+gtRXnXycYuIjnj81syHnc66izMOvY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/cloths/Jeens.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/naruTshirt.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/cloths/naruTshirt#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vg70r15flk",
+      "Integrity": "z9RUPFGxX65p+SaDZNwPeGD7S9Ekh3vRMO9iw/6oD48=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/cloths/naruTshirt.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/NepaliTshirt.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/cloths/NepaliTshirt#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ssn99y1igh",
+      "Integrity": "RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/cloths/NepaliTshirt.png"
     }
   ],
   "Endpoints": [
@@ -1875,6 +1938,252 @@
       ]
     },
     {
+      "Route": "images/cloths/Jeens.pmv5l1jmeq.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1404370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ybg2VRIYNLQV4+gtRXnXycYuIjnj81syHnc66izMOvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 06:22:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pmv5l1jmeq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cloths/Jeens.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ybg2VRIYNLQV4+gtRXnXycYuIjnj81syHnc66izMOvY="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/Jeens.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1404370"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ybg2VRIYNLQV4+gtRXnXycYuIjnj81syHnc66izMOvY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 06:22:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ybg2VRIYNLQV4+gtRXnXycYuIjnj81syHnc66izMOvY="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/naruTshirt.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/naruTshirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "618871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z9RUPFGxX65p+SaDZNwPeGD7S9Ekh3vRMO9iw/6oD48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:37:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9RUPFGxX65p+SaDZNwPeGD7S9Ekh3vRMO9iw/6oD48="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/naruTshirt.vg70r15flk.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/naruTshirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "618871"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z9RUPFGxX65p+SaDZNwPeGD7S9Ekh3vRMO9iw/6oD48=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:37:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vg70r15flk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cloths/naruTshirt.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z9RUPFGxX65p+SaDZNwPeGD7S9Ekh3vRMO9iw/6oD48="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/NepaliTshirt.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/NepaliTshirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "633172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:22:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/NepaliTshirt.ssn99y1igh.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/NepaliTshirt.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "633172"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:22:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ssn99y1igh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cloths/NepaliTshirt.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE="
+        }
+      ]
+    },
+    {
       "Route": "OnlineStore.bundle.scp.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-qioch5snp1.gz",
       "Selectors": [
@@ -1899,7 +2208,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1952,7 +2261,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1989,7 +2298,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2036,7 +2345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2097,7 +2406,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2142,7 +2451,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2197,7 +2506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2258,7 +2567,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2303,7 +2612,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2358,7 +2667,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2411,7 +2720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2448,7 +2757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:47:10 GMT"
+          "Value": "Fri, 31 Jan 2025 05:49:25 GMT"
         },
         {
           "Name": "Cache-Control",

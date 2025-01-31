@@ -28,12 +28,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2QmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Beaauty.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9CZWFhdXR5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Cloths.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DbG90aHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Kitchen.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9LaXRjaGVuLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/LoginPage.razor]

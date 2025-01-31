@@ -37,6 +37,18 @@
       "PackagePath": "staticwebassets/favicon/web-app-manifest-512x512.png"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
+      "PackagePath": "staticwebassets/images/cloths/Jeens.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/NepaliTshirt.png",
+      "PackagePath": "staticwebassets/images/cloths/NepaliTshirt.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/naruTshirt.png",
+      "PackagePath": "staticwebassets/images/cloths/naruTshirt.png"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
