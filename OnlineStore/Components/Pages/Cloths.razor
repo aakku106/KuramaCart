@@ -2,7 +2,7 @@
 
 <head>
     <style>
-        body{
+        body {
             background-color: #bcc7a72f;
         }
     </style>
@@ -190,8 +190,26 @@
                 </div>
                 <div class="d-flex justify-content-between align-items-center">
                     <span class="text-success"><strong>Price: Rs. 4,000</strong></span>
-                    <a href="#" class="btn btn-primary">Buy Now</a>
+                    @* <a href="offcanvasRight" class="btn btn-primary">Buy Now</a> *@
+                    <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Buy Now</button>
                 </div>
+
+                <div class="offcanvas offcanvas-end rounded-3" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header bg-success-subtle rounded-3">
+                        <h5 class="offcanvas-title bg-success-subtle rounded-3" id="offcanvasRightLabel">Billing</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-info-subtle rounded-3">
+                        <p class="border border-danger text-danger shadow-lg p-3 mb-5"> product not Available</p>
+                    </div>
+
+                </div>
+
+
+
+
             </div>
         </div>
     </div>
