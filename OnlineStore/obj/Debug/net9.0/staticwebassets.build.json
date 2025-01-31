@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U2nrXEU15eq10g5LtUOQX29QVy1hmQeYxHCmIxw5haE=",
+  "Hash": "AqjAwFuKKIquOUMt82746KuQ3NxYGFV+3x/WypbWeDs=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -351,6 +351,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon/web-app-manifest-512x512.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/dsHodiee.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/cloths/dsHodiee#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sdvnwj048n",
+      "Integrity": "YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/cloths/dsHodiee.png"
     },
     {
       "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
@@ -1934,6 +1955,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/dsHodiee.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/dsHodiee.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "801865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/dsHodiee.sdvnwj048n.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/dsHodiee.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "801865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:53:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sdvnwj048n"
+        },
+        {
+          "Name": "label",
+          "Value": "images/cloths/dsHodiee.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ="
         }
       ]
     },

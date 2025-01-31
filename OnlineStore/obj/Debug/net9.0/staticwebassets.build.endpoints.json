@@ -1985,6 +1985,88 @@
       ]
     },
     {
+      "Route": "images/cloths/dsHodiee.png",
+      "AssetFile": "images/cloths/dsHodiee.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "801865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:53:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/cloths/dsHodiee.sdvnwj048n.png",
+      "AssetFile": "images/cloths/dsHodiee.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "801865"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Jan 2025 08:53:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sdvnwj048n"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YLUzLy/IrwrMXw7WpsJNTH5ZWBcvPXogqAsiTa350yQ="
+        },
+        {
+          "Name": "label",
+          "Value": "images/cloths/dsHodiee.png"
+        }
+      ]
+    },
+    {
       "Route": "images/cloths/naruTshirt.png",
       "AssetFile": "images/cloths/naruTshirt.png",
       "Selectors": [],
