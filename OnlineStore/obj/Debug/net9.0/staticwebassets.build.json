@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "FikfB/sESuNWP0v7I9kL6IVih10AicLk7005N2ArWrQ=",
+  "Hash": "KQ1nAL/6qLMeHHmVfgQaAFubtL2b9uazzkwMGFm6Y3Q=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest"
     },
     {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-jyml9wwgbl.gz",
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
       "SourceId": "OnlineStore",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/OnlineStore",
-      "RelativePath": "app#[.{fingerprint=jyml9wwgbl}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=fcpnxl37qp}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,8 +115,8 @@
       "RelatedAsset": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xvx7jdjh68",
-      "Integrity": "TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4=",
+      "Fingerprint": "4ce219i77v",
+      "Integrity": "7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jyml9wwgbl",
-      "Integrity": "e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=",
+      "Fingerprint": "fcpnxl37qp",
+      "Integrity": "8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -479,6 +479,69 @@
       "OriginalItemSpec": "wwwroot/images/kitchen/Colander.png"
     },
     {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grater.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Grater#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pg9dfa38a7",
+      "Integrity": "KXg5/EMdMNkZHCA2Z+SQxL98bAtl5gUtEy9bxUATpi4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Grater.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grill.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Grill#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yikr32o75j",
+      "Integrity": "qgu0uxhqWEpYwvf2eT+XjPZqQ9c9ZshlNgLvDvC9v7M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Grill.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/IronSkillet.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/IronSkillet#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uslt0zsj4g",
+      "Integrity": "nv+hvYWOJ10JetdsBzzd851/KJmzK2p+kFhI0Y8XFyU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/IronSkillet.png"
+    },
+    {
       "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
       "SourceId": "OnlineStore",
       "SourceType": "Discovered",
@@ -519,17 +582,101 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/kitchen/Peeler.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Shears.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Shears#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ygxhztmm7",
+      "Integrity": "+L4fxbVecRz+0EJqxut/Qkdy+ONYVLadHXmr9ZiNlNo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Shears.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Sponges.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Sponges#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ilbtdmrdar",
+      "Integrity": "9hSixYFUaFIRQ1wVn95g6N78PWc/XXCLj49eNMtGnJQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Sponges.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Trash.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Trash#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ilr7btysvy",
+      "Integrity": "dia6RxllOVgnVPQnzJMeuXu6t/7NXJ1zPqIRP7AYs80=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Trash.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Whisk.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Whisk#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "shhy679av3",
+      "Integrity": "8CAiU8UAjpCmg8mAs8kZ2RscOG5XBf98XTfAxFX9h+c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Whisk.png"
     }
   ],
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-jyml9wwgbl.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000717360115"
+          "Quality": "0.000683994528"
         }
       ],
       "ResponseHeaders": [
@@ -539,15 +686,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1393"
+          "Value": "1461"
         },
         {
           "Name": "ETag",
-          "Value": "\"TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4=\""
+          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -567,13 +714,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+          "Value": "W/\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
         }
       ]
     },
@@ -588,7 +735,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2464"
+          "Value": "2568"
         },
         {
           "Name": "Content-Type",
@@ -596,11 +743,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+          "Value": "\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -610,13 +757,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-jyml9wwgbl.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -625,7 +772,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1393"
+          "Value": "1461"
         },
         {
           "Name": "Content-Type",
@@ -633,11 +780,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4=\""
+          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -655,18 +802,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4="
+          "Value": "sha256-7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw="
         }
       ]
     },
     {
-      "Route": "app.jyml9wwgbl.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-jyml9wwgbl.gz",
+      "Route": "app.fcpnxl37qp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000717360115"
+          "Quality": "0.000683994528"
         }
       ],
       "ResponseHeaders": [
@@ -676,15 +823,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1393"
+          "Value": "1461"
         },
         {
           "Name": "ETag",
-          "Value": "\"TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4=\""
+          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -704,13 +851,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+          "Value": "W/\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jyml9wwgbl"
+          "Value": "fcpnxl37qp"
         },
         {
           "Name": "label",
@@ -718,12 +865,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
         }
       ]
     },
     {
-      "Route": "app.jyml9wwgbl.css",
+      "Route": "app.fcpnxl37qp.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -733,7 +880,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2464"
+          "Value": "2568"
         },
         {
           "Name": "Content-Type",
@@ -741,11 +888,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE=\""
+          "Value": "\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -755,7 +902,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jyml9wwgbl"
+          "Value": "fcpnxl37qp"
         },
         {
           "Name": "label",
@@ -763,13 +910,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e5A/gbISGyQA5IiLEJGQOHD/QP4jJe14WJWs/G5RkBE="
+          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
         }
       ]
     },
     {
-      "Route": "app.jyml9wwgbl.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-jyml9wwgbl.gz",
+      "Route": "app.fcpnxl37qp.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -778,7 +925,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1393"
+          "Value": "1461"
         },
         {
           "Name": "Content-Type",
@@ -786,11 +933,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4=\""
+          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 18:19:16 GMT"
+          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -808,7 +955,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jyml9wwgbl"
+          "Value": "fcpnxl37qp"
         },
         {
           "Name": "label",
@@ -816,7 +963,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TV5d4dhKRgZRq3dLiqz9/FkuGm1vOe/lj2W04PgKmN4="
+          "Value": "sha256-7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw="
         }
       ]
     },
@@ -2535,6 +2682,252 @@
       ]
     },
     {
+      "Route": "images/kitchen/Grater.pg9dfa38a7.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grater.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXg5/EMdMNkZHCA2Z+SQxL98bAtl5gUtEy9bxUATpi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:49:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pg9dfa38a7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Grater.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXg5/EMdMNkZHCA2Z+SQxL98bAtl5gUtEy9bxUATpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Grater.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grater.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "67102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KXg5/EMdMNkZHCA2Z+SQxL98bAtl5gUtEy9bxUATpi4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:49:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KXg5/EMdMNkZHCA2Z+SQxL98bAtl5gUtEy9bxUATpi4="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Grill.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34750"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgu0uxhqWEpYwvf2eT+XjPZqQ9c9ZshlNgLvDvC9v7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:59:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgu0uxhqWEpYwvf2eT+XjPZqQ9c9ZshlNgLvDvC9v7M="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Grill.yikr32o75j.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grill.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34750"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qgu0uxhqWEpYwvf2eT+XjPZqQ9c9ZshlNgLvDvC9v7M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:59:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yikr32o75j"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Grill.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qgu0uxhqWEpYwvf2eT+XjPZqQ9c9ZshlNgLvDvC9v7M="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/IronSkillet.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/IronSkillet.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nv+hvYWOJ10JetdsBzzd851/KJmzK2p+kFhI0Y8XFyU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:56:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nv+hvYWOJ10JetdsBzzd851/KJmzK2p+kFhI0Y8XFyU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/IronSkillet.uslt0zsj4g.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/IronSkillet.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "45930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nv+hvYWOJ10JetdsBzzd851/KJmzK2p+kFhI0Y8XFyU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:56:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uslt0zsj4g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/IronSkillet.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nv+hvYWOJ10JetdsBzzd851/KJmzK2p+kFhI0Y8XFyU="
+        }
+      ]
+    },
+    {
       "Route": "images/kitchen/opeaner.png",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
       "Selectors": [],
@@ -2695,6 +3088,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Shears.0ygxhztmm7.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Shears.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+L4fxbVecRz+0EJqxut/Qkdy+ONYVLadHXmr9ZiNlNo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:50:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ygxhztmm7"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Shears.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+L4fxbVecRz+0EJqxut/Qkdy+ONYVLadHXmr9ZiNlNo="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Shears.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Shears.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55854"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+L4fxbVecRz+0EJqxut/Qkdy+ONYVLadHXmr9ZiNlNo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:50:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+L4fxbVecRz+0EJqxut/Qkdy+ONYVLadHXmr9ZiNlNo="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Sponges.ilbtdmrdar.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Sponges.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9hSixYFUaFIRQ1wVn95g6N78PWc/XXCLj49eNMtGnJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:57:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilbtdmrdar"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Sponges.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9hSixYFUaFIRQ1wVn95g6N78PWc/XXCLj49eNMtGnJQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Sponges.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Sponges.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "74977"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9hSixYFUaFIRQ1wVn95g6N78PWc/XXCLj49eNMtGnJQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:57:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9hSixYFUaFIRQ1wVn95g6N78PWc/XXCLj49eNMtGnJQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Trash.ilr7btysvy.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Trash.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dia6RxllOVgnVPQnzJMeuXu6t/7NXJ1zPqIRP7AYs80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:52:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ilr7btysvy"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Trash.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dia6RxllOVgnVPQnzJMeuXu6t/7NXJ1zPqIRP7AYs80="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Trash.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Trash.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29121"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dia6RxllOVgnVPQnzJMeuXu6t/7NXJ1zPqIRP7AYs80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:52:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dia6RxllOVgnVPQnzJMeuXu6t/7NXJ1zPqIRP7AYs80="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Whisk.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Whisk.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39973"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8CAiU8UAjpCmg8mAs8kZ2RscOG5XBf98XTfAxFX9h+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:48:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8CAiU8UAjpCmg8mAs8kZ2RscOG5XBf98XTfAxFX9h+c="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Whisk.shhy679av3.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Whisk.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "39973"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8CAiU8UAjpCmg8mAs8kZ2RscOG5XBf98XTfAxFX9h+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:48:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "shhy679av3"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Whisk.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8CAiU8UAjpCmg8mAs8kZ2RscOG5XBf98XTfAxFX9h+c="
         }
       ]
     },

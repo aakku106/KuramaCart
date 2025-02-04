@@ -192,7 +192,6 @@
         if (user != null)
         {
             loginMessage = $"🎉 Login successful! Welcome, {user.UserName}";
-            @* ClearInputs(); *@
             user.DidUserLogIn = true;
             userDetails.DidUserLogIn = true;
             Navigation.NavigateTo("/Home");
@@ -200,6 +199,8 @@
         else
         {
             loginMessage = "❌ Invalid username or password. Please try again.";
+            ClearInputs();
+
         }
     }
 

@@ -57,8 +57,36 @@
       "PackagePath": "staticwebassets/images/kitchen/Colander.png"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grater.png",
+      "PackagePath": "staticwebassets/images/kitchen/Grater.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grill.png",
+      "PackagePath": "staticwebassets/images/kitchen/Grill.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/IronSkillet.png",
+      "PackagePath": "staticwebassets/images/kitchen/IronSkillet.png"
+    },
+    {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
       "PackagePath": "staticwebassets/images/kitchen/Peeler.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Shears.png",
+      "PackagePath": "staticwebassets/images/kitchen/Shears.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Sponges.png",
+      "PackagePath": "staticwebassets/images/kitchen/Sponges.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Trash.png",
+      "PackagePath": "staticwebassets/images/kitchen/Trash.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Whisk.png",
+      "PackagePath": "staticwebassets/images/kitchen/Whisk.png"
     },
     {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",

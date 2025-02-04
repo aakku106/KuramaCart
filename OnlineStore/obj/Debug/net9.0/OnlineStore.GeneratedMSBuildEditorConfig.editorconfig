@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9CZWFhdXR5LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Cart.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DYXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Cloths.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9DbG90aHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
