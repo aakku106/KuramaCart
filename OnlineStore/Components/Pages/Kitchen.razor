@@ -3,18 +3,153 @@
 
 <PageTitle> KuramaCart🦊 - kitchen item 🧑🏻‍🍳</PageTitle>
 <style>
+    img {
+        border-radius: 10px !important;
+    }
+
     .pageCover {
-        background-color: red;
-        height: 100vh !important;
+        background-color: rgba(140, 136, 136, 0.688);
         width: 100vw !important;
         overflow-x: hidden !important;
+        backdrop-filter: blur(10px) !important;
+        height: 100% !important;
+
+    }
+
+    .KitchenItemHolder {
+        columns: 357px;
+        @* column-count: 3 !important; *@
+        column-gap: 10px;
+        padding: 0.5vw;
+        border-radius: 10px;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: rgba(178, 142, 205, 0.233);
+        transition: all .8s ease-in-out;
+    }
+
+    .kitchenItem {
+        max-width: fit-content !important;
+        min-width: fit-content;
+        padding: 1.2vw !important;
+        border-radius: 10px !important;
+        margin-top: 5vw !important;
+        background-color: #3868b732;
+        box-shadow: 0px 0px 15px rgba(226, 223, 223, 0.374) !important;
+        transition: all 0.5s ease-in-out;
+        margin: 50px !important;
+
+        .imageHolder {
+            align-items: center;
+            align-content: center;
+            text-align: center;
+            align-self: center;
+            box-align: center;
+        }
+
+        .productImage {
+            height: 30% !important;
+            transition: inherit;
+            filter: blur(.1) contrast(120%);
+        }
+
+        .productDetailsWrapper {
+            width: 100% !important;
+            height: 70% !important;
+            padding: .3vw !important;
+            border-radius: 10px !important;
+
+            transition: inherit;
+
+            .productDetails {
+                margin-top: 5px !important;
+                margin-bottom: 5px !important;
+                padding: 1vw !important;
+                background-color: #8e96485a !important;
+                border-radius: 10px !important;
+
+            }
+
+            .productName {
+                padding: .7vw !important;
+                transition: inherit;
+                border-radius: 10px !important;
+
+            }
+
+            .productPrice {
+                color: green !important;
+                border-radius: 10px !important;
+                padding: .7vw !important;
+                transition: inherit;
+            }
+
+            .buttonWrapper {
+                display: flex !important;
+                justify-content: space-between !important;
+                padding: 1vw !important;
+                transition: inherit;
+
+
+
+            }
+        }
     }
 </style>
 
+
 <div class="pageCover">
-<header>
-    <h1 style="text-align: center !important;">Kitchen Essentials</h1>
-</header>
+    <header>
+        @* <h1 style="text-align: center !important; background-color: transparent !important;">Kitchen Essentials</h1> *@
+    </header>
+
+    <div class="KitchenItemHolder">
+
+
+        <div class="kitchenItem">
+            <div class="imageHolder">
+                <img class="productImage" src="/images/kitchen/can.png" alt="Food Storage Containers (Premium)">
+            </div>
+            <div class="productDetailsWrapper">
+                <div class="productDetails productName">Food Storage Containers (Premium)</div>
+                <div class="productDetails productPrice">Price:
+                    <i class="bi bi-tags"></i>
+                    Rs. <strong>500-/</strong>
+                </div>
+                <div class="buttonWrapper">
+                    <button class="buyButton  btn btn-outline-success shadow-sm">
+                        <strong>BUY</strong>
+                    </button>
+                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                        <i class="bi bi-cart4"></i>ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="kitchenItem">
+
+
+
+            <div class="imageHolder">
+                <img class="productImage" src="/images/kitchen/opeaner.png" alt="Food Storage Containers (Premium)">
+            </div>
+            <div class="productDetailsWrapper">
+                <div class="productDetails productName">Can Opener</div>
+                <div class="productDetails productPrice">Price:
+                    <i class="bi bi-tags"></i>
+                    Rs. <strong>150-/</strong>
+                </div>
+                <div class="buttonWrapper">
+                    <button class="buyButton  btn btn-outline-success shadow-sm">
+                        <strong>BUY</strong>
+                    </button>
+                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                        <i class="bi bi-cart4"></i>ADD TO CART
+                    </button>
+                </div>
+            </div>
 
 
 
@@ -23,6 +158,78 @@
 
 
 
+        </div>
+        <div class="kitchenItem">
 
 
+
+            <div class="imageHolder">
+                <img class="productImage" src="/images/kitchen/Colander.png" alt="Food Storage Containers (Premium)">
+            </div>
+            <div class="productDetailsWrapper">
+                <div class="productDetails productName">Colander</div>
+                <div class="productDetails productPrice">Price:
+                    <i class="bi bi-tags"></i>
+                    Rs. <strong>350-/</strong>
+                </div>
+                <div class="buttonWrapper">
+                    <button class="buyButton  btn btn-outline-success shadow-sm">
+                        <strong>BUY</strong>
+                    </button>
+                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                        <i class="bi bi-cart4"></i>ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+        <div class="kitchenItem">
+
+
+
+
+            <div class="imageHolder">
+                <img class="productImage" src="/images/kitchen/Peeler.png"
+                    alt="Food Storage Containers (Premium)">
+            </div>
+            <div class="productDetailsWrapper">
+                <div class="productDetails productName">Vegetable Peeler</div>
+                <div class="productDetails productPrice">Price:
+                    <i class="bi bi-tags"></i>
+                    Rs. <strong>130-/</strong>
+                </div>
+                <div class="buttonWrapper">
+                    <button class="buyButton  btn btn-outline-success shadow-sm">
+                        <strong>BUY</strong>
+                    </button>
+                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                        <i class="bi bi-cart4"></i>ADD TO CART
+                    </button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <div class="kitchenItem">5</div>
+        <div class="kitchenItem">6wewwedfcndljfd ggjkg fgje</div>
+        <div class="kitchenItem">7</div>
+        <div class="kitchenItem">8</div>
+        <div class="kitchenItem">9</div>
+        <div class="kitchenItem">0</div>
+        <div class="kitchenItem"></div>
+        <div class="kitchenItem"></div>
+        <div class="kitchenItem"></div>
+        <div class="kitchenItem"></div>
+        <div class="kitchenItem">15</div>
+
+
+    </div>
 </div>

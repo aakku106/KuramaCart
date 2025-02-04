@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1AEZRzbPAZRqBhK3LOs3NR1VD1ibsUDy5+nUPlnH4o8=",
+  "Hash": "FikfB/sESuNWP0v7I9kL6IVih10AicLk7005N2ArWrQ=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -435,6 +435,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/cloths/NepaliTshirt.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/can#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ulk2gb1575",
+      "Integrity": "Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/can.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Colander.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Colander#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ypu1m8cksc",
+      "Integrity": "OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Colander.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/opeaner#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "rjdj9v6n51",
+      "Integrity": "V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/opeaner.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/kitchen/Peeler#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qaezrq84ym",
+      "Integrity": "IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/kitchen/Peeler.png"
     }
   ],
   "Endpoints": [
@@ -2283,6 +2367,334 @@
         {
           "Name": "integrity",
           "Value": "sha256-RB51r0FhcAHxZxk+gb9ahZAyjwDzUViKIACMoCqqXkE="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/can.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 13:21:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/can.ulk2gb1575.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 13:21:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulk2gb1575"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/can.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Colander.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Colander.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:25:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Colander.ypu1m8cksc.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Colander.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:25:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ypu1m8cksc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Colander.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/opeaner.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:23:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/opeaner.rjdj9v6n51.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:23:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rjdj9v6n51"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/opeaner.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Peeler.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Peeler.qaezrq84ym.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:28:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qaezrq84ym"
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Peeler.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI="
         }
       ]
     },

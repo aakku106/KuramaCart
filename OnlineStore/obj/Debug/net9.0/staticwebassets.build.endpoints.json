@@ -2147,6 +2147,334 @@
           "Value": "images/cloths/naruTshirt.png"
         }
       ]
+    },
+    {
+      "Route": "images/kitchen/Colander.png",
+      "AssetFile": "images/kitchen/Colander.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:25:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Colander.ypu1m8cksc.png",
+      "AssetFile": "images/kitchen/Colander.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "62956"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:25:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ypu1m8cksc"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OvjHNAlY212Z89RrSiNAQNMfF1fS/roAmtHPiiWnF3I="
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Colander.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Peeler.png",
+      "AssetFile": "images/kitchen/Peeler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:28:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/Peeler.qaezrq84ym.png",
+      "AssetFile": "images/kitchen/Peeler.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48095"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:28:01 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qaezrq84ym"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IlaNp/u1r7FrOYT4tL+yzXL9Q9IJlSHHSVu/z2a8nhI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/Peeler.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/can.png",
+      "AssetFile": "images/kitchen/can.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 13:21:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/can.ulk2gb1575.png",
+      "AssetFile": "images/kitchen/can.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 13:21:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ulk2gb1575"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Lr/9gMTXdGP1g9zbx8Xh3nz/g5EFDsQZaENI1xc1RbU="
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/can.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/opeaner.png",
+      "AssetFile": "images/kitchen/opeaner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:23:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8="
+        }
+      ]
+    },
+    {
+      "Route": "images/kitchen/opeaner.rjdj9v6n51.png",
+      "AssetFile": "images/kitchen/opeaner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "51542"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 04 Feb 2025 16:23:42 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "rjdj9v6n51"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V3BZUCSn8t9TkqX3GfdUtqS+BGYHomf6op5IxSwmhE8="
+        },
+        {
+          "Name": "label",
+          "Value": "images/kitchen/opeaner.png"
+        }
+      ]
     }
   ]
 }

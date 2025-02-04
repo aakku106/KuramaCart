@@ -53,6 +53,22 @@
       "PackagePath": "staticwebassets/images/cloths/naruTshirt.png"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Colander.png",
+      "PackagePath": "staticwebassets/images/kitchen/Colander.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
+      "PackagePath": "staticwebassets/images/kitchen/Peeler.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",
+      "PackagePath": "staticwebassets/images/kitchen/can.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
+      "PackagePath": "staticwebassets/images/kitchen/opeaner.png"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
