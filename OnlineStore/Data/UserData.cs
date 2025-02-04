@@ -17,7 +17,7 @@ public class UserData
             DidUserLogIn=false
         }
     ];
-    public IEnumerable<User> GetUsers() => users;
+    // public IEnumerable<User> GetUsers() => users;
     public User? AuthenticateUser(string username, string password)
     {
         return users.FirstOrDefault(user =>

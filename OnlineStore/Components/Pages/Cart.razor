@@ -1,16 +1,47 @@
-@page "/User/cart"
-
+@page "/Cart"
+@inject OnlineStore.Data.CartData cartData
+@using OnlineStore.Data
 
 <style>
-    *{
+    * {
         text-align: center !important;
     }
-    body{
-        background-color: rgba(44, 42, 42, 0.734);
-    }
 
+    body {
+        background-color: rgba(44, 42, 42, 0.734);
+        color: aqua !important;
+    }
+    table{
+        margin: auto;
+    }
+    tr,th,td{
+        border: 2px double pink;
+        border-radius: 10px;
+        font-size: 3rem;
+        font-family: cursive;
+        margin: 3vw;
+
+    }
 </style>
 
 
 <h1>Products Added to cart are shown here</h1>
 
+<table>
+    <tr>
+        <th>Item Name</th>
+        <th>Cost</th>
+        <th>ItemInCart</th>
+    </tr>
+
+    @foreach (var i in cartData.carts)
+    {
+        <tr>
+            <td>@i.ItemName</td>
+            <td>@i.ItemCost</td>
+            <td>@i.ItemInCart</td>
+        </tr>
+
+    }
+
+</table>
