@@ -102,12 +102,26 @@
         }
     }
 </style>
+<div class="toast-container position-fixed bottom-0 end-0 p-3 bg-warning rounded">
+  <div id="liveToast" class="toast rounded" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header rounded bg-warning-subtle">
+      @* <img src="..." class="rounded me-2" alt="..."> *@
+      <strong class="me-auto rounded bg-warning-subtle ">KuramaCart🦊</strong>
+      <small class="bg-warning-subtle">just now</small>
+      <button type="button" class="btn-close rounded" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body bg-primary-subtle rounded">
+      item Added To Cart 🦊
+    </div>
+  </div>
+</div>
 
 
 <div class="pageCover">
     <header>
         @* <h1 style="text-align: center !important; background-color: transparent !important;">Kitchen Essentials</h1> *@
     </header>
+
 
     <div class="KitchenItemHolder">
 
@@ -127,7 +141,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm"  >
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -153,7 +167,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -185,7 +199,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -217,7 +231,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -250,7 +264,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -281,7 +295,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -315,7 +329,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -353,7 +367,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -385,7 +399,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -420,7 +434,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -455,7 +469,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -488,7 +502,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -519,7 +533,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -550,7 +564,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -584,7 +598,7 @@
                     <button class="buyButton  btn btn-outline-success shadow-sm">
                         <strong>BUY</strong>
                     </button>
-                    <button class="addToCartButton btn btn-outline-warning shadow-sm">
+                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
                         <i class="bi bi-cart4"></i>
                     </button>
                 </div>
@@ -607,3 +621,15 @@
     private void AddTOCart(){
     }
 }
+
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
+</script>
