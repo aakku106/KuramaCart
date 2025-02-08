@@ -12,7 +12,8 @@ builder.Services.AddScoped<User, User>();
 builder.Services.AddSingleton<OnlineStore.Data.UserData>();
 builder.Services.AddSingleton<OnlineStore.Models.Product>();
 builder.Services.AddSingleton<OnlineStore.Data.CartData>();
-
+builder.Services.AddSingleton<OnlineStore.Data.ProductData>();
+builder.Services.AddScoped<OnlineStore.Data.CartData>();
 
 var app = builder.Build();
 

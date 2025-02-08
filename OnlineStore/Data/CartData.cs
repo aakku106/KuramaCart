@@ -1,12 +1,13 @@
 using System;
-using OnlineStore.Components.Pages;
+using Microsoft.AspNetCore.Components;
 using OnlineStore.Models;
+using System.Linq;
 
 namespace OnlineStore.Data;
 
 public class CartData
 {
-    public List<UserCart> carts = [
+    private List<UserCart> _carts = [
         new(){
             ItemName="Vegetable Peeler",
             ItemCost=130,
@@ -28,4 +29,6 @@ public class CartData
             ItemName="Sponges"
         }
     ];
+
+    public IReadOnlyList<UserCart> Carts => _carts;
 }

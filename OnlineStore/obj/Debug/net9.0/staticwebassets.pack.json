@@ -37,6 +37,30 @@
       "PackagePath": "staticwebassets/favicon/web-app-manifest-512x512.png"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Bella.png",
+      "PackagePath": "staticwebassets/images/beauty/Bella.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/CeraVe.png",
+      "PackagePath": "staticwebassets/images/beauty/CeraVe.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Eye.png",
+      "PackagePath": "staticwebassets/images/beauty/Eye.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Forever52.png",
+      "PackagePath": "staticwebassets/images/beauty/Forever52.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Hair.png",
+      "PackagePath": "staticwebassets/images/beauty/Hair.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/HairButter.png",
+      "PackagePath": "staticwebassets/images/beauty/HairButter.png"
+    },
+    {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
       "PackagePath": "staticwebassets/images/cloths/Jeens.png"
     },

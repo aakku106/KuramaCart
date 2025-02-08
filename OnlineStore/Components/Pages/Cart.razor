@@ -11,19 +11,21 @@
         background-color: rgba(44, 42, 42, 0.734);
         color: aqua !important;
     }
-    table{
+
+    table {
         margin: auto;
     }
-    tr,th,td{
+
+    tr,
+    th,
+    td {
         border: 2px double pink;
         border-radius: 10px;
         font-size: 3rem;
         font-family: cursive;
         margin: 3vw;
-
     }
 </style>
-
 
 <h1>Products Added to cart are shown here</h1>
 
@@ -34,14 +36,12 @@
         <th>ItemInCart</th>
     </tr>
 
-    @foreach (var i in cartData.carts)
+    @foreach (var i in cartData.Carts)
     {
         <tr>
             <td>@i.ItemName</td>
             <td>@i.ItemCost</td>
             <td>@i.ItemInCart</td>
         </tr>
-
     }
-
 </table>

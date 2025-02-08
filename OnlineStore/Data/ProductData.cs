@@ -1,4 +1,5 @@
 using System;
+using OnlineStore.Components.Pages;
 using OnlineStore.Models;
 
 namespace OnlineStore.Data;
@@ -74,7 +75,11 @@ new(){
     Price=350,
     Date=null,
     HowManyProduct=9
-},
+}
+    ];
+
+    private readonly IEnumerable<Product> beauty = [
+
 new(){
     ProductId=11111,
     ProductName="Bella Fragrance",
@@ -88,44 +93,35 @@ new(){
     ProductName="CeraVe",
     Price=3400,
     Date=null,
-    HowManyProduct=7, ImagePath="/images/beauty/CeraVe.png"
+    HowManyProduct=4, ImagePath="/images/beauty/CeraVe.png"
 },new(){
     ProductId=13111,
     ProductName="Note Real Look",
     Price=1450,
     Date=null,
-    HowManyProduct=7, ImagePath="/images/beauty/Eye.png"
+    HowManyProduct=2, ImagePath="/images/beauty/Eye.png"
 },new(){
     ProductId=14111,
     ProductName="ForEver52 Foundation",
     Price=1520,
     Date=null,
-    HowManyProduct=7, ImagePath="/images/beauty/Forever52.png"
+    HowManyProduct=17, ImagePath="/images/beauty/Forever52.png"
 },new(){
     ProductId=15111,
     ProductName="Urban Care Style Guide Elastic Curl Hair Gel 150ml",
     Price=1490,
     Date=null,
-    HowManyProduct=7, ImagePath="/images/beauty/Hair.png"
+    HowManyProduct=10, ImagePath="/images/beauty/Hair.png"
 },new(){
-    ProductId=11111,
+    ProductId=16111,
     ProductName="Earth Rhythm Hair Butter - Onion, Fenugreek & Cocoa Butter - 100 Ml",
     Price=1305,
     Date=null,
-    HowManyProduct=7, ImagePath="/images/beauty/HairButter.png"
-},
-
-
-
-
-
-
-
-
-
-
-
+    HowManyProduct=1, ImagePath="/images/beauty/HairButter.png"
+}
     ];
 
+
     public Product[] GetProduct() => [.. products];
+    public Product[] GetBeauties() => [.. beauty];
 }

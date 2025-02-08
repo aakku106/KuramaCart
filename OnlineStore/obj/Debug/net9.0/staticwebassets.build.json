@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KQ1nAL/6qLMeHHmVfgQaAFubtL2b9uazzkwMGFm6Y3Q=",
+  "Hash": "27g3zSFjE/XyDJGD/+9jqwDMaipUgsiwvHAFLThGx0E=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest"
     },
     {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz",
       "SourceId": "OnlineStore",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/OnlineStore",
-      "RelativePath": "app#[.{fingerprint=fcpnxl37qp}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=j3f68h0vkv}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,8 +115,8 @@
       "RelatedAsset": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "4ce219i77v",
-      "Integrity": "7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=",
+      "Fingerprint": "xqhhnj956x",
+      "Integrity": "Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fcpnxl37qp",
-      "Integrity": "8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=",
+      "Fingerprint": "j3f68h0vkv",
+      "Integrity": "EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -351,6 +351,132 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon/web-app-manifest-512x512.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Bella.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/Bella#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xwkqv671pf",
+      "Integrity": "nwymddGhGSfKUp0LDGvZkAhNUrGzI81ndgM+eipl/MY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/Bella.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/CeraVe.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/CeraVe#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z528mspsht",
+      "Integrity": "Ce1PhXM4+JbHr+Sv/ycFUgupmiI/8U7oRMruTsdBT00=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/CeraVe.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Eye.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/Eye#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lrsz0ya9nz",
+      "Integrity": "YSTNHR7GIisPTZIZemnJiKNQEhlDh8a1b9r92kwWKdg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/Eye.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Forever52.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/Forever52#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "s9xsrst3mi",
+      "Integrity": "kO0PLlMq1jLJo26agkVkdGHmek7x5H6jlmHYwvT+BP0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/Forever52.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Hair.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/Hair#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "o7jhq89r9b",
+      "Integrity": "fLq2Svmnmq2fFWlAyX8TFJMGeKeeVRElcjRMu70jJK4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/Hair.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/HairButter.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/beauty/HairButter#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6uontjxsdz",
+      "Integrity": "gqn0x72lJeLuDS0z3kQA3DDN/JCxiKBpy1VqG/VC4aE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/beauty/HairButter.png"
     },
     {
       "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/dsHodiee.png",
@@ -671,12 +797,12 @@
   "Endpoints": [
     {
       "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000683994528"
+          "Quality": "0.000617665225"
         }
       ],
       "ResponseHeaders": [
@@ -686,15 +812,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1461"
+          "Value": "1618"
         },
         {
           "Name": "ETag",
-          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
+          "Value": "\"Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -714,13 +840,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
+          "Value": "W/\"EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
+          "Value": "sha256-EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c="
         }
       ]
     },
@@ -735,7 +861,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2568"
+          "Value": "2938"
         },
         {
           "Name": "Content-Type",
@@ -743,11 +869,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
+          "Value": "\"EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -757,13 +883,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
+          "Value": "sha256-EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c="
         }
       ]
     },
     {
       "Route": "app.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -772,7 +898,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1461"
+          "Value": "1618"
         },
         {
           "Name": "Content-Type",
@@ -780,11 +906,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
+          "Value": "\"Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -802,18 +928,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw="
+          "Value": "sha256-Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs="
         }
       ]
     },
     {
-      "Route": "app.fcpnxl37qp.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
+      "Route": "app.j3f68h0vkv.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000683994528"
+          "Quality": "0.000617665225"
         }
       ],
       "ResponseHeaders": [
@@ -823,15 +949,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1461"
+          "Value": "1618"
         },
         {
           "Name": "ETag",
-          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
+          "Value": "\"Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -851,13 +977,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
+          "Value": "W/\"EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fcpnxl37qp"
+          "Value": "j3f68h0vkv"
         },
         {
           "Name": "label",
@@ -865,12 +991,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
+          "Value": "sha256-EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c="
         }
       ]
     },
     {
-      "Route": "app.fcpnxl37qp.css",
+      "Route": "app.j3f68h0vkv.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -880,7 +1006,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2568"
+          "Value": "2938"
         },
         {
           "Name": "Content-Type",
@@ -888,11 +1014,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w=\""
+          "Value": "\"EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -902,7 +1028,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fcpnxl37qp"
+          "Value": "j3f68h0vkv"
         },
         {
           "Name": "label",
@@ -910,13 +1036,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-8fpCe3ZWnwzOkwxrxma25QnEzhiBwlrRemkeUX+C51w="
+          "Value": "sha256-EcIPy9RH93qbJ2oOo/hEcGWXWx/kX3OIez5Eajo+b9c="
         }
       ]
     },
     {
-      "Route": "app.fcpnxl37qp.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-fcpnxl37qp.gz",
+      "Route": "app.j3f68h0vkv.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -925,7 +1051,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1461"
+          "Value": "1618"
         },
         {
           "Name": "Content-Type",
@@ -933,11 +1059,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw=\""
+          "Value": "\"Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 04 Feb 2025 17:08:10 GMT"
+          "Value": "Sat, 08 Feb 2025 17:38:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -955,7 +1081,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fcpnxl37qp"
+          "Value": "j3f68h0vkv"
         },
         {
           "Name": "label",
@@ -963,7 +1089,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-7AWPKCeATKW5nL7lnMZGL09RNhwQxVbQ1ZLhD0NLpMw="
+          "Value": "sha256-Gef8Y2UnSZ4GIr90CXmswj6IAQ2R1qK/o+AdLaRufCs="
         }
       ]
     },
@@ -2186,6 +2312,498 @@
         {
           "Name": "integrity",
           "Value": "sha256-GSU6l9QyOmT1ewtOTnZo+nYuE7H7in0VUJFIrpNu7cc="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Bella.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Bella.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwymddGhGSfKUp0LDGvZkAhNUrGzI81ndgM+eipl/MY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:07:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwymddGhGSfKUp0LDGvZkAhNUrGzI81ndgM+eipl/MY="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Bella.xwkqv671pf.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Bella.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "531047"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwymddGhGSfKUp0LDGvZkAhNUrGzI81ndgM+eipl/MY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:07:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xwkqv671pf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/Bella.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwymddGhGSfKUp0LDGvZkAhNUrGzI81ndgM+eipl/MY="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/CeraVe.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/CeraVe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ce1PhXM4+JbHr+Sv/ycFUgupmiI/8U7oRMruTsdBT00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:03:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ce1PhXM4+JbHr+Sv/ycFUgupmiI/8U7oRMruTsdBT00="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/CeraVe.z528mspsht.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/CeraVe.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ce1PhXM4+JbHr+Sv/ycFUgupmiI/8U7oRMruTsdBT00=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:03:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z528mspsht"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/CeraVe.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ce1PhXM4+JbHr+Sv/ycFUgupmiI/8U7oRMruTsdBT00="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Eye.lrsz0ya9nz.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Eye.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YSTNHR7GIisPTZIZemnJiKNQEhlDh8a1b9r92kwWKdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:08:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lrsz0ya9nz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/Eye.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YSTNHR7GIisPTZIZemnJiKNQEhlDh8a1b9r92kwWKdg="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Eye.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Eye.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YSTNHR7GIisPTZIZemnJiKNQEhlDh8a1b9r92kwWKdg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:08:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YSTNHR7GIisPTZIZemnJiKNQEhlDh8a1b9r92kwWKdg="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Forever52.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Forever52.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kO0PLlMq1jLJo26agkVkdGHmek7x5H6jlmHYwvT+BP0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:05:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kO0PLlMq1jLJo26agkVkdGHmek7x5H6jlmHYwvT+BP0="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Forever52.s9xsrst3mi.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Forever52.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "337665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kO0PLlMq1jLJo26agkVkdGHmek7x5H6jlmHYwvT+BP0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:05:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9xsrst3mi"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/Forever52.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kO0PLlMq1jLJo26agkVkdGHmek7x5H6jlmHYwvT+BP0="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Hair.o7jhq89r9b.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Hair.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "503684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fLq2Svmnmq2fFWlAyX8TFJMGeKeeVRElcjRMu70jJK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:07:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "o7jhq89r9b"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/Hair.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fLq2Svmnmq2fFWlAyX8TFJMGeKeeVRElcjRMu70jJK4="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/Hair.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Hair.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "503684"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fLq2Svmnmq2fFWlAyX8TFJMGeKeeVRElcjRMu70jJK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:07:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fLq2Svmnmq2fFWlAyX8TFJMGeKeeVRElcjRMu70jJK4="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/HairButter.6uontjxsdz.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/HairButter.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1052215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqn0x72lJeLuDS0z3kQA3DDN/JCxiKBpy1VqG/VC4aE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6uontjxsdz"
+        },
+        {
+          "Name": "label",
+          "Value": "images/beauty/HairButter.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqn0x72lJeLuDS0z3kQA3DDN/JCxiKBpy1VqG/VC4aE="
+        }
+      ]
+    },
+    {
+      "Route": "images/beauty/HairButter.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/HairButter.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1052215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gqn0x72lJeLuDS0z3kQA3DDN/JCxiKBpy1VqG/VC4aE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 16:09:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gqn0x72lJeLuDS0z3kQA3DDN/JCxiKBpy1VqG/VC4aE="
         }
       ]
     },
@@ -3444,7 +4062,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3497,7 +4115,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3534,7 +4152,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3581,7 +4199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3642,7 +4260,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3687,7 +4305,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3742,7 +4360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3803,7 +4421,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3848,7 +4466,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3903,7 +4521,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3956,7 +4574,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3993,7 +4611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 15:53:44 GMT"
+          "Value": "Sat, 08 Feb 2025 18:56:15 GMT"
         },
         {
           "Name": "Cache-Control",
