@@ -7,6 +7,7 @@ namespace OnlineStore.Data;
 
 public class CartData
 {
+    public event Action? OnChange;
     private List<UserCart> _carts = [
         new(){
             ItemName="Vegetable Peeler",
@@ -31,7 +32,15 @@ public class CartData
     ];
     private readonly List<Product> BeautyCarts = [];
 
+    public void AddToBeautyCart(Product product)
+    {
+        BeautyCarts.Add(product);
+        NotifyStateChanged();
+    }
 
-    public List<Product> AddCart() => [.. BeautyCarts];
+    public IReadOnlyList<Product> GetBeautyCart() => BeautyCarts;
+
     public IReadOnlyList<UserCart> Carts => _carts;
+
+    private void NotifyStateChanged() => OnChange?.Invoke();
 }

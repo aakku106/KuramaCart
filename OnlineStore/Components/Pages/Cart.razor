@@ -1,6 +1,7 @@
 @page "/Cart"
 @inject OnlineStore.Data.CartData cartData
 @using OnlineStore.Data
+@implements IDisposable
 
 <style>
     * {
@@ -25,49 +26,68 @@
         font-family: cursive;
         margin: 3vw;
     }
+
+    .beauty-products {
+        margin-bottom: 2rem;
+    }
+
+    .cart-section {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
 </style>
 
-<h1>Products Added to cart are shown here</h1>
+<h1>Products Added to cart</h1>
 
-
-
-
-@foreach (var BeautyProductsInCart in cartData.AddCart())
-{
-    <div class="col">
-        <div class="card">
-            <div class="card-img-container">
-                <img src="@BeautyProductsInCart.ImagePath" class="card-img-top" alt="@BeautyProductsInCart.ProductName picture"
-                    loading="lazy">
+<div class="beauty-products">
+    <h2>Beauty Products</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var product in cartData.GetBeautyCart())
+        {
+            <div class="col">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="@product.ImagePath" class="card-img-top" alt="@product.ProductName picture"
+                            loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <div class="price">₹@product.Price</div>
+                    </div>
+                </div>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">@BeautyProductsInCart.ProductName</h5>
-                <div class="price">₹@BeautyProductsInCart.Price</div>
-                @* <button class="add-to-cart-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    @onclick="() => passToCart(BeautyProducts)">
-                    Add to Cart 🛒
-                </button> *@
-            </div>
-        </div>
+        }
     </div>
-}
+</div>
 
-
-
-
-<table>
-    <tr>
-        <th>Item Name</th>
-        <th>Cost</th>
-        <th>ItemInCart</th>
-    </tr>
-
-    @foreach (var i in cartData.Carts)
-    {
+<div class="cart-section">
+    <h2>Kitchen Products</h2>
+    <table>
         <tr>
-            <td>@i.ItemName</td>
-            <td>@i.ItemCost</td>
-            <td>@i.ItemInCart</td>
+            <th>Item Name</th>
+            <th>Cost</th>
+            <th>Quantity</th>
         </tr>
+
+        @foreach (var item in cartData.Carts)
+        {
+            <tr>
+                <td>@item.ItemName</td>
+                <td>₹@item.ItemCost</td>
+                <td>@item.ItemInCart</td>
+            </tr>
+        }
+    </table>
+</div>
+
+@code {
+    protected override void OnInitialized()
+    {
+        cartData.OnChange += StateHasChanged;
     }
-</table>
+
+    public void Dispose()
+    {
+        cartData.OnChange -= StateHasChanged;
+    }
+}

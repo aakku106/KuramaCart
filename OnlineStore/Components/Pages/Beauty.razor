@@ -238,7 +238,7 @@
         </div>
     </div>
 
-    @if (beauty.GetBeauties() == null)
+    @if (beauty.GetBeauties() == null || beauty == null)
     {
         <div class="text-center p-5">
             <div class="spinner-border text-primary" role="status">
@@ -284,7 +284,7 @@
             </div>
             <div class="modal-body">
                 <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
-                    Are you sure you want to add to your cart? 🤔
+                    Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
                 </p>
             </div>
             <div class="modal-footer">
@@ -299,19 +299,5 @@
     </div>
 </div>
 @code {
-    private bool conformCart = false;
-    private void AddToCart()
-    {
-        conformCart = true;
-    }
-
-    private void passToCart(Models.Product e)
-    {
-
-        {
-            cartData.AddCart().Add(e);
-        }
-
-    }
-
+   
 }
