@@ -1,0 +1,145 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Release/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
+      "PackagePath": "staticwebassets/OnlineStore.qioch5snp1.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/apple-touch-icon.png",
+      "PackagePath": "staticwebassets/favicon/apple-touch-icon.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon-96x96.png",
+      "PackagePath": "staticwebassets/favicon/favicon-96x96.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.ico",
+      "PackagePath": "staticwebassets/favicon/favicon.ico"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.svg",
+      "PackagePath": "staticwebassets/favicon/favicon.svg"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest",
+      "PackagePath": "staticwebassets/favicon/site.webmanifest"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-192x192.png",
+      "PackagePath": "staticwebassets/favicon/web-app-manifest-192x192.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/web-app-manifest-512x512.png",
+      "PackagePath": "staticwebassets/favicon/web-app-manifest-512x512.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Bella.png",
+      "PackagePath": "staticwebassets/images/beauty/Bella.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/CeraVe.png",
+      "PackagePath": "staticwebassets/images/beauty/CeraVe.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Eye.png",
+      "PackagePath": "staticwebassets/images/beauty/Eye.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Forever52.png",
+      "PackagePath": "staticwebassets/images/beauty/Forever52.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/Hair.png",
+      "PackagePath": "staticwebassets/images/beauty/Hair.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/beauty/HairButter.png",
+      "PackagePath": "staticwebassets/images/beauty/HairButter.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/Jeens.png",
+      "PackagePath": "staticwebassets/images/cloths/Jeens.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/NepaliTshirt.png",
+      "PackagePath": "staticwebassets/images/cloths/NepaliTshirt.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/dsHodiee.png",
+      "PackagePath": "staticwebassets/images/cloths/dsHodiee.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/cloths/naruTshirt.png",
+      "PackagePath": "staticwebassets/images/cloths/naruTshirt.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Colander.png",
+      "PackagePath": "staticwebassets/images/kitchen/Colander.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grater.png",
+      "PackagePath": "staticwebassets/images/kitchen/Grater.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Grill.png",
+      "PackagePath": "staticwebassets/images/kitchen/Grill.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/IronSkillet.png",
+      "PackagePath": "staticwebassets/images/kitchen/IronSkillet.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Peeler.png",
+      "PackagePath": "staticwebassets/images/kitchen/Peeler.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Shears.png",
+      "PackagePath": "staticwebassets/images/kitchen/Shears.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Sponges.png",
+      "PackagePath": "staticwebassets/images/kitchen/Sponges.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Trash.png",
+      "PackagePath": "staticwebassets/images/kitchen/Trash.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/Whisk.png",
+      "PackagePath": "staticwebassets/images/kitchen/Whisk.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/can.png",
+      "PackagePath": "staticwebassets/images/kitchen/can.png"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/kitchen/opeaner.png",
+      "PackagePath": "staticwebassets/images/kitchen/opeaner.png"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.build.OnlineStore.props",
+      "PackagePath": "build\\OnlineStore.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.buildMultiTargeting.OnlineStore.props",
+      "PackagePath": "buildMultiTargeting\\OnlineStore.props"
+    },
+    {
+      "Id": "obj/Release/net9.0/staticwebassets/msbuild.buildTransitive.OnlineStore.props",
+      "PackagePath": "buildTransitive\\OnlineStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
