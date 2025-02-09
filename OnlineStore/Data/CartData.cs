@@ -29,6 +29,9 @@ public class CartData
             ItemName="Sponges"
         }
     ];
+    private readonly List<Product> BeautyCarts = [];
 
+
+    public List<Product> AddCart() => [.. BeautyCarts];
     public IReadOnlyList<UserCart> Carts => _carts;
 }

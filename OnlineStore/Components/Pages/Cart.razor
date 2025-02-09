@@ -29,6 +29,32 @@
 
 <h1>Products Added to cart are shown here</h1>
 
+
+
+
+@foreach (var BeautyProductsInCart in cartData.AddCart())
+{
+    <div class="col">
+        <div class="card">
+            <div class="card-img-container">
+                <img src="@BeautyProductsInCart.ImagePath" class="card-img-top" alt="@BeautyProductsInCart.ProductName picture"
+                    loading="lazy">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">@BeautyProductsInCart.ProductName</h5>
+                <div class="price">₹@BeautyProductsInCart.Price</div>
+                @* <button class="add-to-cart-btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    @onclick="() => passToCart(BeautyProducts)">
+                    Add to Cart 🛒
+                </button> *@
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
 <table>
     <tr>
         <th>Item Name</th>
