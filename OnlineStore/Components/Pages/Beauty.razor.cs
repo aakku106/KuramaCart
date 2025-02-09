@@ -8,11 +8,6 @@ namespace OnlineStore.Components.Pages
 {
     public partial class Beauty
     {
-        private Product? selectedProduct;
 
-        private void SelectProduct(Product product)
-        {
-            selectedProduct = product;
-        }
     }
 }

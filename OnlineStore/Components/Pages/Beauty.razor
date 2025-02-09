@@ -262,14 +262,12 @@
                                 <h5 class="card-title">@BeautyProducts.ProductName</h5>
                                 <div class="price">₹@BeautyProducts.Price</div>
                                 <button class="add-to-cart-btn" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" @onclick="() => SelectProduct(BeautyProducts)">
+                                    data-bs-target="#exampleModal" @onclick="() => passToCart(BeautyProducts)">
                                     Add to Cart 🛒
                                 </button>
                             </div>
                         </div>
                     </div>
-
-
                 }
             </div>
         </div>
@@ -286,17 +284,29 @@
             </div>
             <div class="modal-body">
                 <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
-                    Are you sure you want to add @selectedProduct?.ProductName to your cart? 🤔
+                    Are you sure you want to add to your cart? 🤔
                 </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                     Cancel
                 </button>
-                <button type="button" class="btn btn-primary" @onclick="AddSelectedToCart" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
                     Yes, Add to Cart! 🦊
                 </button>
             </div>
         </div>
     </div>
 </div>
+@code {
+    private bool conformCart = false;
+    private void AddToCart()
+    {
+        conformCart = true;
+    }
+    private void passToCart(Models.Product e)
+    {
+
+    }
+
+}
