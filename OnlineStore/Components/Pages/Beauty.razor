@@ -1,6 +1,7 @@
 @page "/BeautyProducts"
-@inject OnlineStore.Data.ProductData beauty
+@inject OnlineStore.Data.ProductData.ProductData beauty
 @inject OnlineStore.Data.CartData cartData
+
 
 <style>
     body {
@@ -234,11 +235,13 @@
     <div class="page-header">
         <h1 class="page-title">Beauty Products 💄</h1>
         <div class="product-count">
-            Showing @beauty.GetBeauties()?.Count() Products
+            @* Showing @beauty.GetBeauties()?.Count() Products *@
+            Showing @beauty.beautyPublic.Count() Products 👀
         </div>
     </div>
 
-    @if (beauty.GetBeauties() == null || beauty == null)
+    @* @if (beauty.GetBeauties() == null || beauty == null) *@
+    @if (beauty.beautyPublic == null || beauty == null)
     {
         <div class="text-center p-5">
             <div class="spinner-border text-primary" role="status">
@@ -250,7 +253,8 @@
     {
         <div class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach (var BeautyProducts in beauty.GetBeauties())
+                @* @foreach (var BeautyProducts in beauty.GetBeauties()) *@
+                @foreach (var BeautyProducts in beauty.beautyPublic)
                 {
                     <div class="col">
                         <div class="card">
@@ -265,6 +269,7 @@
                                     data-bs-target="#exampleModal" @onclick="() => passToCart(BeautyProducts)">
                                     Add to Cart 🛒
                                 </button>
+
                             </div>
                         </div>
                     </div>
@@ -298,6 +303,3 @@
         </div>
     </div>
 </div>
-@code {
-   
-}

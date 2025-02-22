@@ -16,7 +16,6 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-j3f68h0vkv.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/1ve23xr5hj-4e30byv6x9.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/f0h61z3879-ynwu57l7o8.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/gxide64yes-sejp7jvwrm.gz
@@ -36,3 +35,4 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.pdb
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.genruntimeconfig.cache
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/ref/OnlineStore.dll
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz

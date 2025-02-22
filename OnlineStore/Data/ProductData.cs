@@ -2,7 +2,7 @@ using System;
 using OnlineStore.Components.Pages;
 using OnlineStore.Models;
 
-namespace OnlineStore.Data;
+namespace OnlineStore.Data.ProductData;
 
 public class ProductData
 {
@@ -77,10 +77,61 @@ new(){
     HowManyProduct=9
 }
     ];
+    // These is temporary commented for checking if cart are working
 
-    private readonly IEnumerable<Product> beauty = [
+    //     private readonly IEnumerable<Product> beauty = [
 
-new(){
+    // new(){
+    //     ProductId=11111,
+    //     ProductName="Bella Fragrance",
+    //     Price=1599,
+    //     Date=null,
+    //     HowManyProduct=7, ImagePath="/images/beauty/Bella.png"
+    // },
+
+    // new(){
+    //     ProductId=12111,
+    //     ProductName="CeraVe",
+    //     Price=3400,
+    //     Date=null,
+    //     HowManyProduct=4, ImagePath="/images/beauty/CeraVe.png"
+    // },new(){
+    //     ProductId=13111,
+    //     ProductName="Note Real Look",
+    //     Price=1450,
+    //     Date=null,
+    //     HowManyProduct=2, ImagePath="/images/beauty/Eye.png"
+    // },new(){
+    //     ProductId=14111,
+    //     ProductName="ForEver52 Foundation",
+    //     Price=1520,
+    //     Date=null,
+    //     HowManyProduct=17, ImagePath="/images/beauty/Forever52.png"
+    // },new(){
+    //     ProductId=15111,
+    //     ProductName="Urban Care Style Guide Elastic Curl Hair Gel 150ml",
+    //     Price=1490,
+    //     Date=null,
+    //     HowManyProduct=10, ImagePath="/images/beauty/Hair.png"
+    // },new(){
+    //     ProductId=16111,
+    //     ProductName="Earth Rhythm Hair Butter - Onion, Fenugreek & Cocoa Butter - 100 Ml",
+    //     Price=1305,
+    //     Date=null,
+    //     HowManyProduct=1, ImagePath="/images/beauty/HairButter.png"
+    // }
+    //     ];
+    //     public Product[] GetBeauties() => [.. beauty];
+
+
+    public Product[] GetProduct() => [.. products];
+
+
+
+    // this list is made just for temporary practice to pass values to cart.
+    public readonly List<Product> beautyPublic = [
+
+    new(){
     ProductId=11111,
     ProductName="Bella Fragrance",
     Price=1599,
@@ -120,8 +171,4 @@ new(){
     HowManyProduct=1, ImagePath="/images/beauty/HairButter.png"
 }
     ];
-
-
-    public Product[] GetProduct() => [.. products];
-    public Product[] GetBeauties() => [.. beauty];
 }

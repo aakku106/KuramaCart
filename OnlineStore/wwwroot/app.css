@@ -65,6 +65,6 @@ h1:focus {
 
 @media (max-width: 768px) {
   .card-img-container {
-    height: 240px; /* Slightly smaller height on mobile */
+    height: 240px;
   }
 }

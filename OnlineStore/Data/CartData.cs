@@ -30,7 +30,8 @@ public class CartData
             ItemName="Sponges"
         }
     ];
-    private readonly List<Product> BeautyCarts = [];
+    // private readonly List<Product> BeautyCarts = [];
+    public List<Product> BeautyCarts = [];// this is temp public list just used to showcase example, use upper private for more secure use
 
     public void AddToBeautyCart(Product product)
     {
@@ -38,7 +39,7 @@ public class CartData
         NotifyStateChanged();
     }
 
-    public IReadOnlyList<Product> GetBeautyCart() => BeautyCarts;
+    // public IReadOnlyList<Product> GetBeautyCart() => BeautyCarts;
 
     public IReadOnlyList<UserCart> Carts => _carts;
 
