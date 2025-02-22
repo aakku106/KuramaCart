@@ -7,33 +7,32 @@ using OnlineStore.Models;
 
 namespace OnlineStore.Components.Pages
 {
-    public partial class Beauty
+    public partial class Beauty : IDisposable
     {
-        private OnlineStore.Models.Product? selectedProduct;
+        private Product? selectedProduct;
 
         protected override void OnInitialized()
         {
             cartData.OnChange += StateHasChanged;
         }
 
-        private void passToCart(Models.Product product)
+        private void passToCart(Product product)
         {
-            Console.WriteLine(@$"selected {selectedProduct.ProductName}");
-
-            selectedProduct = product;
+            selectedProduct = product;  // Just store the selected product
         }
 
         private void AddToCart()
         {
-            Console.WriteLine(@$"{selectedProduct.ProductName} added in cart");
             if (selectedProduct != null)
             {
                 cartData.AddToBeautyCart(selectedProduct);
-                Console.WriteLine(@$"{selectedProduct.ProductName} added in cart for sure 🐶");
-
-
                 selectedProduct = null;
             }
+        }
+
+        public void Dispose()
+        {
+            cartData.OnChange -= StateHasChanged;
         }
     }
 }

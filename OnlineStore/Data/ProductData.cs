@@ -129,7 +129,7 @@ new(){
 
 
     // this list is made just for temporary practice to pass values to cart.
-    public readonly List<Product> beautyPublic = [
+    public  List<Product> beautyPublic = [
 
     new(){
     ProductId=11111,
@@ -137,9 +137,7 @@ new(){
     Price=1599,
     Date=null,
     HowManyProduct=7, ImagePath="/images/beauty/Bella.png"
-},
-
-new(){
+},new(){
     ProductId=12111,
     ProductName="CeraVe",
     Price=3400,

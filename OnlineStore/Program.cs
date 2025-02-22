@@ -14,7 +14,6 @@ builder.Services.AddSingleton<OnlineStore.Models.Product>();
 builder.Services.AddSingleton<OnlineStore.Data.CartData>();
 builder.Services.AddSingleton<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
-builder.Services.AddSingleton<OnlineStore.Data.CartData>();
 
 var app = builder.Build();
 

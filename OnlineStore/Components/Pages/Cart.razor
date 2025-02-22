@@ -1,60 +1,109 @@
 @page "/Cart"
 @inject OnlineStore.Data.CartData cartData
-@using OnlineStore.Data
+
 @implements IDisposable
-@using OnlineStore.Data.ProductData
 
 <style>
-    * {
-        text-align: center !important;
+    :root {
+        --glass-bg: rgba(255, 69, 0, 0.15);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --text-glow: rgba(255, 140, 0, 0.6);
+        --kushina-red: #cc2d2d;
+        --kurama-orange: #e67700;
+        --aqua-glow: rgba(0, 255, 255, 0.4);
+        --shadow-dark: rgba(0, 0, 0, 0.5);
+        --text-color: #e5e5e5;
     }
 
-    body {
-        background-color: rgba(44, 42, 42, 0.734);
-        color: aqua !important;
+    .cart-page {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.9)),
+            url('/images/naruto-kurama-bg.jpg') no-repeat center center/cover;
+        color: var(--text-color);
+        font-family: 'Poppins', sans-serif;
     }
 
-    table {
-        margin: auto;
+    .cart-title {
+        text-align: center;
+        text-shadow: 0 0 5px var(--text-glow);
+        color: #ffae42;
     }
 
-    tr,
-    th,
-    td {
-        border: 2px double pink;
-        border-radius: 10px;
-        font-size: 3rem;
-        font-family: cursive;
-        margin: 3vw;
+    .glass-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 12px;
+        padding: 1rem;
+        box-shadow: 0 4px 8px var(--shadow-dark);
+        border: 1px solid var(--glass-border);
+        text-align: center;
+        transition: all 0.3s ease-in-out;
     }
 
-    .beauty-products {
-        margin-bottom: 2rem;
+    .glass-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px var(--shadow-dark);
     }
 
     .cart-section {
         margin-top: 2rem;
         padding: 1rem;
     }
+
+    .cart-table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px var(--shadow-dark);
+        border: 2px solid var(--glass-border) !important;
+        background: rgba(255, 69, 0, 0.2) !important;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 12px;
+        text-align: center;
+        font-size: 1.2rem;
+        background: rgba(255, 69, 0, 0.15) !important;
+        border-bottom: 1px solid var(--glass-border) !important;
+    }
+
+    .cart-table th {
+        background: rgba(255, 69, 0, 0.3);
+    }
+
+    .card-img-container img {
+        width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        filter: brightness(90%) contrast(90%);
+    }
+
+    .price {
+        color: var(--aqua-glow);
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
 </style>
 
-<h1>Products Added to cart</h1>
+<h1 class="cart-title">🦊 Products Added to Cart 🦊</h1>
 
 <div class="beauty-products">
-    <h2>Beauty Products</h2>
+    <h2 class="cart-title">💄 Beauty Products</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @* @foreach (var product in cartData.GetBeautyCart()) *@
-        @foreach (var product in cartData.BeautyCarts)
+        @foreach (var product in cartData.GetBeautyCart())
         {
             <div class="col">
-                <div class="card">
+                <div class="glass-card">
                     <div class="card-img-container">
                         <img src="@product.ImagePath" class="card-img-top" alt="@product.ProductName picture"
                             loading="lazy">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">@product.ProductName</h5>
-                        <div class="price">Rs@product.Price</div>
+                        <div class="price">Rs @product.Price</div>
                     </div>
                 </div>
             </div>
@@ -63,23 +112,24 @@
 </div>
 
 <div class="cart-section">
-    <h2>Kitchen Products</h2>
-    <table>
-        <tr>
-            <th>Item Name</th>
-            <th>Cost</th>
-            <th>Quantity</th>
-        </tr>
-
-        @foreach (var item in cartData.Carts)
-        {
+    <h2 class="cart-title">🍽️ Kitchen Products</h2>
+    <div class="glass-card">
+        <table class="cart-table">
             <tr>
-                <td>@item.ItemName</td>
-                <td>₹@item.ItemCost</td>
-                <td>@item.ItemInCart</td>
+                <th>Item Name</th>
+                <th>Cost</th>
+                <th>Quantity</th>
             </tr>
-        }
-    </table>
+            @foreach (var item in cartData.Carts)
+            {
+                <tr>
+                    <td>@item.ItemName</td>
+                    <td>₹@item.ItemCost</td>
+                    <td>@item.ItemInCart</td>
+                </tr>
+            }
+        </table>
+    </div>
 </div>
 
 @code {
