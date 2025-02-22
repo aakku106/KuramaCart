@@ -2,14 +2,6 @@
 @rendermode InteractiveServer
 <PageTitle>KuramaCart 🦊 --> LoginPage</PageTitle>
 
-@using Microsoft.AspNetCore.Components.Routing
-@inject NavigationManager Navigation
-
-@inject OnlineStore.Models.User userDetails
-@inject OnlineStore.Data.UserData userData
-
-
-
 
 <head>
     <style>
@@ -129,9 +121,7 @@
                             @loginMessage
                         </div>
                     }
-                    @* <Navigating>
-                        <p>Logging In.....</p>
-                    </Navigating> *@
+
 
                     <div class="text-center mt-3">
                         <p class="text-white">Don't have an account? <label for="register"
@@ -142,48 +132,52 @@
                 <input type="radio" class="form-toggle" id="register" name="form-toggle">
                 <div class="form-container register-form">
                     <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    <form>
-                        <div class="mb-3">
-                            <label for="register-username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="register-username" placeholder="Enter username"
-                                @bind="username">
+                    @* <form> *@
+                    <div class="mb-3">
+                        <label for="register-username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="register-username" placeholder="Enter username"
+                            @bind="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="register-email" placeholder="Enter email"
+                            @bind="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="register-password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="register-password" placeholder="Enter password"
+                            @bind="password">
+                    </div>
+                    @if (!string.IsNullOrWhiteSpace(loginMessage))
+                    {
+                        <div class="alert alert-warning mt-3">
+                            @loginMessage
                         </div>
-                        <div class="mb-3">
-                            <label for="register-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="register-email" placeholder="Enter email"
-                                @bind="email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="register-password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="register-password"
-                                placeholder="Enter password" @bind="password">
-                        </div>
-                        <div class="mb-3">
-                            <label for="register-password" class="form-label">Conform Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password"
-                                @bind="conformPassword">
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100 py-2">Sign Up</button>
-                    </form>
+                    }
+                    <div class="mb-3">
+                        <label for="register-password" class="form-label">Conform Password</label>
+                        <input type="password" class="form-control" placeholder="Enter password"
+                            @bind="conformPassword">
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
+                    @* </form> *@
                     <div class="text-center mt-3">
                         <p class="text-white">Already have an account? <label for="login"
-                                class="text-warning toggle-btn">Login here</label></p>
+                                class="text-warning toggle-btn" @onclick="ClearInputs">Login here</label></p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
 
-
-
 @code {
-    private string username = string.Empty,
+    private static string username = string.Empty,
     password = string.Empty,
     email = string.Empty,
     conformPassword = string.Empty;
     private string? loginMessage;
+    private int ID = 0;
 
     private void Login()
     {
@@ -200,13 +194,26 @@
         {
             loginMessage = "❌ Invalid username or password. Please try again.";
             ClearInputs();
-
         }
     }
-
+    private void SignUp()
+    {
+        if (password == conformPassword && password != "" && email != "" && username != "")
+        {
+            userDetails.UserPassword = conformPassword;
+            userData.AddUser(ID.ToString(), username, email, conformPassword);
+            ID += 106;
+            loginMessage = $"User {username} is created on {DateTime.Now} with id \t{ID + "A76Z"} ";
+            ClearInputs();
+            return;
+        }
+        else
+        {
+            loginMessage = $"{password} ≠{conformPassword} please try again 👀";
+        }
+    }
     private void ClearInputs()
     {
-        username = password = string.Empty;
+        username = password = conformPassword = string.Empty;
     }
-
 }

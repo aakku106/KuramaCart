@@ -7,7 +7,7 @@ namespace OnlineStore.Data;
 
 public class UserData
 {
-    private readonly List<User> users = [
+    public List<User> users = [
         new(){
             UserId="ccn106",
             UserName="MasterCCNSamma",
@@ -17,6 +17,23 @@ public class UserData
             DidUserLogIn=false
         }
     ];
+
+    public void AddUser(string userId, string username, string email, string password)
+    {
+        users.Add(new User()
+        {
+            UserId = userId + "A76Z" ,
+            UserName = username,
+            UserEmail = email,
+            UserPassword = password,
+            DateTime = DateTime.Now, // Set to current time
+            DidUserLogIn = false
+        });
+
+        Console.WriteLine($"User {username} is added on {DateTime.Now}");
+    }
+
+
     // public IEnumerable<User> GetUsers() => users;
     public User? AuthenticateUser(string username, string password)
     {

@@ -18,7 +18,8 @@ namespace OnlineStore.Components.Pages
 
         private void passToCart(Product product)
         {
-            selectedProduct = product;  // Just store the selected product
+            selectedProduct = product;
+            Console.WriteLine(@$"{selectedProduct.ProductName} passed");
         }
 
         private void AddToCart()
@@ -26,6 +27,7 @@ namespace OnlineStore.Components.Pages
             if (selectedProduct != null)
             {
                 cartData.AddToBeautyCart(selectedProduct);
+                Console.WriteLine(selectedProduct.ProductName+"\tadded to cart");
                 selectedProduct = null;
             }
         }
