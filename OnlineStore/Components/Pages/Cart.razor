@@ -37,6 +37,7 @@
 
     .glass-card {
         background: var(--glass-bg);
+        background: radial-gradient(var(--glass-bg), rgba(123, 43, 236, 0.242));
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 15px;
@@ -51,6 +52,7 @@
     }
 
     .glass-card:hover {
+        background: radial-gradient(rgba(123, 43, 236, 0.242), var(--glass-bg));
         backdrop-filter: blur(0px);
         transform: translateY(-5px) scale(1.02);
         box-shadow: 0px 0px 1vw 0 var(--shadow-dark);
@@ -136,13 +138,6 @@
         background: rgba(255, 69, 0, 0.3);
     }
 
-    @* .card-img-container img {
-        width: 100%;
-        border-top-left-radius: 12px;
-        border-top-right-radius: 12px;
-        filter: brightness(90%) contrast(90%);
-    } *@
-
     .card-body {
         padding: 20px 15px;
         background: rgba(255, 255, 255, 0.1);
@@ -157,12 +152,92 @@
         color: #2d3436;
         text-align: center;
         margin: 10px 0;
-        background: linear-gradient(135deg,
-                rgba(106, 17, 203, 0.2),
-                rgba(37, 117, 252, 0.1));
+        background: linear-gradient(35deg,
+                rgba(107, 17, 203, 0.39),
+                rgba(200, 239, 132, 0.409));
         padding: 8px;
         border-radius: 8px;
         backdrop-filter: blur(4px);
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            background: radial-gradient(rgba(240, 106, 151, 0.213), rgba(107, 17, 203, 0.39));
+            color: rgba(3, 254, 3, 0.714);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    .modal-content {
+        background: linear-gradient(145deg,
+                rgba(229, 220, 224, 0.665),
+                rgba(182, 225, 233, 0.183),
+                rgba(223, 209, 195, 0.763));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
+        &:hover {
+            backdrop-filter: blur(3px);
+            background: linear-gradient(415deg,
+                    rgba(229, 220, 224, 0.665),
+                    rgba(225, 233, 234, 0.500),
+                    rgba(223, 209, 195, 0.763));
+        }
+    }
+
+    .modal-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 1.5rem;
+    }
+
+    .modal-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 1.5rem;
+    }
+
+    .modal-title {
+        color: #2d3436;
+        font-weight: 600;
+    }
+
+    .btn-close {
+        background-color: rgba(45, 52, 54, 0.1);
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+
+    .modal-footer .btn {
+        padding: 10px 20px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .modal-footer .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #2d3436;
+    }
+
+    .modal-footer .btn-primary {
+        background: linear-gradient(135deg,
+                rgba(106, 17, 203, 0.9),
+                rgba(37, 117, 252, 0.8));
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: white;
+    }
+
+    .modal-footer .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+    }
+
+    .modal-footer .btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
     }
 </style>
 <header>

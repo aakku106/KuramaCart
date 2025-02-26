@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SiaQvTE/Zf6qPj63HXq5T7E8eZOMlAhHVqS0TU0NE7E=",
+  "Hash": "7mYr69ni+LAqzNRwYIpWHQQy9kYY0Bvg6EsDAspLi98=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/site.webmanifest"
     },
     {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz",
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz",
       "SourceId": "OnlineStore",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/OnlineStore",
-      "RelativePath": "app#[.{fingerprint=lh28pbz4ap}]?.css.gz",
+      "RelativePath": "app#[.{fingerprint=83mnjw2ytm}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -178,8 +178,8 @@
       "RelatedAsset": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "udl53quxke",
-      "Integrity": "flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA=",
+      "Fingerprint": "7aimcwptcj",
+      "Integrity": "8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css"
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "lh28pbz4ap",
-      "Integrity": "Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY=",
+      "Fingerprint": "83mnjw2ytm",
+      "Integrity": "lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
@@ -1265,13 +1265,13 @@
       ]
     },
     {
-      "Route": "app.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz",
+      "Route": "app.83mnjw2ytm.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000628140704"
+          "Quality": "0.000400160064"
         }
       ],
       "ResponseHeaders": [
@@ -1281,19 +1281,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1591"
+          "Value": "2498"
         },
         {
           "Name": "ETag",
-          "Value": "\"flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA=\""
+          "Value": "\"8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -1309,18 +1309,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY=\""
+          "Value": "W/\"lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "83mnjw2ytm"
+        },
+        {
+          "Name": "label",
+          "Value": "app.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY="
+          "Value": "sha256-lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA="
         }
       ]
     },
     {
-      "Route": "app.css",
+      "Route": "app.83mnjw2ytm.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1330,7 +1338,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2898"
+          "Value": "7262"
         },
         {
           "Name": "Content-Type",
@@ -1338,121 +1346,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY=\""
+          "Value": "\"lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY="
-        }
-      ]
-    },
-    {
-      "Route": "app.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA="
-        }
-      ]
-    },
-    {
-      "Route": "app.lh28pbz4ap.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000628140704"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1591"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
           "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lh28pbz4ap"
+          "Value": "83mnjw2ytm"
         },
         {
           "Name": "label",
@@ -1460,13 +1368,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY="
+          "Value": "sha256-lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA="
         }
       ]
     },
     {
-      "Route": "app.lh28pbz4ap.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "Route": "app.83mnjw2ytm.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1475,7 +1383,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2898"
+          "Value": "2498"
         },
         {
           "Name": "Content-Type",
@@ -1483,56 +1391,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY=\""
+          "Value": "\"8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lh28pbz4ap"
-        },
-        {
-          "Name": "label",
-          "Value": "app.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Z0wO/yRD+LieTGg3dBihQdtXJfPQAMKQR8quHOwd5fY="
-        }
-      ]
-    },
-    {
-      "Route": "app.lh28pbz4ap.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-lh28pbz4ap.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1591"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 11:23:12 GMT"
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1550,7 +1413,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "lh28pbz4ap"
+          "Value": "83mnjw2ytm"
         },
         {
           "Name": "label",
@@ -1558,7 +1421,144 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-flnEE9e/gbHaQW2FMNWXaDBhd7fYr4JhlU9Q5/NhfVA="
+          "Value": "sha256-8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000400160064"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2498"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA="
+        }
+      ]
+    },
+    {
+      "Route": "app.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7262"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lOJTySDgZSAIENYcwPatrCptrbEWPHRd+GyKjMAxUzA="
+        }
+      ]
+    },
+    {
+      "Route": "app.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 14:27:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8R2qJ/HPoB6w2Xx3BPcyvePLv8HHavRP4xXko8bDymk="
         }
       ]
     },
