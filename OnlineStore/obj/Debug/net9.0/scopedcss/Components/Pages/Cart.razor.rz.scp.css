@@ -1,6 +1,6 @@
 /** @format */
 
-.cart-page {
+.cart-page[b-sl760fwpun] {
   background: linear-gradient(to bottom, #599ce492, #ffaf7a94),
     url("/images/naruto-kurama-bg.png") no-repeat center center/cover;
   color: var(--text-color);
@@ -8,12 +8,12 @@
   padding: 2vw;
 }
 
-.cart-title {
+.cart-title[b-sl760fwpun] {
   text-align: center;
   color: rgba(255, 0, 208, 0.531);
 }
 
-.glass-card {
+.glass-card[b-sl760fwpun] {
   background: var(--glass-bg);
   background: radial-gradient(
     var(--glass-bg),
@@ -32,7 +32,7 @@
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.glass-card:hover {
+.glass-card:hover[b-sl760fwpun] {
   background: radial-gradient(
     rgba(123, 43, 236, 0.242),
     var(--glass-bg)
@@ -42,7 +42,7 @@
   box-shadow: 0px 0px 1vw 0 var(--shadow-dark);
 }
 
-.card-img-container {
+.card-img-container[b-sl760fwpun] {
   width: 100%;
   height: 280px;
   position: relative;
@@ -57,7 +57,7 @@
   justify-content: center;
 }
 
-.card-img-top {
+.card-img-top[b-sl760fwpun] {
   max-width: 100%;
   max-height: 100%;
   width: auto;
@@ -68,11 +68,11 @@
   transition: transform 0.3s ease;
 }
 
-.card-img-top:hover {
+.card-img-top:hover[b-sl760fwpun] {
   transform: scale(1.05);
 }
 
-.cross {
+.cross[b-sl760fwpun] {
   position: absolute;
   top: 3.3%;
   right: 1%;
@@ -96,12 +96,12 @@
   }
 }
 
-.cart-section {
+.cart-section[b-sl760fwpun] {
   margin-top: 2rem;
   padding: 1rem;
 }
 
-.cart-table {
+.cart-table[b-sl760fwpun] {
   width: 90%;
   margin: auto;
   border-collapse: collapse;
@@ -112,8 +112,8 @@
   background: rgba(255, 69, 0, 0.2) !important;
 }
 
-.cart-table th,
-.cart-table td {
+.cart-table th[b-sl760fwpun],
+.cart-table td[b-sl760fwpun] {
   padding: 12px;
   text-align: center;
   font-size: 1.2rem;
@@ -121,11 +121,11 @@
   border-bottom: 1px solid var(--glass-border) !important;
 }
 
-.cart-table th {
+.cart-table th[b-sl760fwpun] {
   background: rgba(255, 69, 0, 0.3);
 }
 
-.card-body {
+.card-body[b-sl760fwpun] {
   padding: 20px 15px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
@@ -133,7 +133,7 @@
   backdrop-filter: blur(4px);
 }
 
-.price {
+.price[b-sl760fwpun] {
   font-size: 1.3rem;
   font-weight: 700;
   color: #2d3436;
@@ -155,7 +155,7 @@
   }
 }
 
-.modal-content {
+.modal-content[b-sl760fwpun] {
   background: linear-gradient(
     145deg,
     rgba(229, 220, 224, 0.665),
@@ -178,42 +178,42 @@
   }
 }
 
-.modal-header {
+.modal-header[b-sl760fwpun] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   padding: 1.5rem;
 }
 
-.modal-footer {
+.modal-footer[b-sl760fwpun] {
   border-top: 1px solid rgba(255, 255, 255, 0.18);
   padding: 1.5rem;
 }
 
-.modal-title {
+.modal-title[b-sl760fwpun] {
   color: #2d3436;
   font-weight: 600;
 }
 
-.btn-close {
+.btn-close[b-sl760fwpun] {
   background-color: rgba(45, 52, 54, 0.1);
   border-radius: 50%;
   padding: 0.5rem;
 }
 
-.modal-footer .btn {
+.modal-footer .btn[b-sl760fwpun] {
   padding: 10px 20px;
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
-.modal-footer .btn-secondary {
+.modal-footer .btn-secondary[b-sl760fwpun] {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
   color: #2d3436;
 }
 
-.modal-footer .btn-primary {
+.modal-footer .btn-primary[b-sl760fwpun] {
   background: linear-gradient(
     135deg,
     rgba(106, 17, 203, 0.9),
@@ -224,12 +224,12 @@
   color: white;
 }
 
-.modal-footer .btn:hover {
+.modal-footer .btn:hover[b-sl760fwpun] {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
 }
 
-.modal-footer .btn:active {
+.modal-footer .btn:active[b-sl760fwpun] {
   transform: translateY(1px);
   box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
 }

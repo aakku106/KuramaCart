@@ -17,16 +17,15 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.sourcelink.json
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Layout/NaVBar.razor.rz.scp.css
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Pages/Beauty.razor.rz.scp.css
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Pages/Cart.razor.rz.scp.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/tzxjg6is5z-32p77bvc6j.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/0wz98yz2xy-r91md4kz0z.gz
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-83mnjw2ytm.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/1ve23xr5hj-4e30byv6x9.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/f0h61z3879-ynwu57l7o8.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/gxide64yes-sejp7jvwrm.gz
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-5kziow68wl.gz
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-5kziow68wl.gz
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/staticwebassets.build.json
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/staticwebassets.development.json
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -42,3 +41,6 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.pdb
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.genruntimeconfig.cache
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/ref/OnlineStore.dll
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-yps5og3usy.gz
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-5s7fn2dmo9.gz
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-5s7fn2dmo9.gz
