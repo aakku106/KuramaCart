@@ -251,7 +251,7 @@
     }
     else
     {
-        <div class="container">
+        <article class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 @* @foreach (var BeautyProducts in beauty.GetBeauties()) *@
                 @foreach (var BeautyProducts in beauty.beautyPublic)
@@ -269,13 +269,12 @@
                                     data-bs-target="#exampleModal" @onclick="() => passToCart(BeautyProducts)">
                                     Add to Cart 🛒
                                 </button>
-
                             </div>
                         </div>
                     </div>
                 }
             </div>
-        </div>
+        </article>
     }
 </div>
 

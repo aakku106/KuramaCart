@@ -43,7 +43,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Vary",
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         }
       ],
       "EndpointProperties": [
@@ -141,7 +141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Vary",
@@ -204,7 +204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Vary",
@@ -245,7 +245,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         }
       ],
       "EndpointProperties": [
@@ -286,7 +286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Vary",
@@ -3903,6 +3903,88 @@
         {
           "Name": "label",
           "Value": "images/kitchen/opeaner.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/naruto-kurama-bg.28vjzl4wlq.png",
+      "AssetFile": "images/naruto-kurama-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2993146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 11:09:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "28vjzl4wlq"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU="
+        },
+        {
+          "Name": "label",
+          "Value": "images/naruto-kurama-bg.png"
+        }
+      ]
+    },
+    {
+      "Route": "images/naruto-kurama-bg.png",
+      "AssetFile": "images/naruto-kurama-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2993146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 11:09:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU="
         }
       ]
     }

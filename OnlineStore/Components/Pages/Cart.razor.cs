@@ -17,7 +17,6 @@ public partial class Cart
         if (selectedProductInCart != null)
         {
             await Task.Delay(300);
-
             cartData.RemoveFromBeautyCart(selectedProductInCart);
             selectedProductInCart = null;
             StateHasChanged();

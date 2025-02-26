@@ -121,6 +121,10 @@
       "PackagePath": "staticwebassets/images/kitchen/opeaner.png"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/naruto-kurama-bg.png",
+      "PackagePath": "staticwebassets/images/naruto-kurama-bg.png"
+    },
+    {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.OnlineStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

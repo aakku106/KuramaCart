@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9QaMzRWXD08H9pLlCTKYPFFMed0AMfcI2+WNoqhZkw8=",
+  "Hash": "ySwoDU2jXkqapvsSiuYj6Fd7MtgZZWMmkiaZ0DSvr0c=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -876,6 +876,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/kitchen/Whisk.png"
+    },
+    {
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/naruto-kurama-bg.png",
+      "SourceId": "OnlineStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/",
+      "BasePath": "_content/OnlineStore",
+      "RelativePath": "images/naruto-kurama-bg#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "28vjzl4wlq",
+      "Integrity": "0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/naruto-kurama-bg.png"
     }
   ],
   "Endpoints": [
@@ -4486,6 +4507,88 @@
       ]
     },
     {
+      "Route": "images/naruto-kurama-bg.28vjzl4wlq.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/naruto-kurama-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2993146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 11:09:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "28vjzl4wlq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/naruto-kurama-bg.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU="
+        }
+      ]
+    },
+    {
+      "Route": "images/naruto-kurama-bg.png",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/images/naruto-kurama-bg.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2993146"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 26 Feb 2025 11:09:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0tv/e5bNNVktChCw8Ku7EZ/W0rdCPMdocCZ0XpNMGIU="
+        }
+      ]
+    },
+    {
       "Route": "OnlineStore.bundle.scp.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-qioch5snp1.gz",
       "Selectors": [
@@ -4510,7 +4613,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4563,7 +4666,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4600,7 +4703,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4647,7 +4750,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4708,7 +4811,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4753,7 +4856,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4808,7 +4911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4869,7 +4972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4914,7 +5017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4969,7 +5072,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5022,7 +5125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5059,7 +5162,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 22 Feb 2025 20:25:06 GMT"
+          "Value": "Wed, 26 Feb 2025 11:42:42 GMT"
         },
         {
           "Name": "Cache-Control",
