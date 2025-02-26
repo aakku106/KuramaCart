@@ -85,7 +85,10 @@ OnlineStore/
 - Visual Studio 2022 or VS Code
 
 ### Running the Application
-1. Clone the repository ``` git clone https://github.com/aakku106/KuramaCart.git ```
+1. Clone the repository 
+``` 
+    git clone https://github.com/aakku106/KuramaCart.git
+ ```
 2. Navigate to the project directory ``` ls && cd OnlineStore ```
 3. Run `dotnet restore` to restore dependencies ``` dotnet restore ```
 4. Run `dotnet run` to start the application or ``` dotnet watch run ```
