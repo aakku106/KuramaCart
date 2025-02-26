@@ -93,7 +93,8 @@ OnlineStore/
 ```
     ls && cd OnlineStore 
 ```
-3. Run `dotnet restore` to restore dependencies ``` 
+3. Run `dotnet restore` to restore dependencies 
+```
     dotnet restore 
 ```
 4. Run `dotnet run` to start the application or 
@@ -101,9 +102,9 @@ OnlineStore/
     dotnet watch run 
 ```
 5. Open your browser and navigate to 
-`
+```
     https://localhost:5142
-`
+```
 
 ## Future Enhancements
 
