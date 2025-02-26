@@ -1,0 +1,23 @@
+/** @format */
+
+body {
+  background-color: #dddadac5 !important;
+  backdrop-filter: blur(15px) !important;
+  transition: all 0.5s ease-in-out !important;
+
+  &:hover {
+    background-color: #c3bfbfc5 !important;
+    backdrop-filter: blur(20px) !important;
+  }
+}
+
+.backgroundBlur {
+  background-color: #3407305a !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 10px !important;
+}
+
+.carouselWrapperControl {
+  max-height: 53vw !important;
+  border-radius: 10px !important;
+}

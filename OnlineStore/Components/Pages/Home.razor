@@ -1,47 +1,8 @@
 ﻿@page "/Home"
 @using OnlineStore.Models
 @rendermode InteractiveServer
-@inject User userDetails
-@inject OnlineStore.Data.UserData data
-@inject NavigationManager Navigation
-
 
 <PageTitle> KuramaCart🦊 - Home</PageTitle>
-
-
-@* @if (!userDetails.DidUserLogIn)
-{
-    Navigation.NavigateTo("/");
-} *@
-
-<head>
-    <style>
-        body {
-            background-color: #dddadac5 !important;
-            backdrop-filter: blur(15px) !important;
-            transition: all .5s ease-in-out !important;
-
-            &:hover {
-                background-color: #c3bfbfc5 !important;
-                backdrop-filter: blur(20px) !important;
-            }
-        }
-
-        .backgroundBlur {
-            background-color: #3407305a !important;
-            backdrop-filter: blur(10px) !important;
-            border-radius: 10px !important;
-        }
-
-        .carouselWrapperControl {
-            max-height: 53vw !important;
-            border-radius: 10px !important;
-
-        }
-    </style>
-</head>
-
-
 
 <div id="loginToast" class="toast align-items-center position-fixed top-0 end-0 m-4 visible opacity-100" role="alert"
     aria-live="assertive" aria-atomic="true">
@@ -121,8 +82,6 @@
             </h1>
         </div>
         <div class="col">
-
-
             <h1>
                 <NavLink href="/BeautyProducts">Beauty</NavLink>
             </h1>

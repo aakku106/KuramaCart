@@ -2,19 +2,16 @@
 @rendermode InteractiveServer
 @inject OnlineStore.Data.CartData cartData
 
-
 <PageTitle>KuramaCart🦊 - Beauty 💄</PageTitle>
 
 <div class="container">
     <div class="page-header">
         <h1 class="page-title">Beauty Products 💄</h1>
         <div class="product-count">
-            @* Showing @beauty.GetBeauties()?.Count() Products *@
             Showing @beauty.beautyPublic.Count() Products 👀
         </div>
     </div>
 
-    @* @if (beauty.GetBeauties() == null || beauty == null) *@
     @if (beauty.beautyPublic == null || beauty == null)
     {
         <div class="text-center p-5">
@@ -27,7 +24,6 @@
     {
         <article class="container">
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                @* @foreach (var BeautyProducts in beauty.GetBeauties()) *@
                 @foreach (var BeautyProducts in beauty.beautyPublic)
                 {
                     <div class="col">

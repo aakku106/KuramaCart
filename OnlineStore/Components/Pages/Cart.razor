@@ -1,14 +1,6 @@
 @page "/Cart"
-@inject OnlineStore.Data.CartData cartData
-
 @implements IDisposable
 @rendermode InteractiveServer
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
 
 <header>
     <h1 class="cart-title">🦊 Products Added to Cart 🦊</h1>
@@ -19,7 +11,7 @@
         <div class="beauty-products">
             <h2 class="cart-title">💄 Beauty Products</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach (var product in cartData.GetBeautyCart())
+                @foreach (var product in cartData.GetBeautyCart().Reverse())
                 {
                     <div class="col">
                         <div class="glass-card">
@@ -74,7 +66,6 @@
         </div>
     </div>
 
-
     <section>
         <div class="cart-section">
             <h2 class="cart-title">🍽️ Kitchen Products</h2>
@@ -97,6 +88,4 @@
             </div>
         </div>
     </section>
-
-
 </article>
