@@ -32,7 +32,7 @@ public class CartData
             ItemName="Sponges"
         }
     ];
-    private readonly List<Product> BeautyCarts = [];
+    private static readonly List<Product> BeautyCarts = [];
 
     public void AddToBeautyCart(Product product)
     {

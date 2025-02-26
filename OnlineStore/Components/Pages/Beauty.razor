@@ -19,20 +19,18 @@
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
         margin-bottom: 1.5rem;
         padding: 20px;
-        transition: all 0.3s ease;
         transform-origin: center;
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .card:hover {
         transform: translateY(-5px) scale(1.02);
-        box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+        box-shadow: 0 0px 40px 0 rgba(31, 38, 135, 0.25);
     }
 
     .card-img-container {
         width: 100%;
         height: 280px;
-        /* Increased height for better visibility */
         position: relative;
         overflow: hidden;
         border-radius: 12px;
@@ -40,34 +38,24 @@
         backdrop-filter: blur(4px);
         border: 1px solid rgba(255, 255, 255, 0.18);
         padding: 15px;
-        /* Increased padding */
         display: flex;
-        /* Added flex display */
         align-items: center;
-        /* Center vertically */
         justify-content: center;
-        /* Center horizontally */
     }
 
     .card-img-top {
         max-width: 100%;
         max-height: 100%;
         width: auto;
-        /* Allow natural width */
         height: auto;
-        /* Allow natural height */
         object-fit: contain;
-        /* Maintain aspect ratio */
         position: relative;
-        /* Remove absolute positioning */
         transform: none;
-        /* Remove transform */
         transition: transform 0.3s ease;
     }
 
     .card-img-top:hover {
         transform: scale(1.05);
-        /* Subtle zoom on hover */
     }
 
     .card-body {
@@ -106,7 +94,6 @@
         backdrop-filter: blur(4px);
         border: 1px solid rgba(255, 255, 255, 0.18);
         cursor: pointer;
-        /* Add pointer cursor */
     }
 
     .add-to-cart-btn:hover {
@@ -116,18 +103,13 @@
 
     .add-to-cart-btn:active {
         transform: translateY(1px);
-        /* Slight push down effect */
         background: linear-gradient(135deg,
                 rgba(86, 14, 163, 0.9),
                 rgba(31, 98, 212, 0.8));
-        /* Darker gradient */
         box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
-        /* Reduced shadow */
         transition: all 0.1s ease;
-        /* Faster transition for click feedback */
     }
 
-    /* Optional: Add focus state for accessibility */
     .add-to-cart-btn:focus {
         outline: none;
         box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.3);
@@ -259,7 +241,7 @@
                     <div class="col">
                         <div class="card">
                             <div class="card-img-container">
-                                <img src="@BeautyProducts.ImagePath" class="card-img-top"
+                                <img src="@BeautyProducts.ImagePath" class="card-img-top lazy-load"
                                     alt="@BeautyProducts.ProductName picture" loading="lazy">
                             </div>
                             <div class="card-body">
@@ -305,4 +287,4 @@
 </div>
 
 
-<Cart />
+@* <Cart /> *@
