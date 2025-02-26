@@ -27,7 +27,6 @@ namespace OnlineStore.Components.Pages
             if (selectedProduct != null)
             {
                 cartData.AddToBeautyCart(selectedProduct);
-                Console.WriteLine(selectedProduct.ProductName+"\tadded to cart");
                 selectedProduct = null;
             }
         }

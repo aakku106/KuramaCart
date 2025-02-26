@@ -112,7 +112,11 @@
         @foreach (var product in cartData.GetBeautyCart())
         {
             <div class="col">
-                <div class="glass-card"> <i class="cross">X</i>
+                <div class="glass-card">
+                    <i type="button" class="cross btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                        @onclick="() => PassTORemoveFromCart(product)">
+                        <strong>X</strong>
+                    </i>
                     <div class="card-img-container">
                         <img src="@product.ImagePath" class="card-img-top" alt="@product.ProductName picture"
                             loading="lazy">
@@ -126,6 +130,37 @@
         }
     </div>
 </div>
+
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @if (OnlineStore.Data.CartData.cartDataDEtail == string.Empty)
+                {
+                    <span> 🦊 Sure wanna remove ?< strong> @selectedProductInCart?.ProductName 🥺</ strong> </span>
+                }
+                else
+                {
+                    <span>@OnlineStore.Data.CartData.cartDataDEtail</span>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="RemoveFromCart">remove 🫣</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 <div class="cart-section">
     <h2 class="cart-title">🍽️ Kitchen Products</h2>
@@ -147,15 +182,3 @@
         </table>
     </div>
 </div>
-
-@code {
-    protected override void OnInitialized()
-    {
-        cartData.OnChange += StateHasChanged;
-    }
-
-    public void Dispose()
-    {
-        cartData.OnChange -= StateHasChanged;
-    }
-}
