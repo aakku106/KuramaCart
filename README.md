@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # KuramaCart 🦊 - Online Shopping Application
 
 ## Overview
@@ -18,7 +20,7 @@ KuramaCart is an interactive online shopping application built with Blazor , fea
 
 ## Tech Stack
 
-- **Frontend**: Blazor  with .NET 9.0
+- **Frontend**: Blazor with .NET 9.0
 - **Styling**: CSS3, Bootstrap 5.3
 - **Interactivity**: C# for component logic
 - **Icons**: Bootstrap Icons
@@ -64,12 +66,14 @@ OnlineStore/
 ## UI Features
 
 ### Glassmorphism Design
+
 - Frosted glass effects
 - Subtle shadows and gradients
 - Semi-transparent backgrounds
 - Blur effects
 
 ### Interactive Elements
+
 - Hover animations
 - Click feedback
 - Toast notifications
@@ -77,31 +81,41 @@ OnlineStore/
 
 <!-- ## Screenshots -->
 
-
 ## Getting Started
 
 ### Prerequisites
+
 - .NET 9.0 SDK or later
 - Visual Studio 2022 or VS Code
 
 ### Running the Application
-1. Clone the repository 
-``` 
+
+1. Clone the repository
+
+```
     git clone https://github.com/aakku106/KuramaCart.git
- ```
-2. Navigate to the project directory 
 ```
-    ls && cd OnlineStore 
+
+2. Navigate to the project directory
+
 ```
-3. Run `dotnet restore` to restore dependencies 
+    ls && cd OnlineStore
 ```
-    dotnet restore 
+
+3. Run `dotnet restore` to restore dependencies
+
 ```
-4. Run `dotnet run` to start the application or 
+    dotnet restore
 ```
-    dotnet watch run 
+
+4. Run `dotnet run` to start the application or
+
 ```
-5. Open your browser and navigate to 
+    dotnet watch run
+```
+
+5. Open your browser and navigate to
+
 ```
     https://localhost:5142
 ```
@@ -123,4 +137,4 @@ OnlineStore/
 
 ## License
 
-[Add license information here]
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
