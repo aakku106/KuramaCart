@@ -138,8 +138,8 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel"><strong>remove from Cart</strong> 🦊</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" @onclick="Clear"></button>
             </div>
             <div class="modal-body">
                 @if (OnlineStore.Data.CartData.cartDataDEtail == string.Empty)
@@ -152,7 +152,7 @@
                 }
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">Close</button>
                 @if (Data.CartData.cartDataDEtail == string.Empty)
                 {
                     <button type="button" class="btn btn-primary" @onclick="RemoveFromCart">remove 🫣</button>

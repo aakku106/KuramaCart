@@ -24,6 +24,14 @@ public partial class Cart
             return;
         }
     }
+
+    private void Clear()
+    {
+        StateHasChanged();
+        selectedProductInCart = null;
+        Data.CartData.cartDataDEtail = string.Empty;
+    }
+
     protected override void OnInitialized()
     {
         cartData.OnChange += StateHasChanged;

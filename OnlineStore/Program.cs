@@ -9,10 +9,10 @@ builder.Services.AddRazorComponents()
 
 // Register your services
 builder.Services.AddScoped<User, User>();
-builder.Services.AddSingleton<OnlineStore.Data.UserData>();
-builder.Services.AddSingleton<OnlineStore.Models.Product>();
-builder.Services.AddSingleton<OnlineStore.Data.CartData>();
-builder.Services.AddSingleton<OnlineStore.Data.ProductData.ProductData>();
+builder.Services.AddScoped<OnlineStore.Data.UserData>();
+builder.Services.AddScoped<OnlineStore.Models.Product>();
+builder.Services.AddScoped<OnlineStore.Data.CartData>();
+builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
 
 var app = builder.Build();

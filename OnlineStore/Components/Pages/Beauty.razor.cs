@@ -27,8 +27,12 @@ namespace OnlineStore.Components.Pages
             if (selectedProduct != null)
             {
                 cartData.AddToBeautyCart(selectedProduct);
-                selectedProduct = null;
+                Clear();
             }
+        }
+        private void Clear()
+        {
+            selectedProduct = null;
         }
 
         public void Dispose()

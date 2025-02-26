@@ -47,6 +47,7 @@ public class CartData
         Console.WriteLine(@$"{product.ProductName} is Removed from cart CONFORMED on {DateTime.Now}||product ID: {product.ProductId}");
         cartDataDEtail = $"{product.ProductName} Has Been removed from cart on {DateTime.Now}";
     }
+    
 
     public IReadOnlyList<Product> GetBeautyCart() => BeautyCarts;
     public IReadOnlyList<UserCart> Carts => _carts;
