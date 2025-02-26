@@ -49,4 +49,4 @@ If you have suggestions on how to fix the issue, please include them here.
 
 ---
 
-<!-- Thank you for contributing to improve KuramaCart! -->
+# Thank you for contributing to improve KuramaCart!
