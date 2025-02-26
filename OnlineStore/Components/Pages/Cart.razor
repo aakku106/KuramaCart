@@ -113,7 +113,7 @@
         {
             <div class="col">
                 <div class="glass-card">
-                    <i type="button" class="cross btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    <i type=" button" class="cross btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                         @onclick="() => PassTORemoveFromCart(product)">
                         <strong>X</strong>
                     </i>
@@ -144,16 +144,19 @@
             <div class="modal-body">
                 @if (OnlineStore.Data.CartData.cartDataDEtail == string.Empty)
                 {
-                    <span> 🦊 Sure wanna remove ?< strong> @selectedProductInCart?.ProductName 🥺</ strong> </span>
+                    <span> 🦊 Sure wanna remove <strong> @selectedProductInCart?.ProductName </strong>🥺? </span>
                 }
                 else
                 {
-                    <span>@OnlineStore.Data.CartData.cartDataDEtail</span>
+                    <span>🦊 @OnlineStore.Data.CartData.cartDataDEtail</span>
                 }
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" @onclick="RemoveFromCart">remove 🫣</button>
+                @if (Data.CartData.cartDataDEtail == string.Empty)
+                {
+                    <button type="button" class="btn btn-primary" @onclick="RemoveFromCart">remove 🫣</button>
+                }
             </div>
         </div>
     </div>
