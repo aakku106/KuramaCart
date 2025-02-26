@@ -1,89 +1,66 @@
 @rendermode InteractiveServer
+@implements IDisposable
 
-<head>
-  <style>
-    .customController {
-      min-height: 4rem;
-      border-radius: 0 0 15px 15px !important;
-      margin-bottom: 1rem;
-      backdrop-filter: blur(10px);
-      background: linear-gradient(135deg,
-          rgba(255, 255, 255, 0.2),
-          rgba(255, 255, 255, 0.1));
-      border: 1px solid rgba(255, 255, 255, 0.18);
-    }
-
-    .navbar {
-      background: linear-gradient(135deg,
-          rgba(106, 17, 203, 0.9),
-          rgba(37, 117, 252, 0.8));
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
-    }
-
-    .navbar-brand {
-      max-width: 200px;
-      overflow: hidden;
-    }
-
-    .navbar-brand h1 {
-      font-size: clamp(1rem, 3vw, 1.5rem);
-      font-weight: 700;
-      color: white;
-      margin: 0;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .form-control {
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(4px);
-      color: white;
-      border-radius: 10px;
-    }
-
-    .form-control::placeholder {
-      color: rgba(255, 255, 255, 0.8);
-    }
-
-    .btn {
-      background: rgba(255, 255, 255, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      backdrop-filter: blur(4px);
-      color: white;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: translateY(-2px);
-    }
-  </style>
-</head>
 <nav class="navbar navbar-expand-lg sticky-top customController mb-3 shadow-lg z-3">
   <div class="container-fluid">
-    <a href="/Home" class="navbar-brand user-select-none">
-      <h1 class="user-select-none">KuramaCart🦊</h1>
+    <a class="navbar-brand" href="/Home">
+      <h1>KuramaCart 🦊</h1>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <form class="d-flex ms-auto" role="search">
-        <input class="form-control me-2 shadow-lg" type="search" placeholder="Search Any Products 😁"
-          aria-label="Search Products">
-        <button class="btn shadow-lg" type="submit">
-          <h3>Search</h3>
-        </button>
-      </form>
-      <ul class="navbar-nav ms-3">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link text-white" href="/cart">🛒 Cart</a>
+          <a class="nav-link active" aria-current="page" href="/Home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/BeautyProducts">Beauty</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Cart">Cart</a>
         </li>
       </ul>
+
+      <div class="d-flex position-relative">
+        <div class="search-container">
+          <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search"
+            @oninput="HandleSearch" @onblur="HideResults" @onfocus="@(_ => showResults = searchResults.Any())"
+            value="@searchQuery">
+
+          @if (showResults)
+          {
+            <div class="search-results">
+              <div class="list-group shadow">
+                @foreach (var product in searchResults.Take(5))
+                {
+                  <a href="/product/@product.ProductId" class="list-group-item list-group-item-action"
+                    @onclick:preventDefault @onclick="() => NavigateToProduct(product)">
+                    <div class="d-flex align-items-center">
+                      <img src="@product.ImagePath" style="width: 40px; height: 40px; object-fit: contain;" class="me-2"
+                        alt="@product.ProductName">
+                      <div>
+                        <div class="fw-bold">@product.ProductName</div>
+                        <small class="text-muted">₹@product.Price</small>
+                      </div>
+                    </div>
+                  </a>
+                }
+                @if (searchResults.Count > 5)
+                {
+                  <a href="/search?q=@searchQuery" class="list-group-item list-group-item-action text-center">
+                    <small>See all @searchResults.Count results</small>
+                  </a>
+                }
+              </div>
+            </div>
+          }
+        </div>
+        <button class="btn" type="submit">🔍</button>
+      </div>
     </div>
   </div>
 </nav>

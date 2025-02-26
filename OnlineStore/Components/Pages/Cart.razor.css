@@ -1,0 +1,231 @@
+:root {
+        --glass-bg: rgba(250, 180, 82, 0.15);
+        --glass-border: rgba(255, 255, 255, 0.1);
+        --text-glow: rgba(222, 129, 239, 0.6);
+        --kushina-red: #cc2d2d;
+        --kurama-orange: #e67700;
+        --aqua-glow: rgba(0, 255, 255, 0.4);
+        --shadow-dark: rgba(17, 17, 202, 0.455);
+        --shadow-light: rgba(0, 81, 255, 0.295);
+        --text-color: #e5e5e5;
+    }
+
+    .cart-page {
+        background: linear-gradient(to bottom, #599ce492, #ffaf7a94),
+            url('/images/naruto-kurama-bg.png') no-repeat center center/cover;
+        color: var(--text-color);
+        font-family: 'Quicksand', sans-serif;
+        padding: 2vw;
+    }
+
+    .cart-title {
+        text-align: center;
+        color: rgba(255, 0, 208, 0.531);
+    }
+
+    .glass-card {
+        background: var(--glass-bg);
+        background: radial-gradient(var(--glass-bg), rgba(123, 43, 236, 0.242));
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        margin-bottom: 1.5rem;
+        box-shadow: 0px 0px 2vw var(--shadow-light);
+        border: 2px solid var(--glass-border);
+        text-align: center;
+        transform-origin: center;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .glass-card:hover {
+        background: radial-gradient(rgba(123, 43, 236, 0.242), var(--glass-bg));
+        backdrop-filter: blur(0px);
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0px 0px 1vw 0 var(--shadow-dark);
+    }
+
+    .card-img-container {
+        width: 100%;
+        height: 280px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img-top {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        position: relative;
+        transform: none;
+        transition: transform 0.3s ease;
+    }
+
+    .card-img-top:hover {
+        transform: scale(1.05);
+    }
+
+    .cross {
+        position: absolute;
+        top: 3.3%;
+        right: 1%;
+        z-index: 1;
+        background: rgba(255, 255, 255, 0.399) !important;
+        color: #cc2d2d;
+        backdrop-filter: blur(10px) !important;
+        text-align: center;
+        font-size: 1.3rem;
+        user-select: none;
+        cursor: pointer;
+        max-width: fit-content;
+        max-height: fit-content;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1) !important;
+
+        &:hover {
+            color: #ff0404;
+            font-style: normal;
+            transform: scale(1.5) rotate(360deg) !important;
+            right: 2%;
+        }
+    }
+
+    .cart-section {
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+
+    .cart-table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px var(--shadow-dark);
+        border: 2px solid var(--glass-border) !important;
+        background: rgba(255, 69, 0, 0.2) !important;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 12px;
+        text-align: center;
+        font-size: 1.2rem;
+        background: rgba(255, 69, 0, 0.15) !important;
+        border-bottom: 1px solid var(--glass-border) !important;
+    }
+
+    .cart-table th {
+        background: rgba(255, 69, 0, 0.3);
+    }
+
+    .card-body {
+        padding: 20px 15px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        margin-top: 15px;
+        backdrop-filter: blur(4px);
+    }
+
+    .price {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #2d3436;
+        text-align: center;
+        margin: 10px 0;
+        background: linear-gradient(35deg,
+                rgba(107, 17, 203, 0.39),
+                rgba(200, 239, 132, 0.409));
+        padding: 8px;
+        border-radius: 8px;
+        backdrop-filter: blur(4px);
+        transition: all .4s ease-in-out;
+
+        &:hover {
+            color: rgba(3, 254, 3, 0.411);
+            backdrop-filter: blur(10px);
+        }
+    }
+
+    .modal-content {
+        background: linear-gradient(145deg,
+                rgba(229, 220, 224, 0.665),
+                rgba(182, 225, 233, 0.383),
+                rgba(223, 209, 195, 0.763));
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 15px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
+        &:hover {
+            backdrop-filter: blur(3px);
+            background: linear-gradient(155deg,
+                    rgba(229, 220, 224, 0.665),
+                    rgba(225, 233, 234, 0.500),
+                    rgba(223, 209, 195, 0.763));
+        }
+    }
+
+    .modal-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 1.5rem;
+    }
+
+    .modal-footer {
+        border-top: 1px solid rgba(255, 255, 255, 0.18);
+        padding: 1.5rem;
+    }
+
+    .modal-title {
+        color: #2d3436;
+        font-weight: 600;
+    }
+
+    .btn-close {
+        background-color: rgba(45, 52, 54, 0.1);
+        border-radius: 50%;
+        padding: 0.5rem;
+    }
+
+    .modal-footer .btn {
+        padding: 10px 20px;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+
+    .modal-footer .btn-secondary {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #2d3436;
+    }
+
+    .modal-footer .btn-primary {
+        background: linear-gradient(135deg,
+                rgba(106, 17, 203, 0.9),
+                rgba(37, 117, 252, 0.8));
+        backdrop-filter: blur(4px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: white;
+    }
+
+    .modal-footer .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 117, 252, 0.3);
+    }
+
+    .modal-footer .btn:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
+    }
