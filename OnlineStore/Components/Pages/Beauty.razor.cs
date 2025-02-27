@@ -10,6 +10,8 @@ namespace OnlineStore.Components.Pages
     public partial class Beauty : IDisposable
     {
         private Product? selectedProduct;
+        private string productDetailsUIMessage = string.Empty;
+        private bool isOutOfStock = false;
 
         protected override void OnInitialized()
         {
@@ -18,8 +20,16 @@ namespace OnlineStore.Components.Pages
 
         private void passToCart(Product product)
         {
-            selectedProduct = product;
-            Console.WriteLine(@$"{selectedProduct.ProductName} passed");
+            if (product.HowManyProduct > 0)
+            {
+                selectedProduct = product;
+                Console.WriteLine(@$"{selectedProduct.ProductName} passed");
+            }
+            else
+            {
+                isOutOfStock = true;
+                productDetailsUIMessage = @$"{selectedProduct?.ProductName} is out of stock, sorry for inConvenance";
+            }
         }
 
         private void AddToCart()
@@ -27,12 +37,15 @@ namespace OnlineStore.Components.Pages
             if (selectedProduct != null)
             {
                 cartData.AddToBeautyCart(selectedProduct);
+                selectedProduct.HowManyProduct--;
                 Clear();
             }
         }
         private void Clear()
         {
             selectedProduct = null;
+            productDetailsUIMessage = string.Empty;
+            isOutOfStock = false;
         }
 
         public void Dispose()

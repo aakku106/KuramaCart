@@ -59,16 +59,36 @@
             </div>
             <div class="modal-body">
                 <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
-                    Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
+                    @if (!isOutOfStock)
+                    {
+                        <span>
+                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
+                        </span>
+                    }
+                    else
+                    {
+                        <span>
+                            🦊 @productDetailsUIMessage 🤧
+                        </span>
+                    }
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
-                    Cancel
-                </button>
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
-                    Yes, Add to Cart! 🦊
-                </button>
+                @if (isOutOfStock)
+                {
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        Okii 🥲
+                    </button>
+                }
+                else
+                {
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
+                        Yes, Add to Cart! 🦊
+                    </button>
+                }
             </div>
         </div>
     </div>

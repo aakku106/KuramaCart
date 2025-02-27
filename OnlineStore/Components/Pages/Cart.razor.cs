@@ -18,6 +18,7 @@ public partial class Cart
         {
             await Task.Delay(300);
             cartData.RemoveFromBeautyCart(selectedProductInCart);
+            selectedProductInCart.HowManyProduct++;
             selectedProductInCart = null;
             StateHasChanged();
             return;
