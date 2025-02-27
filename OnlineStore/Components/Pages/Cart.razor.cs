@@ -2,7 +2,6 @@ using System;
 using OnlineStore.Models;
 
 namespace OnlineStore.Components.Pages;
-
 public partial class Cart
 {
     private Product? selectedProductInCart;
@@ -18,6 +17,7 @@ public partial class Cart
         {
             await Task.Delay(300);
             cartData.RemoveFromBeautyCart(selectedProductInCart);
+            selectedProductInCart.HowManyProduct++;
             selectedProductInCart = null;
             StateHasChanged();
             return;
