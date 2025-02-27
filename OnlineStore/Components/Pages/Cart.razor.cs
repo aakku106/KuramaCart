@@ -2,7 +2,6 @@ using System;
 using OnlineStore.Models;
 
 namespace OnlineStore.Components.Pages;
-
 public partial class Cart
 {
     private Product? selectedProductInCart;
