@@ -26,11 +26,11 @@ public class UserData
             UserName = username,
             UserEmail = email,
             UserPassword = password,
-            DateTime = DateTime.Now, // Set to current time
+            DateTime = DateTime.Now,
             DidUserLogIn = false
         });
 
-        Console.WriteLine($"User {username} is added on {DateTime.Now}");
+        Console.WriteLine($"User: {username} of ID: {userId}, is added on {DateTime.Now}");
     }
 
 

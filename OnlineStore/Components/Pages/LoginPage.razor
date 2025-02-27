@@ -102,19 +102,19 @@
                 <input type="radio" class="form-toggle" id="login" name="form-toggle" checked>
                 <div class="form-container login-form">
                     <h3 class="text-center text-white mb-4">🦊 KuramaCart Login 🦊</h3>
-                    @* <form> *@
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="username" placeholder="Enter username"
-                            @bind="username">
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter password"
-                            @bind="password">
-                    </div>
-                    <button type="button" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
-                    @* </form> *@
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username"
+                                @bind="username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password"
+                                @bind="password">
+                        </div>
+                        <button type="button" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
+                    </form>
                     @if (!string.IsNullOrWhiteSpace(loginMessage))
                     {
                         <div class="alert alert-warning mt-3">
@@ -125,45 +125,45 @@
 
                     <div class="text-center mt-3">
                         <p class="text-white">Don't have an account? <label for="register"
-                                class="text-warning toggle-btn">Sign up here</label></p>
+                                class="text-warning toggle-btn" @onclick="ClearInputsOnChange">Sign up here</label></p>
                     </div>
                 </div>
 
                 <input type="radio" class="form-toggle" id="register" name="form-toggle">
                 <div class="form-container register-form">
                     <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    @* <form> *@
-                    <div class="mb-3">
-                        <label for="register-username" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="register-username" placeholder="Enter username"
-                            @bind="username">
-                    </div>
-                    <div class="mb-3">
-                        <label for="register-email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="register-email" placeholder="Enter email"
-                            @bind="email">
-                    </div>
-                    <div class="mb-3">
-                        <label for="register-password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="register-password" placeholder="Enter password"
-                            @bind="password">
-                    </div>
-                    @if (!string.IsNullOrWhiteSpace(loginMessage))
-                    {
-                        <div class="alert alert-warning mt-3">
-                            @loginMessage
+                    <form>
+                        <div class="mb-3">
+                            <label for="register-username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="register-username" placeholder="Enter username"
+                                required @bind="username">
                         </div>
-                    }
-                    <div class="mb-3">
-                        <label for="register-password" class="form-label">Conform Password</label>
-                        <input type="password" class="form-control" placeholder="Enter password"
-                            @bind="conformPassword">
-                    </div>
-                    <button type="submit" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
-                    @* </form> *@
+                        <div class="mb-3">
+                            <label for="register-email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="register-email" placeholder="Enter email"
+                                required @bind="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="register-password" required
+                                placeholder="Enter password" @bind="password">
+                        </div>
+                        @if (!string.IsNullOrWhiteSpace(loginMessage))
+                        {
+                            <div class="alert alert-warning mt-3">
+                                @loginMessage
+                            </div>
+                        }
+                        <div class="mb-3">
+                            <label for="register-password" class="form-label">Conform Password</label>
+                            <input type="password" class="form-control" placeholder="Enter password" required
+                                @bind="conformPassword">
+                        </div>
+                        <button type="button" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
+                    </form>
                     <div class="text-center mt-3">
                         <p class="text-white">Already have an account? <label for="login"
-                                class="text-warning toggle-btn" @onclick="ClearInputs">Login here</label></p>
+                                class="text-warning toggle-btn" @onclick="ClearInputsOnChange">Login here</label></p>
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@
 </div>
 
 @code {
-    private static string username = string.Empty,
+    private string username = string.Empty,
     password = string.Empty,
     email = string.Empty,
     conformPassword = string.Empty;
@@ -209,11 +209,15 @@
         }
         else
         {
-            loginMessage = $"{password} ≠{conformPassword} please try again 👀";
+            loginMessage = $"Either {username} or {password} ≠{conformPassword} please try again 👀";
         }
     }
     private void ClearInputs()
     {
-        username = password = conformPassword = string.Empty;
+        username = password = email = conformPassword = string.Empty;
+    }
+    private void ClearInputsOnChange()
+    {
+        username = password = email = conformPassword = loginMessage = string.Empty;
     }
 }
