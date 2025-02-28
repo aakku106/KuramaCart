@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/rotate.css",
+      "PackagePath": "staticwebassets/css/rotate.css"
+    },
+    {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/errorPageImage.gif",
       "PackagePath": "staticwebassets/errorPageImage.gif"
     },

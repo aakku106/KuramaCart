@@ -1,0 +1,9 @@
+@keyframes rotate-in {
+  from {
+    transform: scale(0) rotate(-185deg);
+  }
+
+  to {
+    transform: scale(1) rotate(0);
+  }
+}
