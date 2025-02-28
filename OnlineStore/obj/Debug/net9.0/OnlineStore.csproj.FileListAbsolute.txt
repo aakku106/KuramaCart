@@ -39,5 +39,5 @@
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/OnlineStore.genruntimeconfig.cache
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/ref/OnlineStore.dll
 /Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/Components/Pages/Kitchen.razor.rz.scp.css
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz
-/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-pa98vbyw24.gz
+/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-pa98vbyw24.gz

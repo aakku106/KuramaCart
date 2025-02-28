@@ -3,7 +3,7 @@
 @rendermode InteractiveServer
 
 <header>
-    <h1 class="cart-title">🦊 Products Added to Cart 🦊</h1>
+    <h1 class="cart-title extraTextGlow">🦊 Products Added to Cart: @NumberOfItemInCart</h1>
 </header>
 <article class="cart-page">
     @if (cartData.GetBeautyCart().Count > 0)
@@ -73,7 +73,7 @@
 
         <section>
             <div class="beauty-products">
-                <h2 class="cart-title">💄 Beauty Products</h2>
+                <h2 class="cart-title extraTextGlow">🧑🏻‍🍳 Kitchen Products</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
                     @foreach (var product in cartData.GetKitchenCart().Reverse())
                     {

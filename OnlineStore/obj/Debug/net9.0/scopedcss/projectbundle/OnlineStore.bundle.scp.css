@@ -592,6 +592,10 @@ body[b-saa31xfakc] {
   transform: translateY(1px);
   box-shadow: 0 2px 8px rgba(37, 117, 252, 0.2);
 }
+
+.extraTextGlow[b-sl760fwpun] {
+  color: rgb(255, 0, 174) !important;
+}
 /* _content/OnlineStore/Components/Pages/Home.razor.rz.scp.css */
 /** @format */
 
