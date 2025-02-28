@@ -1,477 +1,96 @@
 @page "/KitchenWares"
-
+@rendermode InteractiveServer
 <PageTitle>KuramaCart🦊 - Kitchen Items 🧑🏻‍🍳</PageTitle>
 
-<head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
 
-<style>
-    img {
-        border-radius: 10px !important;
-    }
-
-    .pageCover {
-        background-color: #421e043b !important;
-        width: 100vw !important;
-        overflow-x: hidden !important;
-        backdrop-filter: blur(10px) !important;
-        height: 100% !important;
-    }
-
-    .KitchenItemHolder {
-        columns: 357px !important;
-        padding: 0.5vw !important;
-        border-radius: 10px !important;
-        width: 100% !important;
-        height: 100% !important;
-        background-color: #b28ecd3b !important;
-        transition: all .8s ease-in-out !important;
-    }
-
-    .kitchenItem {
-        max-width: fit-content !important;
-        min-width: fit-content !important;
-        height: fit-content !important;
-        padding: 1.2vw !important;
-        border-radius: 10px !important;
-        margin: 50px !important;
-        background-color: #3868b732;
-        box-shadow: 0px 0px 15px #e2dfdf5f !important;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .kitchenItem .imageHolder {
-        align-items: center;
-        align-content: center;
-        text-align: center;
-        align-self: center;
-        box-align: center;
-    }
-
-    .kitchenItem .productImage {
-        height: 30% !important;
-        transition: inherit;
-        filter: blur(.1) contrast(120%);
-    }
-
-    .kitchenItem .productDetailsWrapper {
-        width: 100% !important;
-        height: 70% !important;
-        padding: .3vw !important;
-        border-radius: 10px !important;
-        transition: inherit;
-    }
-
-    .kitchenItem .productDetailsWrapper .productDetails {
-        margin-top: 5px !important;
-        margin-bottom: 5px !important;
-        padding: 1vw !important;
-        background-color: #f9ed3d5a !important;
-        border-radius: 10px !important;
-    }
-
-    .kitchenItem .productDetailsWrapper .productName {
-        padding: .7vw !important;
-        transition: inherit;
-        border-radius: 10px !important;
-    }
-
-    .kitchenItem .productDetailsWrapper .productPrice {
-        color: green !important;
-        border-radius: 10px !important;
-        padding: .7vw !important;
-        transition: inherit;
-    }
-
-    .kitchenItem .productDetailsWrapper .buttonWrapper {
-        display: flex !important;
-        justify-content: space-between !important;
-        padding: 1vw !important;
-        transition: inherit;
-    }
-</style>
-
-<div class="toast-container position-fixed bottom-0 end-0 p-3 bg-warning rounded">
-    <div id="liveToast" class="toast rounded" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header rounded bg-warning-subtle">
-            <strong class="me-auto rounded bg-warning-subtle ">KuramaCart🦊</strong>
-            <small class="bg-warning-subtle">just now</small>
-            <button type="button" class="btn-close rounded" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body bg-primary-subtle rounded">
-            item Added To Cart 🦊
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-title">Kitchen Products 💄</h1>
+        <div class="product-count">
+            Showing @beauty.kitchenProducts.Count() Products 👀
         </div>
     </div>
-</div>
 
-<div class="pageCover">
-    <header>
-        @* <h1 style="text-align: center !important; background-color: transparent !important;">Kitchen Essentials</h1> *@
-    </header>
-
-    <div class="KitchenItemHolder">
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/can.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Food Storage Containers (Premium)</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>500-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/opeaner.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Can Opener</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>150-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Colander.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Colander</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>350-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Peeler.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Vegetable Peeler</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>130-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Sponges.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Sponges</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>59-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Peeler.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Vegetable Peeler</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>130-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Peeler.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Vegetable Peeler</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>130-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Peeler.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Vegetable Peeler</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>130-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Peeler.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Vegetable Peeler</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>130-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Trash.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Large Trash Bin</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>549-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Grill.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Grill Pan</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>559.999-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/IronSkillet.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Cast Iron Skillet</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>439-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Shears.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Shears</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>50-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Grater.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Grater</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>229-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <div class="kitchenItem">
-            <div class="imageHolder">
-                <img loading="lazy" class="productImage" src="/images/kitchen/Whisk.png"
-                    alt="Food Storage Containers (Premium)">
-            </div>
-            <div class="productDetailsWrapper">
-                <div class="productDetails productName">Whisk</div>
-                <div class="productDetails productPrice">
-                    <i class="bi bi-tags"></i>
-                    Price:
-                    Rs. <strong>120-/</strong>
-                </div>
-                <div class="buttonWrapper">
-                    <button class="buyButton  btn btn-outline-success shadow-sm">
-                        <strong>BUY</strong>
-                    </button>
-                    <button type="button" id="liveToastBtn" class="addToCartButton btn btn-outline-warning shadow-sm">
-                        <i class="bi bi-cart4"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-@code {
-    private void AddTOCart()
+    @if (beauty.kitchenProducts == null || beauty == null)
     {
+        <div class="text-center p-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
     }
-}
-
-<script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-
-    if (toastTrigger) {
-        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-        toastTrigger.addEventListener('click', () => {
-            toastBootstrap.show()
-        })
+    else
+    {
+        <article class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                @foreach (var KitchenProducts in beauty.kitchenProducts)
+                {
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="@KitchenProducts.ImagePath" class="card-img-top lazy-load"
+                                    alt="@KitchenProducts.ProductName picture" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">@KitchenProducts.ProductName</h5>
+                                <div class="price">
+                                    <i class="bi bi-tags"></i>
+                                    रू @KitchenProducts.Price-/
+                                </div>
+                                <button class="add-to-cart-btn" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" @onclick="() => passToCart(KitchenProducts)">
+                                    Add to Cart 🛒
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </article>
     }
-</script>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add to Cart 🛒</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    @onclick="Clear"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
+                    @if (!isOutOfStock)
+                    {
+                        <span>
+                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
+                        </span>
+                    }
+                    else
+                    {
+                        <span>
+                            🦊 @productDetailsUIMessage 🤧
+                        </span>
+                    }
+                </p>
+            </div>
+            <div class="modal-footer">
+                @if (isOutOfStock)
+                {
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal  @onclick=" Clear"">
+                        Okii 🥲
+                    </button>
+                }
+                else
+                {
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
+                        Yes, Add to Cart! 🦊
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+</div>

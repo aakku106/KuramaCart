@@ -7,9 +7,4 @@
         <BlazorWebAssemblyEnableCompression>true</BlazorWebAssemblyEnableCompression>
 
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MudBlazor" Version="8.2.0" />
-  </ItemGroup>
-
 </Project>

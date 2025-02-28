@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nFhdl1VuCceeQJRnhiuhKQWhVuhzLaLCI5NvRkoE0Js=",
+  "Hash": "pa4hl4kcf2j6M82YTzayLOsm1LL2Rc9FSm5wN5Uq2IU=",
   "Source": "OnlineStore",
   "BasePath": "_content/OnlineStore",
   "Mode": "Default",
@@ -16,69 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css",
-      "SourceId": "MudBlazor",
-      "SourceType": "Package",
-      "ContentRoot": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/",
-      "BasePath": "_content/MudBlazor",
-      "RelativePath": "MudBlazor.min.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "32p77bvc6j",
-      "Integrity": "ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css"
-    },
-    {
-      "Identity": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js",
-      "SourceId": "MudBlazor",
-      "SourceType": "Package",
-      "ContentRoot": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/",
-      "BasePath": "_content/MudBlazor",
-      "RelativePath": "MudBlazor.min.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "r91md4kz0z",
-      "Integrity": "EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js"
-    },
-    {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/0wz98yz2xy-r91md4kz0z.gz",
-      "SourceId": "MudBlazor",
-      "SourceType": "Package",
-      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/MudBlazor",
-      "RelativePath": "MudBlazor.min.js.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "v8v35k4eak",
-      "Integrity": "73UlSfOMPokMjjyNqAkKw4E98ESJWUH5OQOS/xU1lFM=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js"
-    },
     {
       "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/1ve23xr5hj-4e30byv6x9.gz",
       "SourceId": "OnlineStore",
@@ -101,12 +38,12 @@
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/favicon/favicon.ico"
     },
     {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-0ngl5f5vx2.gz",
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz",
       "SourceId": "OnlineStore",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/OnlineStore",
-      "RelativePath": "OnlineStore#[.{fingerprint=0ngl5f5vx2}]?.styles.css.gz",
+      "RelativePath": "OnlineStore#[.{fingerprint=c48xw9fc0u}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -115,8 +52,8 @@
       "RelatedAsset": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "g6kue1py3z",
-      "Integrity": "qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=",
+      "Fingerprint": "jd51vwcjxw",
+      "Integrity": "d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css"
@@ -185,12 +122,12 @@
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css"
     },
     {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-0ngl5f5vx2.gz",
+      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz",
       "SourceId": "OnlineStore",
       "SourceType": "Computed",
       "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/OnlineStore",
-      "RelativePath": "OnlineStore#[.{fingerprint=0ngl5f5vx2}]!.bundle.scp.css.gz",
+      "RelativePath": "OnlineStore#[.{fingerprint=c48xw9fc0u}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -199,32 +136,11 @@
       "RelatedAsset": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "g6kue1py3z",
-      "Integrity": "qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=",
+      "Fingerprint": "jd51vwcjxw",
+      "Integrity": "d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css"
-    },
-    {
-      "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/tzxjg6is5z-32p77bvc6j.gz",
-      "SourceId": "MudBlazor",
-      "SourceType": "Package",
-      "ContentRoot": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/MudBlazor",
-      "RelativePath": "MudBlazor.min.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "czpcpbgzw2",
-      "Integrity": "iJM6acLI06VuPyILt4Sv9cYK8ihbtJHM9iGB8MWL5hE=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css"
     },
     {
       "Identity": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css",
@@ -241,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "0ngl5f5vx2",
-      "Integrity": "hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=",
+      "Fingerprint": "c48xw9fc0u",
+      "Integrity": "pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css"
@@ -262,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "0ngl5f5vx2",
-      "Integrity": "hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=",
+      "Fingerprint": "c48xw9fc0u",
+      "Integrity": "pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css"
@@ -921,370 +837,6 @@
     }
   ],
   "Endpoints": [
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.32p77bvc6j.css",
-      "AssetFile": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595613"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "32p77bvc6j"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
-        },
-        {
-          "Name": "label",
-          "Value": "_content/MudBlazor/MudBlazor.min.css"
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595613"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/tzxjg6is5z-32p77bvc6j.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000015501953"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64507"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iJM6acLI06VuPyILt4Sv9cYK8ihbtJHM9iGB8MWL5hE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZSJicRfSsO+B1xWmpXJ7ou81EIg418GnukAMFJRn3Bc="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/tzxjg6is5z-32p77bvc6j.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "64507"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iJM6acLI06VuPyILt4Sv9cYK8ihbtJHM9iGB8MWL5hE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iJM6acLI06VuPyILt4Sv9cYK8ihbtJHM9iGB8MWL5hE="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55249"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/0wz98yz2xy-r91md4kz0z.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000085193389"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11737"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"73UlSfOMPokMjjyNqAkKw4E98ESJWUH5OQOS/xU1lFM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/0wz98yz2xy-r91md4kz0z.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "11737"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"73UlSfOMPokMjjyNqAkKw4E98ESJWUH5OQOS/xU1lFM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-73UlSfOMPokMjjyNqAkKw4E98ESJWUH5OQOS/xU1lFM="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.r91md4kz0z.js",
-      "AssetFile": "/Users/aakku/.nuget/packages/mudblazor/8.2.0/staticwebassets/MudBlazor.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55249"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 01 Feb 2025 17:43:29 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "r91md4kz0z"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-EZNMO/azgG7IPa1IlFGwWmLhT64HPPCxhE0H6t+BOiM="
-        },
-        {
-          "Name": "label",
-          "Value": "_content/MudBlazor/MudBlazor.min.js"
-        }
-      ]
-    },
     {
       "Route": "app.3jh06fuxr7.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/l9wy1tdgj5-3jh06fuxr7.gz",
@@ -4692,13 +4244,13 @@
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.bundle.scp.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-0ngl5f5vx2.gz",
+      "Route": "OnlineStore.bundle.scp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000389105058"
+          "Quality": "0.000354987575"
         }
       ],
       "ResponseHeaders": [
@@ -4708,19 +4260,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4736,26 +4288,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "W/\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
-        },
-        {
-          "Name": "label",
-          "Value": "OnlineStore.bundle.scp.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.bundle.scp.css",
+      "Route": "OnlineStore.bundle.scp.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4765,7 +4309,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13631"
+          "Value": "18428"
         },
         {
           "Name": "Content-Type",
@@ -4773,11 +4317,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.bundle.scp.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2816"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.c48xw9fc0u.bundle.scp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000354987575"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2816"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c48xw9fc0u"
+        },
+        {
+          "Name": "label",
+          "Value": "OnlineStore.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
+        }
+      ]
+    },
+    {
+      "Route": "OnlineStore.c48xw9fc0u.bundle.scp.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "18428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4787,7 +4476,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
+          "Value": "c48xw9fc0u"
         },
         {
           "Name": "label",
@@ -4795,13 +4484,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.bundle.scp.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-0ngl5f5vx2.gz",
+      "Route": "OnlineStore.c48xw9fc0u.bundle.scp.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-c48xw9fc0u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4810,7 +4499,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "Content-Type",
@@ -4818,11 +4507,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4840,7 +4529,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
+          "Value": "c48xw9fc0u"
         },
         {
           "Name": "label",
@@ -4848,18 +4537,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c="
+          "Value": "sha256-d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY="
         }
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.styles.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-0ngl5f5vx2.gz",
+      "Route": "OnlineStore.c48xw9fc0u.styles.css",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000389105058"
+          "Quality": "0.000354987575"
         }
       ],
       "ResponseHeaders": [
@@ -4869,15 +4558,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4897,13 +4586,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "W/\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
+          "Value": "c48xw9fc0u"
         },
         {
           "Name": "label",
@@ -4911,12 +4600,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.styles.css",
+      "Route": "OnlineStore.c48xw9fc0u.styles.css",
       "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/bundle/OnlineStore.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4926,7 +4615,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13631"
+          "Value": "18428"
         },
         {
           "Name": "Content-Type",
@@ -4934,11 +4623,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4948,7 +4637,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
+          "Value": "c48xw9fc0u"
         },
         {
           "Name": "label",
@@ -4956,13 +4645,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
     {
-      "Route": "OnlineStore.0ngl5f5vx2.styles.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-0ngl5f5vx2.gz",
+      "Route": "OnlineStore.c48xw9fc0u.styles.css.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4971,7 +4660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "Content-Type",
@@ -4979,11 +4668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5001,7 +4690,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ngl5f5vx2"
+          "Value": "c48xw9fc0u"
         },
         {
           "Name": "label",
@@ -5009,155 +4698,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c="
-        }
-      ]
-    },
-    {
-      "Route": "OnlineStore.bundle.scp.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-0ngl5f5vx2.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000389105058"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2569"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
-        }
-      ]
-    },
-    {
-      "Route": "OnlineStore.bundle.scp.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "13631"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
-        }
-      ]
-    },
-    {
-      "Route": "OnlineStore.bundle.scp.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/mcyjr7yf8e-0ngl5f5vx2.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2569"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c="
+          "Value": "sha256-d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY="
         }
       ]
     },
     {
       "Route": "OnlineStore.styles.css",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-0ngl5f5vx2.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000389105058"
+          "Quality": "0.000354987575"
         }
       ],
       "ResponseHeaders": [
@@ -5167,15 +4719,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5195,13 +4747,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "W/\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
@@ -5216,7 +4768,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "13631"
+          "Value": "18428"
         },
         {
           "Name": "Content-Type",
@@ -5224,11 +4776,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY=\""
+          "Value": "\"pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5238,13 +4790,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hOdiAzYG3XDyqB2H+O7KEg5SHOjePo8FjGYtRIOw/fY="
+          "Value": "sha256-pIR/ddbDI1jAxoW+7L34XIq2ZdideyU9gF7pN9Cubhc="
         }
       ]
     },
     {
       "Route": "OnlineStore.styles.css.gz",
-      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-0ngl5f5vx2.gz",
+      "AssetFile": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/compressed/e7hf2bchb9-c48xw9fc0u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5253,7 +4805,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2569"
+          "Value": "2816"
         },
         {
           "Name": "Content-Type",
@@ -5261,11 +4813,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c=\""
+          "Value": "\"d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Feb 2025 08:19:13 GMT"
+          "Value": "Fri, 28 Feb 2025 10:00:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5283,7 +4835,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qEMjucq6iedrbk3ytLemTWkG3hBfsmDniE6KHpT2Q3c="
+          "Value": "sha256-d1Bk6gc3/fxut49tNPelMTNLYJ3azYppy+Yr9LkfvpY="
         }
       ]
     }
