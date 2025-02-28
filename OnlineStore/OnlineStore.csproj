@@ -5,6 +5,5 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
         <BlazorWebAssemblyEnableCompression>true</BlazorWebAssemblyEnableCompression>
-
   </PropertyGroup>
 </Project>
