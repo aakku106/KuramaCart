@@ -28,7 +28,7 @@ namespace OnlineStore.Components.Pages
             else
             {
                 isOutOfStock = true;
-                productDetailsUIMessage = @$"{selectedProduct?.ProductName} is out of stock, sorry for inConvenance";
+                productDetailsUIMessage = @$"{product?.ProductName} is out of stock, sorry for inConvenance";
             }
         }
 
