@@ -1,7 +1,4 @@
 is_global = true
-build_property.MudDebugAnalyzer = 
-build_property.MudAllowedAttributePattern = 
-build_property.MudAllowedAttributeList = 
 build_property.TargetFramework = net9.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
@@ -39,8 +36,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Kitchen.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9LaXRjaGVuLnJhem9y
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/LestShop.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZXN0U2hvcC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/LoginPage.razor]
@@ -74,3 +71,7 @@ build_metadata.AdditionalFiles.CssScope = b-sl760fwpun
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-dpr4gxwrx5
+
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Kitchen.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9LaXRjaGVuLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-aba8mxjqmg

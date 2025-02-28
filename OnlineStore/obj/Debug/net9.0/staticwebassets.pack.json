@@ -2,11 +2,15 @@
   "Files": [
     {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/obj/Debug/net9.0/scopedcss/projectbundle/OnlineStore.bundle.scp.css",
-      "PackagePath": "staticwebassets/OnlineStore.0ngl5f5vx2.bundle.scp.css"
+      "PackagePath": "staticwebassets/OnlineStore.pa98vbyw24.bundle.scp.css"
     },
     {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/app.css",
       "PackagePath": "staticwebassets/app.css"
+    },
+    {
+      "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/css/rotate.css",
+      "PackagePath": "staticwebassets/css/rotate.css"
     },
     {
       "Id": "/Users/aakku/Documents/onlineStore/OnlineStore/wwwroot/errorPageImage.gif",

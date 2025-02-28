@@ -1,0 +1,60 @@
+﻿@page "/LestShop"
+@rendermode InteractiveServer
+@inject NavigationManager NavigationManager
+
+<head>
+    <link rel="stylesheet" href="css/rotate.css">
+</head>
+
+<section class="shop-container">
+    <div class="shop-wrapper @(showOptions ? "show-options" : "")">
+        <button type="button" class="shop-button ripple" @onclick="ToggleOptions">
+            SHOP
+        </button>
+
+        <button class="option-button option-kitchen ripple" @onclick="GoToKitchen">
+            <div class="option-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <div class="option-text">Kitchen</div>
+        </button>
+
+        <button class="option-button option-beauty ripple" @onclick="GoToBeauty">
+            <div class="option-icon">
+                <span>&#x1F484;</span>
+            </div>
+            <div class="option-text">Beauty</div>
+        </button>
+
+        <button class="option-button option-clothes ripple" @onclick="GoToClothes">
+            <div class="option-icon">
+                <span>&#x1F455;</span>
+            </div>
+            <div class="option-text">Clothes</div>
+        </button>
+    </div>
+</section>
+
+@code {
+    private bool showOptions = false;
+
+    private void ToggleOptions()
+    {
+        showOptions = !showOptions;
+    }
+
+    private void GoToKitchen()
+    {
+        NavigationManager.NavigateTo("/KitchenWares");
+    }
+
+    private void GoToBeauty()
+    {
+        NavigationManager.NavigateTo("/BeautyProducts");
+    }
+
+    private void GoToClothes()
+    {
+        NavigationManager.NavigateTo("/ClothsFashion");
+    }
+}

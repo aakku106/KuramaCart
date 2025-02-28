@@ -38,6 +38,7 @@ namespace OnlineStore.Components.Pages
             {
                 cartData.AddToBeautyCart(selectedProduct);
                 selectedProduct.HowManyProduct--;
+                OnlineStore.Components.Pages.Cart.NumberOfItemInCart++;
                 Clear();
             }
         }

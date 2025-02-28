@@ -10,5 +10,5 @@ public class Product
     public DateOnly? Date { get; set; }
     public int HowManyProduct { get; set; } = 1;
     public string ImagePath { get; set; } = string.Empty;
-
+    public required string ProductType { get; set;}
 }

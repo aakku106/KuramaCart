@@ -5,19 +5,32 @@ namespace OnlineStore.Components.Pages;
 public partial class Cart
 {
     private Product? selectedProductInCart;
+    public static int NumberOfItemInCart = 0;
 
     private void PassTORemoveFromCart(Product product)
     {
         selectedProductInCart = product;
     }
 
-    public async Task RemoveFromCart()
+    public void RemoveBeautyItemFromCart()
     {
         if (selectedProductInCart != null)
         {
-            await Task.Delay(300);
             cartData.RemoveFromBeautyCart(selectedProductInCart);
             selectedProductInCart.HowManyProduct++;
+            NumberOfItemInCart--;
+            selectedProductInCart = null;
+            StateHasChanged();
+            return;
+        }
+    }
+    public void RemoveKitchenItemFromCart()
+    {
+        if (selectedProductInCart != null)
+        {
+            cartData.RemoveFromKitchenCart(selectedProductInCart);
+            selectedProductInCart.HowManyProduct++;
+            NumberOfItemInCart--;
             selectedProductInCart = null;
             StateHasChanged();
             return;
@@ -26,9 +39,9 @@ public partial class Cart
 
     private void Clear()
     {
-        StateHasChanged();
         selectedProductInCart = null;
         Data.CartData.cartDataDEtail = string.Empty;
+        StateHasChanged();
     }
 
     protected override void OnInitialized()
