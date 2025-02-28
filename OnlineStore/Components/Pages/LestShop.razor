@@ -1,7 +1,6 @@
 ﻿@page "/LestShop"
 @rendermode InteractiveServer
 @inject NavigationManager NavigationManager
-@inject IJSRuntime JSRuntime
 
 <head>
     <link rel="stylesheet" href="css/rotate.css">
@@ -12,6 +11,7 @@
             align-items: center;
             height: 80vh;
             position: relative;
+            width: 100%;
         }
 
         .shop-button {
@@ -69,8 +69,8 @@
         .option-kitchen {
             background: linear-gradient(145deg, #48c78e, #00a076);
             color: white;
-            top: -180px;
-            left: 0px;
+            top: -150px;
+            left: 0;
             transition-delay: 0.1s;
         }
 
@@ -78,8 +78,8 @@
         .option-beauty {
             background: linear-gradient(145deg, #ff85a2, #f14668);
             color: white;
-            top: -90px;
-            left: -156px;
+            top: -75px;
+            left: -130px;
             transition-delay: 0.2s;
         }
 
@@ -87,8 +87,8 @@
         .option-clothes {
             background: linear-gradient(145deg, #3e8ed0, #2160c4);
             color: white;
-            top: -90px;
-            left: 156px;
+            top: -75px;
+            left: 130px;
             transition-delay: 0.3s;
         }
 
@@ -133,22 +133,11 @@
             opacity: .3;
             transition: 0s;
         }
-
-        @keyframes
-        rotate-in {
-            from {
-                transform: scale(0.1) rotate(-45deg);
-            }
-
-            to {
-                transform: scale(1) rotate(0);
-            }
-        }
     </style>
 </head>
 
 <section class="shop-container">
-    <button type="button" class="shop-button ripple" @onclick="ToggleOptionsWithSound">
+    <button type="button" class="shop-button ripple" @onclick="ToggleOptions">
         SHOP
     </button>
 
@@ -197,12 +186,5 @@
     private void GoToClothes()
     {
         NavigationManager.NavigateTo("/ClothsItems");
-    }
-
-    private async Task ToggleOptionsWithSound()
-    {
-        showOptions = !showOptions;
-        await JSRuntime.InvokeVoidAsync("playSound",
-        showOptions ? "open.mp3" : "close.mp3");
     }
 }

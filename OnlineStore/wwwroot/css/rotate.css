@@ -1,9 +1,78 @@
+/** @format */
+
 @keyframes rotate-in {
   from {
-    transform: scale(0) rotate(-185deg);
+    transform: scale(0.1) rotate(-180deg);
   }
 
   to {
     transform: scale(1) rotate(0);
+  }
+}
+
+/*  mobile  */
+@media (max-width: 768px) {
+  .shop-button {
+    width: 90px;
+    height: 90px;
+    font-size: 1.2rem;
+  }
+
+  .option-button {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* Adjust positions for smaller screens */
+  .option-kitchen {
+    top: -120px;
+  }
+
+  .option-beauty {
+    top: -60px;
+    left: -100px;
+  }
+
+  .option-clothes {
+    top: -60px;
+    left: 100px;
+  }
+
+  .option-icon {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+
+  .option-text {
+    font-size: 0.7rem;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+  .shop-button {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+
+  .option-button {
+    width: 65px;
+    height: 65px;
+  }
+
+  /* Adjust positions for even smaller screens */
+  .option-kitchen {
+    top: -100px;
+  }
+
+  .option-beauty {
+    top: -50px;
+    left: -80px;
+  }
+
+  .option-clothes {
+    top: -50px;
+    left: 80px;
   }
 }
