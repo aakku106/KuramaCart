@@ -34,8 +34,9 @@ public partial class Kitchen
     {
         if (selectedProduct != null)
         {
-            cartData.AddToBeautyCart(selectedProduct);
+            cartData.AddToKitchenCart(selectedProduct);
             selectedProduct.HowManyProduct--;
+            OnlineStore.Components.Pages.Cart.NumberOfItemInCart++;
             Clear();
         }
     }

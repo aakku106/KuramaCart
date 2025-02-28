@@ -6,33 +6,35 @@
     <h1 class="cart-title">🦊 Products Added to Cart 🦊</h1>
 </header>
 <article class="cart-page">
-
-    <section>
-        <div class="beauty-products">
-            <h2 class="cart-title">💄 Beauty Products</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach (var product in cartData.GetBeautyCart().Reverse())
-                {
-                    <div class="col">
-                        <div class="glass-card">
-                            <i type=" button" class="cross btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                @onclick="() => PassTORemoveFromCart(product)">
-                                <strong>X</strong>
-                            </i>
-                            <div class="card-img-container">
-                                <img src="@product.ImagePath" class="card-img-top lazy-load"
-                                    alt="@product.ProductName picture" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">@product.ProductName</h5>
-                                <div class="price">Rs @product.Price</div>
+    @if (cartData.GetBeautyCart().Count > 0)
+    {
+        <section>
+            <div class="beauty-products">
+                <h2 class="cart-title">💄 Beauty Products</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    @foreach (var product in cartData.GetBeautyCart().Reverse())
+                    {
+                        <div class="col">
+                            <div class="glass-card">
+                                <i type=" button" class="cross btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    @onclick="() => PassTORemoveFromCart(product)">
+                                    <strong>X</strong>
+                                </i>
+                                <div class="card-img-container">
+                                    <img src="@product.ImagePath" class="card-img-top lazy-load"
+                                        alt="@product.ProductName picture" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">@product.ProductName</h5>
+                                    <div class="price">Rs @product.Price</div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                }
+                    }
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    }
 
 
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -59,33 +61,42 @@
                         @onclick="Clear">Close</button>
                     @if (Data.CartData.cartDataDEtail == string.Empty)
                     {
-                        <button type="button" class="btn btn-primary" @onclick="RemoveFromCart">remove 🫣</button>
+                        <button type="button" class="btn btn-primary" @onclick="RemoveBeautyItemFromCart">remove 🫣</button>
                     }
                 </div>
             </div>
         </div>
     </div>
 
-    <section>
-        <div class="cart-section">
-            <h2 class="cart-title">🍽️ Kitchen Products</h2>
-            <div class="glass-card">
-                <table class="cart-table">
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Cost</th>
-                        <th>Quantity</th>
-                    </tr>
-                    @foreach (var item in cartData.Carts)
+    @if (cartData.GetKitchenCart().Count > 0)
+    {
+
+        <section>
+            <div class="beauty-products">
+                <h2 class="cart-title">💄 Beauty Products</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+                    @foreach (var product in cartData.GetKitchenCart().Reverse())
                     {
-                        <tr>
-                            <td>@item.ItemName</td>
-                            <td>₹@item.ItemCost</td>
-                            <td>@item.ItemInCart</td>
-                        </tr>
+                        <div class="col">
+                            <div class="glass-card">
+                                <i type=" button" class="cross btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                    @onclick="() => PassTORemoveFromCart(product)">
+                                    <strong>X</strong>
+                                </i>
+                                <div class="card-img-container">
+                                    <img src="@product.ImagePath" class="card-img-top lazy-load"
+                                        alt="@product.ProductName picture" loading="lazy">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">@product.ProductName</h5>
+                                    <div class="price">Rs @product.Price</div>
+                                </div>
+                            </div>
+                        </div>
                     }
-                </table>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    }
+
 </article>

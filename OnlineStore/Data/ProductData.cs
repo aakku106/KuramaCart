@@ -82,7 +82,7 @@ new(){
     Price=50,
     Date=null,
     HowManyProduct=2,
-    ImagePath="Shears.png"
+    ImagePath="/images/kitchen/Shears.png"
 },
 new(){
     ProductId=765875423,
@@ -99,7 +99,6 @@ new(){
     ProductName="Grill Pan",
     HowManyProduct=7,
     ImagePath="/images/kitchen/Grill.png"
-
 }
 
 ];
