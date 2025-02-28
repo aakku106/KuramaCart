@@ -6,8 +6,8 @@
     <h1 class="cart-title extraTextGlow">🦊 Products Added to Cart: @NumberOfItemInCart</h1>
 </header>
 
-@if (NumberOfItemInCart > 0)
-{
+@* @if (NumberOfItemInCart > 0)
+{ *@
     <article class="cart-page">
 
         @if (cartData.GetBeautyCart().Count > 0)
@@ -112,7 +112,8 @@
         }
 
     </article>
-}
-else
+@* } *@
+@* else
 {
-}
+    <LestShop />
+} *@

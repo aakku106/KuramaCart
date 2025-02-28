@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"yps5og3usy"},{"Name":"integrity","Value":"sha256-piiSGn4ItmtnyNRezp\u002Biu3PxYOC/LnQ8097gxUtFp98="},{"Name":"label","Value":"_content/OnlineStore/app.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3252"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022piiSGn4ItmtnyNRezp\u002Biu3PxYOC/LnQ8097gxUtFp98=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 14:08:41 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/OnlineStore/css/rotate.04jsmy4q75.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rotate.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"04jsmy4q75"},{"Name":"integrity","Value":"sha256-wK2764Nqdls/\u002BmVFEBpzDXrGRP\u002Bkn4YtVzfn/vCka0k="},{"Name":"label","Value":"_content/OnlineStore/css/rotate.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4428"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wK2764Nqdls/\u002BmVFEBpzDXrGRP\u002Bkn4YtVzfn/vCka0k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 15:19:29 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/OnlineStore/css/rotate.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rotate.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wK2764Nqdls/\u002BmVFEBpzDXrGRP\u002Bkn4YtVzfn/vCka0k="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4428"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022wK2764Nqdls/\u002BmVFEBpzDXrGRP\u002Bkn4YtVzfn/vCka0k=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 15:19:29 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-uhHNfRwdj0xCSFvYqn5pdZrFnwWf7HvlARiRXWYPnKg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4168"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uhHNfRwdj0xCSFvYqn5pdZrFnwWf7HvlARiRXWYPnKg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 15:34:44 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/OnlineStore/css/rotate.ef1a4ubq4l.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rotate.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ef1a4ubq4l"},{"Name":"integrity","Value":"sha256-uhHNfRwdj0xCSFvYqn5pdZrFnwWf7HvlARiRXWYPnKg="},{"Name":"label","Value":"_content/OnlineStore/css/rotate.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4168"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022uhHNfRwdj0xCSFvYqn5pdZrFnwWf7HvlARiRXWYPnKg=\u0022"},{"Name":"Last-Modified","Value":"Fri, 28 Feb 2025 15:34:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/OnlineStore/errorPageImage.039xvdjt41.gif">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\errorPageImage.gif'))</AssetFile>

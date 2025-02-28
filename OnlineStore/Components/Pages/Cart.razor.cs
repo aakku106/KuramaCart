@@ -12,11 +12,10 @@ public partial class Cart
         selectedProductInCart = product;
     }
 
-    public async Task RemoveBeautyItemFromCart()
+    public void RemoveBeautyItemFromCart()
     {
         if (selectedProductInCart != null)
         {
-            await Task.Delay(300);
             cartData.RemoveFromBeautyCart(selectedProductInCart);
             selectedProductInCart.HowManyProduct++;
             NumberOfItemInCart--;
@@ -25,11 +24,10 @@ public partial class Cart
             return;
         }
     }
-    public async Task RemoveKitchenItemFromCart()
+    public void RemoveKitchenItemFromCart()
     {
         if (selectedProductInCart != null)
         {
-            await Task.Delay(300);
             cartData.RemoveFromKitchenCart(selectedProductInCart);
             selectedProductInCart.HowManyProduct++;
             NumberOfItemInCart--;
@@ -41,9 +39,9 @@ public partial class Cart
 
     private void Clear()
     {
-        StateHasChanged();
         selectedProductInCart = null;
         Data.CartData.cartDataDEtail = string.Empty;
+        StateHasChanged();
     }
 
     protected override void OnInitialized()

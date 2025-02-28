@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>04jsmy4q75</Fingerprint>
-      <Integrity>wK2764Nqdls/+mVFEBpzDXrGRP+kn4YtVzfn/vCka0k=</Integrity>
+      <Fingerprint>ef1a4ubq4l</Fingerprint>
+      <Integrity>uhHNfRwdj0xCSFvYqn5pdZrFnwWf7HvlARiRXWYPnKg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\rotate.css'))</OriginalItemSpec>
