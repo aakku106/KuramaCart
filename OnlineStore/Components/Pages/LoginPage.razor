@@ -102,7 +102,7 @@
                 <input type="radio" class="form-toggle" id="login" name="form-toggle" checked>
                 <div class="form-container login-form">
                     <h3 class="text-center text-white mb-4">🦊 KuramaCart Login 🦊</h3>
-                    <form>
+                    <EditForm Model="userLogin">
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter username"
@@ -113,11 +113,11 @@
                             <input type="password" class="form-control" id="password" placeholder="Enter password"
                                 @bind="password">
                         </div>
-                        <button type="button" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
-                    </form>
+                        <button type="submit" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
+                    </EditForm>
                     @if (!string.IsNullOrWhiteSpace(loginMessage))
                     {
-                        <div class="alert alert-warning mt-3">
+                        <div class=" alert alert-warning mt-3">
                             @loginMessage
                         </div>
                     }
@@ -132,7 +132,7 @@
                 <input type="radio" class="form-toggle" id="register" name="form-toggle">
                 <div class="form-container register-form">
                     <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    <form>
+                    <EditForm Model="userLogin">
                         <div class="mb-3">
                             <label for="register-username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="register-username" placeholder="Enter username"
@@ -159,8 +159,8 @@
                             <input type="password" class="form-control" placeholder="Enter password" required
                                 @bind="conformPassword">
                         </div>
-                        <button type="button" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
-                    </form>
+                        <button type="submit" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
+                    </EditForm>
                     <div class="text-center mt-3">
                         <p class="text-white">Already have an account? <label for="login"
                                 class="text-warning toggle-btn" @onclick="ClearInputsOnChange">Login here</label></p>
@@ -178,6 +178,16 @@
     conformPassword = string.Empty;
     private string? loginMessage;
     private int ID = 0;
+
+    private User userLogin { get; set; } = new()
+    {
+        UserName = string.Empty,
+        UserEmail = string.Empty,
+        UserId = string.Empty,
+        UserPassword = string.Empty,
+        DateTime = DateTime.UtcNow,
+        DidUserLogIn = false
+    };
 
     private void Login()
     {

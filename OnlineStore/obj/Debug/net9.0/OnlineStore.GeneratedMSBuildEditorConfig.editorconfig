@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9BcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Layout/EmptyLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvRW1wdHlMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Layout/PageNotFound.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvUGFnZU5vdEZvdW5kLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9MZXN0U2hvcC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Pages/LoginPage.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Mb2dpblBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -51,6 +59,10 @@ build_metadata.AdditionalFiles.CssScope =
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9fSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/aakku/Documents/onlineStore/OnlineStore/Admin/AdminPannel.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW4vQWRtaW5QYW5uZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-tauoa5bqrb
 
 [/Users/aakku/Documents/onlineStore/OnlineStore/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTWFpbkxheW91dC5yYXpvcg==

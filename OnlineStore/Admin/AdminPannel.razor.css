@@ -1,0 +1,10 @@
+/** @format */
+
+:root {
+  --mainBG: rgb(56, 56, 82);
+  --maunText:rgb(250,250,250);
+}
+
+body {
+    background-color: var(--mainBG);
+}

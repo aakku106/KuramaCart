@@ -1,3 +1,14 @@
+/* _content/OnlineStore/Admin/AdminPannel.razor.rz.scp.css */
+/** @format */
+
+:root[b-tauoa5bqrb] {
+  --mainBG: rgb(56, 56, 82);
+  --maunText:rgb(250,250,250);
+}
+
+body[b-tauoa5bqrb] {
+    background-color: var(--mainBG);
+}
 /* _content/OnlineStore/Components/Layout/MainLayout.razor.rz.scp.css */
 /** @format */
 
