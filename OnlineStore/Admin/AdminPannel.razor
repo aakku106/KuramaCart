@@ -12,14 +12,14 @@
     }
 
     * {
-        border-radius: 1vw;
+        border-radius: 10px !important;
         padding: 0;
         margin: 0;
     }
 
     body {
         background-color: var(--mainBG);
-        color: var(--maunText);
+        color: var(--bodyText);
         height: 100vh;
     }
 
@@ -62,7 +62,6 @@
                 transform: scale(1.1) !important;
 
                 .btnText {
-                    @* border: 1px solid red; *@
                     transform: translateX(20px);
                 }
 
@@ -71,10 +70,14 @@
 
 
         .mainSection {
-            width: 100%;
-            background-color: var(--mainBG);
-            color: var(--bodyText);
+            background-color: var(--mainBG) !important;
+            color: var(--bodyText) !important;
 
+            .control {
+                height: 95px !important;
+                width: 270px !important;
+                border: 1px solid red !important;
+            }
         }
 </style>
 <main>
@@ -94,13 +97,18 @@
         </section>
     </aside>
 
-    <section class="mainSection">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
+    <section class=" container mainSection">
+        <div class="row">
+            <div class="col-sm control">Today's Sales</div>
+            <div class="control col-sm">Today's renew</div>
+            <div class="control col-sm">In Eschew</div>
+        </div>
+        <div class="row">
+            <div class=" control  col-sm-8">Total renew</div>
+            <div class=" control  col-sm-4">Most Sold Item</div>
+        </div>
+        <div class="row">
+            <div class=" control  col-sm">Latest Order</div>
+        </div>
     </section>
 </main>
-@code {
-    private void DashboardOpen()
-    {
-
-    }
-}
