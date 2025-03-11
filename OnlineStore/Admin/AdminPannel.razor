@@ -1,87 +1,129 @@
 ﻿@page "/MasterAdminPanel"
 @using OnlineStore.Components.Layout
 @layout EmptyLayout
-<style>
-    :root {
-        --mainBG: rgb(56, 56, 82);
-        --HighText: rgb(250, 250, 250);
-        --asideBG: rgb(46, 46, 70);
-        --asideText: rgb(186, 186, 188);
-        --bodyText: rgb(218, 218, 220);
-        --buttonHover: rgb(75, 90, 224);
-    }
 
-    * {
-        border-radius: 10px !important;
-        padding: 0;
-        margin: 0;
-    }
-
-    body {
-        background-color: var(--mainBG);
-        color: var(--bodyText);
-        height: 100vh;
-    }
-
-    main {
-        display: flex;
-        flex-direction: row;
-        gap: 5rem;
-        height: 100vh;
-    }
-
-    aside {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between !important;
-        background-color: var(--asideBG);
-        color: var(--asideText);
-        padding: 1rem;
-        position: sticky;
-        width: 17rem !important;
-        height: 100vh;
-        top: 0;
-
-        button {
-            padding: 1vw !important;
-            cursor: pointer !important;
-            color: var(--asideText) !important;
-            width: 100% !important;
-            text-align: left !important;
-
-            transition: all .5s ease-in-out !important;
-
-            .btnText {
-                display: block;
-                transition: all .5s ease-in-out !important;
-            }
-
-            &:hover {
-                background-color: var(--buttonHover) !important;
-                box-shadow: 0px 0px 10px 1px rgb(10, 29, 54) !important;
-                transform: scale(1.1) !important;
-
-                .btnText {
-                    transform: translateX(20px);
-                }
-
-            }
+<head>
+    <style>
+        :root {
+            --mainBG: rgb(56, 56, 82);
+            --HighText: rgb(250, 250, 250);
+            --asideBG: rgb(46, 46, 70);
+            --asideText: rgb(186, 186, 188);
+            --bodyText: rgb(218, 218, 220);
+            --buttonHover: rgb(75, 90, 224);
         }
 
+        * {
+            border-radius: 10px !important;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: var(--mainBG);
+            color: var(--bodyText);
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+        }
+
+        .aside {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between !important;
+            background-color: var(--asideBG);
+            color: var(--asideText);
+            padding: 1.5rem;
+            position: sticky;
+            width: 17rem !important;
+            height: 100vh;
+            top: 0;
+            margin-right: 1.5rem;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .btn {
+                padding: 1rem 1.25rem !important;
+                cursor: pointer !important;
+                color: var(--asideText) !important;
+                width: 100% !important;
+                text-align: left !important;
+                transition: all .5s ease-in-out !important;
+
+                .btnText {
+                    display: block;
+                    transition: all .5s ease-in-out !important;
+                }
+
+                &:hover {
+                    background-color: var(--buttonHover) !important;
+                    box-shadow: 0px 0px 10px 1px rgb(10, 29, 54) !important;
+                    transform: scale(1.05) !important;
+
+                    .btnText {
+                        transform: translateX(20px);
+                    }
+                }
+            }
+        }
 
         .mainSection {
             background-color: var(--mainBG) !important;
             color: var(--bodyText) !important;
+            flex: 1;
+            padding: 1.5rem;
+
+            .dashboard-row {
+                margin-bottom: 1.5rem;
+            }
 
             .control {
-                height: 95px !important;
-                width: 270px !important;
-                border: 1px solid red !important;
+                height: 100% !important;
+                padding: 1.5rem !important;
+                background-color: var(--asideBG) !important;
+                display: flex;
+                flex-direction: column;
+
+                .stat-title {
+                    font-weight: 600;
+                    color: var(--HighText);
+                    margin-bottom: 0.75rem;
+                }
+
+                .stat-value {
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    margin: 0.5rem 0;
+                }
+
+                .stat-subtitle {
+                    color: var(--asideText);
+                    font-size: 0.875rem;
+                    margin-top: auto;
+                }
+            }
+
+            .chart-container {
+                min-height: 300px;
+            }
+
+            .table-container {
+                min-height: 300px;
             }
         }
-</style>
-<main>
-    <aside>
+    </style>
+</head>
+
+<main class="main">
+    <aside class="aside">
         <section>
             <button class="btn"> <span class="btnText">Dashboard</span> </button>
             <button class="btn"> <span class="btnText">Statistics</span></button>
@@ -97,18 +139,59 @@
         </section>
     </aside>
 
-    <section class=" container mainSection">
-        <div class="row">
-            <div class="col-sm control">Today's Sales</div>
-            <div class="control col-sm">Today's renew</div>
-            <div class="control col-sm">In Eschew</div>
+    <section class="mainSection">
+        <div class="dashboard-row">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="control">
+                        <div class="stat-title">Today's Sales</div>
+                        <div class="stat-value">$20.5k</div>
+                        <div class="stat-subtitle">We have sold 106 items</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="control">
+                        <div class="stat-title">Today's Revenue</div>
+                        <div class="stat-value">$8.2k</div>
+                        <div class="stat-subtitle">Available to payout</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="control">
+                        <div class="stat-title">In Escrow</div>
+                        <div class="stat-value">$18.2k</div>
+                        <div class="stat-subtitle">Available to payout</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class=" control  col-sm-8">Total renew</div>
-            <div class=" control  col-sm-4">Most Sold Item</div>
+
+        <div class="dashboard-row">
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <div class="control chart-container">
+                        <div class="stat-title">Total Revenue</div>
+                        <!-- Chart would go here -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="control chart-container">
+                        <div class="stat-title">Most Sold Items</div>
+                        <!-- Top items list would go here -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class=" control  col-sm">Latest Order</div>
+
+        <div class="dashboard-row">
+            <div class="row g-4">
+                <div class="col-md-12">
+                    <div class="control table-container">
+                        <div class="stat-title">Latest Orders</div>
+                        <!-- Orders table would go here -->
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
