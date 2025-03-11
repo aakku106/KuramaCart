@@ -42,40 +42,55 @@
         height: 100vh;
         top: 0;
 
-        h3 {
-            padding: 1vw;
-            cursor: pointer;
-            transition: all .3s ease-in-out !important;
+        button {
+            padding: 1vw !important;
+            cursor: pointer !important;
+            color: var(--asideText) !important;
+            width: 100% !important;
+            text-align: left !important;
+
+            transition: all .5s ease-in-out !important;
+
+            .btnText {
+                display: block;
+                transition: all .5s ease-in-out !important;
+            }
 
             &:hover {
-                background-color: var(--buttonHover);
-                box-shadow: 0px 0px 10px 1px rgb(10, 29, 54);
-                text-align: center;
+                background-color: var(--buttonHover) !important;
+                box-shadow: 0px 0px 10px 1px rgb(10, 29, 54) !important;
+                transform: scale(1.1) !important;
+
+                .btnText {
+                    @* border: 1px solid red; *@
+                    transform: translateX(20px);
+                }
+
             }
         }
-    }
 
-    .mainSection {
-        width: 100%;
-        background-color: var(--mainBG);
-        color: var(--bodyText);
 
-    }
+        .mainSection {
+            width: 100%;
+            background-color: var(--mainBG);
+            color: var(--bodyText);
+
+        }
 </style>
 <main>
     <aside>
         <section>
-            <h3>Dashboard</h3>
-            <h3>Statistics</h3>
-            <h3>Payments</h3>
-            <h3>Transitions</h3>
-            <h3>Products</h3>
-            <h3>Customer</h3>
-            <h3>Message</h3>
+            <button class="btn"> <span class="btnText">Dashboard</span> </button>
+            <button class="btn"> <span class="btnText">Statistics</span></button>
+            <button class="btn"> <span class="btnText">Payments</span></button>
+            <button class="btn"> <span class="btnText">Transitions</span></button>
+            <button class="btn"> <span class="btnText">Products</span></button>
+            <button class="btn"> <span class="btnText">Customer</span></button>
+            <button class="btn"> <span class="btnText">Message</span></button>
         </section>
         <section>
-            <h3>Setting</h3>
-            <h3>LogOut</h3>
+            <button class="btn"> <span class="btnText">Setting</span></button>
+            <button class="btn"> <span class="btnText">LogOut</span></button>
         </section>
     </aside>
 
