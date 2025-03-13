@@ -7,7 +7,7 @@ namespace OnlineStore.Data;
 
 public class UserData
 {
-    public List<User> users = [
+    public static List<User> users = [
         new(){
             UserId="ccn106",
             UserName="MasterCCNSamma",
@@ -40,5 +40,4 @@ public class UserData
         return users.FirstOrDefault(user =>
             user.UserName == username && user.UserPassword == password);
     }
-
 }
