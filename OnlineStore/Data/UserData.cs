@@ -22,7 +22,7 @@ public class UserData
     {
         users.Add(new User()
         {
-            UserId = userId + "A76Z" ,
+            UserId = userId + "A76Z",
             UserName = username,
             UserEmail = email,
             UserPassword = password,
@@ -35,9 +35,9 @@ public class UserData
 
 
     // public IEnumerable<User> GetUsers() => users;
-    public User? AuthenticateUser(string username, string password)
+    public User? AuthenticateUser(string username, string email, string password)
     {
         return users.FirstOrDefault(user =>
-            user.UserName == username && user.UserPassword == password);
+            user.UserName == username && user.UserEmail == email && user.UserPassword == password);
     }
 }
