@@ -9,18 +9,13 @@
     <div class="mb-3">
         <label for="username" class="form-label">Username</label>
         <InputText id="email" @bind-Value="userLogin.UserName"></InputText>
-        @* <input type="text" class="form-control" id="username" placeholder="Enter username" @bind="username"> *@
     </div>
     <div class="mb-3">
         <label for="password" class="form-label">Password</label>
         <InputText type="password" @bind-Value="userLogin.UserPassword"></InputText>
-        @* <input type="password" class="form-control" id="password" placeholder="Enter password" @bind="password"> *@
     </div>
     <button type="submit" class="btn btn-dark w-100 py-2">Login</button>
 </EditForm>
-
-
-
 
 
 @code {
