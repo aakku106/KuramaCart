@@ -3,6 +3,8 @@
 @layout EmptyLayout
 
 <head>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <style>
         :root {
             --mainBG: rgb(56, 56, 82);
@@ -11,6 +13,9 @@
             --asideText: rgb(186, 186, 188);
             --bodyText: rgb(218, 218, 220);
             --buttonHover: rgb(75, 90, 224);
+            --iconColor: rgb(144, 144, 220);
+            --growthGreen: rgb(75, 210, 143);
+            --warningOrange: rgb(255, 164, 61);
         }
 
         * {
@@ -44,6 +49,25 @@
             top: 0;
             margin-right: 1.5rem;
 
+            .logo {
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+                padding-left: 0.75rem;
+
+                i {
+                    font-size: 1.75rem;
+                    color: var(--iconColor);
+                    margin-right: 0.75rem;
+                }
+
+                span {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    color: var(--HighText);
+                }
+            }
+
             section {
                 display: flex;
                 flex-direction: column;
@@ -57,6 +81,16 @@
                 width: 100% !important;
                 text-align: left !important;
                 transition: all .5s ease-in-out !important;
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-right: 0.75rem;
+                    font-size: 1.1rem;
+                    width: 1.5rem;
+                    text-align: center;
+                    color: var(--iconColor);
+                }
 
                 .btnText {
                     display: block;
@@ -69,7 +103,45 @@
                     transform: scale(1.05) !important;
 
                     .btnText {
-                        transform: translateX(20px);
+                        transform: translateX(10px);
+                    }
+
+                    i {
+                        color: var(--HighText);
+                    }
+                }
+            }
+
+            .user-info {
+                display: flex;
+                align-items: center;
+                margin-top: 2rem;
+                padding: 1rem;
+                background-color: rgba(75, 90, 224, 0.15);
+
+                .avatar {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50% !important;
+                    background-color: var(--iconColor);
+                    color: var(--HighText);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.25rem;
+                    margin-right: 0.75rem;
+                }
+
+                .user-details {
+                    .user-name {
+                        font-weight: 600;
+                        color: var(--HighText);
+                        font-size: 0.9rem;
+                    }
+
+                    .user-role {
+                        font-size: 0.75rem;
+                        color: var(--asideText);
                     }
                 }
             }
@@ -81,6 +153,25 @@
             flex: 1;
             padding: 1.5rem;
 
+            .page-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+                i {
+                    font-size: 1.5rem;
+                    margin-right: 0.75rem;
+                    color: var(--HighText);
+                }
+
+                h1 {
+                    font-size: 1.75rem;
+                    font-weight: bold;
+                    color: var(--HighText);
+                    margin-bottom: 0;
+                }
+            }
+
             .dashboard-row {
                 margin-bottom: 1.5rem;
             }
@@ -91,6 +182,23 @@
                 background-color: var(--asideBG) !important;
                 display: flex;
                 flex-direction: column;
+                position: relative;
+                overflow: hidden;
+
+                .stat-icon {
+                    position: absolute;
+                    top: 1.5rem;
+                    right: 1.5rem;
+                    font-size: 1.25rem;
+                    color: var(--iconColor);
+                    background-color: rgba(75, 90, 224, 0.1);
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50% !important;
+                }
 
                 .stat-title {
                     font-weight: 600;
@@ -108,15 +216,107 @@
                     color: var(--asideText);
                     font-size: 0.875rem;
                     margin-top: auto;
+                    display: flex;
+                    align-items: center;
+
+                    i {
+                        margin-right: 0.3rem;
+                    }
+
+                    .growth {
+                        color: var(--growthGreen);
+                        margin-left: 0.5rem;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                    box-shadow: 0px 0px 15px rgba(32, 73, 117, 0.097);
+                    transition: all 0.3s ease-in-out;
                 }
             }
 
             .chart-container {
                 min-height: 300px;
+
+                .chart-placeholder {
+                    display: flex;
+                    height: 220px;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    margin-top: 1rem;
+                    border-radius: 8px !important;
+
+                    i {
+                        font-size: 3rem;
+                        color: rgba(75, 90, 224, 0.3);
+                    }
+                }
             }
 
             .table-container {
                 min-height: 300px;
+
+                .order-list {
+                    margin-top: 1rem;
+
+                    .order-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 0.75rem;
+                        border-bottom: 1px solid rgba(186, 186, 188, 0.1);
+
+                        .order-icon {
+                            width: 2.5rem;
+                            height: 2.5rem;
+                            border-radius: 50% !important;
+                            background-color: rgba(75, 90, 224, 0.1);
+                            color: var(--iconColor);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 1rem;
+                        }
+
+                        .order-details {
+                            flex: 1;
+
+                            .order-title {
+                                font-weight: 600;
+                                color: var(--HighText);
+                            }
+
+                            .order-meta {
+                                font-size: 0.8rem;
+                                color: var(--asideText);
+                            }
+                        }
+
+                        .order-price {
+                            font-weight: 600;
+                            color: var (--HighText);
+                        }
+
+                        .order-status {
+                            margin-left: 1rem;
+                            padding: 0.25rem 0.5rem;
+                            border-radius: 5px !important;
+                            font-size: 0.75rem;
+                            font-weight: 600;
+
+                            &.completed {
+                                background-color: rgba(75, 210, 143, 0.15);
+                                color: var(--growthGreen);
+                            }
+
+                            &.pending {
+                                background-color: rgba(255, 164, 61, 0.15);
+                                color: var(--warningOrange);
+                            }
+                        }
+                    }
+                }
             }
         }
     </style>
@@ -124,43 +324,109 @@
 
 <main class="main">
     <aside class="aside">
-        <section>
-            <button class="btn"> <span class="btnText">Dashboard</span> </button>
-            <button class="btn"> <span class="btnText">Statistics</span></button>
-            <button class="btn"> <span class="btnText">Payments</span></button>
-            <button class="btn"> <span class="btnText">Transitions</span></button>
-            <button class="btn"> <span class="btnText">Products</span></button>
-            <button class="btn"> <span class="btnText">Customer</span></button>
-            <button class="btn"> <span class="btnText">Message</span></button>
-        </section>
-        <section>
-            <button class="btn"> <span class="btnText">Setting</span></button>
-            <button class="btn"> <span class="btnText">LogOut</span></button>
-        </section>
+        <div>
+            <div class="logo">
+                <i class="fas fa-store"></i>
+                <span>KuramaCart</span>
+            </div>
+            <section>
+                <button class="btn">
+                    <i class="fas fa-home"></i>
+                    <span class="btnText">Dashboard</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="btnText">Statistics</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-credit-card"></i>
+                    <span class="btnText">Payments</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-exchange-alt"></i>
+                    <span class="btnText">Transactions</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-boxes"></i>
+                    <span class="btnText">Products</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-users"></i>
+                    <span class="btnText">Customers</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-comments"></i>
+                    <span class="btnText">Messages</span>
+                </button>
+            </section>
+        </div>
+        <div>
+            <section>
+                <button class="btn">
+                    <i class="fas fa-cog"></i>
+                    <span class="btnText">Settings</span>
+                </button>
+                <button class="btn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span class="btnText">Log Out</span>
+                </button>
+            </section>
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-details">
+                    <div class="user-name">Admin User</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+            </div>
+        </div>
     </aside>
 
     <section class="mainSection">
+        <div class="page-title">
+            <i class="fas fa-tachometer-alt"></i>
+            <h1>kuramaCart's Dashboard Overview</h1>
+        </div>
+
         <div class="dashboard-row">
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="control">
+                        <div class="stat-icon">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
                         <div class="stat-title">Today's Sales</div>
                         <div class="stat-value">$20.5k</div>
-                        <div class="stat-subtitle">We have sold 106 items</div>
+                        <div class="stat-subtitle">
+                            <i class="fas fa-box"></i> We have sold 106 items
+                            <span class="growth"><i class="fas fa-arrow-up"></i> 12%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="control">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
                         <div class="stat-title">Today's Revenue</div>
                         <div class="stat-value">$8.2k</div>
-                        <div class="stat-subtitle">Available to payout</div>
+                        <div class="stat-subtitle">
+                            <i class="fas fa-wallet"></i> Available to payout
+                            <span class="growth"><i class="fas fa-arrow-up"></i> 8.4%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="control">
+                        <div class="stat-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
                         <div class="stat-title">In Escrow</div>
                         <div class="stat-value">$18.2k</div>
-                        <div class="stat-subtitle">Available to payout</div>
+                        <div class="stat-subtitle">
+                            <i class="fas fa-clock"></i> Pending clearance
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,14 +436,24 @@
             <div class="row g-4">
                 <div class="col-md-8">
                     <div class="control chart-container">
-                        <div class="stat-title">Total Revenue</div>
-                        <!-- Chart would go here -->
+                        <div class="stat-title">
+                            <i class="fas fa-chart-area me-2"></i>
+                            Total Revenue
+                        </div>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="control chart-container">
-                        <div class="stat-title">Most Sold Items</div>
-                        <!-- Top items list would go here -->
+                        <div class="stat-title">
+                            <i class="fas fa-trophy me-2"></i>
+                            Most Sold Items
+                        </div>
+                        <div class="chart-placeholder">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -187,8 +463,56 @@
             <div class="row g-4">
                 <div class="col-md-12">
                     <div class="control table-container">
-                        <div class="stat-title">Latest Orders</div>
-                        <!-- Orders table would go here -->
+                        <div class="stat-title">
+                            <i class="fas fa-shopping-cart me-2"></i>
+                            Latest Orders
+                        </div>
+                        <div class="order-list">
+                            <div class="order-item">
+                                <div class="order-icon">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-title">Premium T-Shirt</div>
+                                    <div class="order-meta">Order #2453 • Mar 10, 2025</div>
+                                </div>
+                                <div class="order-price">$89.00</div>
+                                <div class="order-status completed">Completed</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-icon">
+                                    <i class="fas fa-blender"></i>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-title">Kitchen Blender</div>
+                                    <div class="order-meta">Order #2452 • Mar 10, 2025</div>
+                                </div>
+                                <div class="order-price">$125.00</div>
+                                <div class="order-status completed">Completed</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-title">Makeup Kit</div>
+                                    <div class="order-meta">Order #2451 • Mar 09, 2025</div>
+                                </div>
+                                <div class="order-price">$78.50</div>
+                                <div class="order-status pending">Pending</div>
+                            </div>
+                            <div class="order-item">
+                                <div class="order-icon">
+                                    <i class="fas fa-shoe-prints"></i>
+                                </div>
+                                <div class="order-details">
+                                    <div class="order-title">Running Shoes</div>
+                                    <div class="order-meta">Order #2450 • Mar 09, 2025</div>
+                                </div>
+                                <div class="order-price">$145.00</div>
+                                <div class="order-status pending">Pending</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
