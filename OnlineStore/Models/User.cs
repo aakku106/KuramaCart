@@ -7,12 +7,13 @@ namespace OnlineStore.Models
     public class User
     {
         public required string UserId { get; set; }
+        [Required(ErrorMessage ="User name is compulsory")]
         public required string UserName { get; set; }
-
-        [EmailAddress]
+        [Required(ErrorMessage ="Unique address is required")]
+        [EmailAddress(ErrorMessage ="Invalid address")]
         public required string UserEmail { get; set; }
 
-        [PasswordPropertyText]
+        [PasswordPropertyText][Required(ErrorMessage ="PassWord is required at any cost HeHeHe..😈")]
         [StringLength(100, MinimumLength = 8, ErrorMessage = "Password must be at least 8 characters long.")]
         public required string UserPassword { get; set; }
         public DateTime DateTime { get; set; } //Id creation time
