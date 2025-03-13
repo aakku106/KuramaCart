@@ -103,6 +103,8 @@
                 <div class="form-container login-form">
                     <h3 class="text-center text-white mb-4">🦊 KuramaCart Login 🦊</h3>
                     <EditForm Model="userLogin">
+                        <DataAnnotationsValidator></DataAnnotationsValidator>
+
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" placeholder="Enter username"
@@ -113,6 +115,8 @@
                             <input type="password" class="form-control" id="password" placeholder="Enter password"
                                 @bind="password">
                         </div>
+                        <ValidationSummary></ValidationSummary>
+
                         <button type="submit" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
                     </EditForm>
                     @if (!string.IsNullOrWhiteSpace(loginMessage))
@@ -132,21 +136,22 @@
                 <input type="radio" class="form-toggle" id="register" name="form-toggle">
                 <div class="form-container register-form">
                     <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    <EditForm Model="userLogin">
+                    <EditForm Model="userLogin" OnValidSubmit="HandleValidSignUpSubmit">
+                        <DataAnnotationsValidator />
                         <div class="mb-3">
                             <label for="register-username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="register-username" placeholder="Enter username"
-                                required @bind="username">
+                            <InputText type="text" class="form-control" id="register-username"
+                                placeholder="Enter username" @bind-Value=userLogin.UserName />
                         </div>
                         <div class="mb-3">
                             <label for="register-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="register-email" placeholder="Enter email"
-                                required @bind="email">
+                            <InputText type="email" class="form-control" id="register-email" placeholder="Enter email"
+                                @bind-value="userLogin.UserEmail" />
                         </div>
                         <div class="mb-3">
                             <label for="register-password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="register-password" required
-                                placeholder="Enter password" @bind="password">
+                            <InputText type="password" class="form-control" id="register-password" required
+                                placeholder="Enter password" @bind-value="userLogin.UserPassword" />
                         </div>
                         @if (!string.IsNullOrWhiteSpace(loginMessage))
                         {
@@ -156,10 +161,11 @@
                         }
                         <div class="mb-3">
                             <label for="register-password" class="form-label">Conform Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password" required
-                                @bind="conformPassword">
+                            <input type="password" class="form-control" placeholder="Enter password" 
+                                @bind="conformPassword" />
                         </div>
-                        <button type="submit" class="btn btn-dark w-100 py-2" @onclick="SignUp">Sign Up</button>
+                        <ValidationSummary />
+                        <button type="submit" class="btn btn-dark w-100 py-2"> Sign Up</button>
                     </EditForm>
                     <div class="text-center mt-3">
                         <p class="text-white">Already have an account? <label for="login"
@@ -187,7 +193,7 @@
         UserId = string.Empty,
         UserPassword = string.Empty,
         DateTime = DateTime.UtcNow,
-        DidUserLogIn = false
+        DidUserLogIn = false,
     };
 
     private void Login()
@@ -207,28 +213,27 @@
             ClearInputs();
         }
     }
-    private void SignUp()
+    private void HandleValidSignUpSubmit()
     {
-        if (password == conformPassword && password != "" && email != "" && username != "")
+        if (userLogin.UserPassword != conformPassword)
         {
-            userDetails.UserPassword = conformPassword;
-            userData.AddUser(ID.ToString(), username, email, conformPassword);
-            ID += 106;
-            loginMessage = $"User {username} is created on {DateTime.Now} with id \t{ID + "A76Z"} ";
-            ClearInputs();
-            return;
+            loginMessage = $" {userLogin.UserPassword} ≠{conformPassword} please try again 👀";
         }
         else
         {
-            loginMessage = $"Either {username} or {password} ≠{conformPassword} please try again 👀";
+            userData.AddUser(ID.ToString(), userLogin.UserName, userLogin.UserEmail, conformPassword);
+            ID += 106;
+            loginMessage = $"User {userLogin.UserName} is created on {DateTime.Now} with id \t{ID + "A76Z"} ";
+            ClearInputs();
+            return;
         }
     }
     private void ClearInputs()
     {
-        username = password = email = conformPassword = string.Empty;
+        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword =conformPassword= string.Empty;
     }
     private void ClearInputsOnChange()
     {
-        username = password = email = conformPassword = loginMessage = string.Empty;
+        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword = conformPassword =loginMessage= string.Empty;
     }
 }
