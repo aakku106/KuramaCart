@@ -102,22 +102,24 @@
                 <input type="radio" class="form-toggle" id="login" name="form-toggle" checked>
                 <div class="form-container login-form">
                     <h3 class="text-center text-white mb-4">🦊 KuramaCart Login 🦊</h3>
-                    <EditForm Model="userLogin">
-                        <DataAnnotationsValidator></DataAnnotationsValidator>
-
+                    <EditForm Model="userLogin" OnValidSubmit="Login">
+                        <DataAnnotationsValidator />
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter username"
-                                @bind="username">
+                            <InputText type="text" class="form-control" id="username" placeholder="Enter username"
+                                @bind-value="userLogin.UserName" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <InputText id="email" type="email" @bind-Value="userLogin.UserEmail" class="form-control" />
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter password"
-                                @bind="password">
+                            <InputText type="password" class="form-control" id="password" placeholder="Enter password"
+                                @bind-value="userLogin.UserPassword" />
                         </div>
-                        <ValidationSummary></ValidationSummary>
-
-                        <button type="submit" class="btn btn-dark w-100 py-2" @onclick="Login">Login</button>
+                        <ValidationSummary />
+                        <button type="submit" class="btn btn-dark w-100 py-2">Login</button>
                     </EditForm>
                     @if (!string.IsNullOrWhiteSpace(loginMessage))
                     {
@@ -136,12 +138,12 @@
                 <input type="radio" class="form-toggle" id="register" name="form-toggle">
                 <div class="form-container register-form">
                     <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    <EditForm Model="userLogin" OnValidSubmit="HandleValidSignUpSubmit">
+                    <EditForm Model="userLogin" OnValidSubmit="SignUp">
                         <DataAnnotationsValidator />
                         <div class="mb-3">
                             <label for="register-username" class="form-label">Username</label>
                             <InputText type="text" class="form-control" id="register-username"
-                                placeholder="Enter username" @bind-Value=userLogin.UserName />
+                                placeholder="Enter username" @bind-Value="userLogin.UserName" />
                         </div>
                         <div class="mb-3">
                             <label for="register-email" class="form-label">Email</label>
@@ -161,7 +163,7 @@
                         }
                         <div class="mb-3">
                             <label for="register-password" class="form-label">Conform Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password" 
+                            <input type="password" class="form-control" placeholder="Enter password"
                                 @bind="conformPassword" />
                         </div>
                         <ValidationSummary />
@@ -198,7 +200,7 @@
 
     private void Login()
     {
-        var user = userData.AuthenticateUser(username, password);
+        var user = userData.AuthenticateUser(userLogin.UserName, userLogin.UserEmail, userLogin.UserPassword);
 
         if (user != null)
         {
@@ -213,7 +215,7 @@
             ClearInputs();
         }
     }
-    private void HandleValidSignUpSubmit()
+    private void SignUp()
     {
         if (userLogin.UserPassword != conformPassword)
         {
@@ -230,10 +232,10 @@
     }
     private void ClearInputs()
     {
-        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword =conformPassword= string.Empty;
+        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword = conformPassword = string.Empty;
     }
     private void ClearInputsOnChange()
     {
-        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword = conformPassword =loginMessage= string.Empty;
+        userLogin.UserName = userLogin.UserEmail = userLogin.UserPassword = conformPassword = loginMessage = string.Empty;
     }
 }
