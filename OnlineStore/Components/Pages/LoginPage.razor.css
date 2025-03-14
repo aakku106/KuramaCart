@@ -1,83 +1,83 @@
- body {
-            background-color: #1c1c1c;
-        }
+/** @format */
 
-        .container {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1c !important;
+  border-radius: 10px;
+}
 
-        .card {
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            background-color: #2d2d2d;
-            padding: 40px;
-        }
+.card {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #2d2d2d;
+  padding: 40px;
+}
 
-        .form-label {
-            color: #fff;
-        }
+.form-label {
+  color: #fff;
+}
 
-        .btn-dark {
-            background-color: #ff7f50;
-            color: #fff;
-            border: none;
-        }
+.btn-dark {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+}
 
-        .btn-dark:hover {
-            background-color: #ff6347;
-        }
+.btn-dark:hover {
+  background-color: #ff6347;
+}
 
-        .text-white {
-            color: #fff;
-        }
+.text-white {
+  color: #fff;
+}
 
-        .text-warning {
-            color: #f39c12;
-            text-decoration: none;
-        }
+.text-warning {
+  color: #f39c12;
+  text-decoration: none;
+}
 
-        .text-warning:hover {
-            color: #e67e22;
-        }
+.text-warning:hover {
+  color: #e67e22;
+}
 
-        .form-control {
-            background-color: #3a3a3a;
-            color: #fff;
-            border: 1px solid #555;
-        }
+.form-control {
+  background-color: #3a3a3a;
+  color: #fff;
+  border: 1px solid #555;
+}
 
-        .form-control:focus {
-            border-color: #ff7f50;
-            box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
-        }
+.form-control:focus {
+  border-color: #ff7f50;
+  box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
 
-        .form-container {
-            display: none;
-        }
+.form-container {
+  display: none;
+}
 
-        #login:checked~.login-form {
-            display: block;
-        }
+#login:checked ~ .login-form {
+  display: block;
+}
 
-        #register:checked~.register-form {
-            display: block;
-        }
+#register:checked ~ .register-form {
+  display: block;
+}
 
-        .toggle-btn {
-            text-align: center;
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            cursor: pointer;
-        }
+.toggle-btn {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
 
-        .form-toggle {
-            display: none;
-        }
+.form-toggle {
+  display: none;
+}
 
-        .form-toggle:checked+.form-container {
-            display: block;
-        }
+.form-toggle:checked + .form-container {
+  display: block;
+}
