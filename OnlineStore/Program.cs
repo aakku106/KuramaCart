@@ -13,7 +13,6 @@ builder.Services.AddRazorComponents()
 builder.Services.AddScoped<User, User>();
 builder.Services.AddScoped<UserData>();
 builder.Services.AddScoped<Product>();
-builder.Services.AddScoped<CartData>();
 builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<CartData>();
 builder.Services.AddSingleton<UserServices>();
