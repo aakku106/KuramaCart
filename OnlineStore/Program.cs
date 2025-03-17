@@ -11,7 +11,7 @@ builder.Services.AddRazorComponents()
 // Register your services
 builder.Services.AddScoped<User, User>();
 builder.Services.AddScoped<OnlineStore.Data.UserData>();
-builder.Services.AddScoped<OnlineStore.Models.Product>();
+builder.Services.AddScoped<Product>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
 builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
