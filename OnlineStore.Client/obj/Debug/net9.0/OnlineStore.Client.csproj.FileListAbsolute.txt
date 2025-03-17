@@ -1,0 +1,7 @@
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.csproj.AssemblyReference.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.AssemblyInfoInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.AssemblyInfo.cs
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.csproj.CoreCompileInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.MvcApplicationPartsAssemblyInfo.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Client/obj/Debug/net9.0/OnlineStore.Client.sourcelink.json

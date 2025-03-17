@@ -1,92 +1,37 @@
-﻿@page "/"
-@rendermode InteractiveServer
-<PageTitle>KuramaCart 🦊 --> LoginPage</PageTitle>
+﻿@page "/login"
 
-<style>
-    body {
-        background-color: black;
-    }
-</style>
-
-<div class="container">
-    <div class="row w-100">
-        <div class="col-12 col-md-6 mx-auto p-4">
-            <div class="card">
-                <input type="radio" class="form-toggle" id="login" name="form-toggle" checked>
-                <div class="form-container login-form">
-                    <h3 class="text-center text-white mb-4">🦊 KuramaCart Login 🦊</h3>
-                    <EditForm Model="userLogin" OnValidSubmit="Login">
-                        <DataAnnotationsValidator />
-                        <div class="mb-3">
-                            <label for="username" class="form-label">Username</label>
-                            <InputText type="text" class="form-control" id="username" placeholder="Enter username"
-                                @bind-value="userLogin.UserName" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <InputText id="email" type="email" @bind-Value="userLogin.UserEmail" class="form-control" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <InputText type="password" class="form-control" id="password" placeholder="Enter password"
-                                @bind-value="userLogin.UserPassword" />
-                        </div>
-                        <ValidationSummary />
-                        <button type="submit" class="btn btn-dark w-100 py-2">Login</button>
-                    </EditForm>
-                    @if (!string.IsNullOrWhiteSpace(loginMessage))
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                Login
+            </div>
+            <div class="card-body">
+                @if (!string.IsNullOrEmpty(errorMessage))
+                {
+                    <div class="alert alert-danger">
+                        @errorMessage
+                    </div>
+                }
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" @bind="email" />
+                </div>
+                <div class="form-group mt-2">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" @bind="password" />
+                </div>
+                <button class="btn btn-primary mt-3" @onclick="HandleLogin" disabled="@loading">
+                    @if (loading)
                     {
-                        <div class=" alert alert-warning mt-3">
-                            @loginMessage
-                        </div>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span>Loading...</span>
                     }
-
-
-                    <div class="text-center mt-3">
-                        <p class="text-white">Don't have an account? <label for="register"
-                                class="text-warning toggle-btn" @onclick="ClearInputsOnChange">Sign up here</label></p>
-                    </div>
-                </div>
-
-                <input type="radio" class="form-toggle" id="register" name="form-toggle">
-                <div class="form-container register-form">
-                    <h3 class="text-center text-white mb-4">Create an Account</h3>
-                    <EditForm Model="userLogin" OnValidSubmit="SignUp">
-                        <DataAnnotationsValidator />
-                        <div class="mb-3">
-                            <label for="register-username" class="form-label">Username</label>
-                            <InputText type="text" class="form-control" id="register-username"
-                                placeholder="Enter username" @bind-Value="userLogin.UserName" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="register-email" class="form-label">Email</label>
-                            <InputText type="email" class="form-control" id="register-email" placeholder="Enter email"
-                                @bind-value="userLogin.UserEmail" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="register-password" class="form-label">Password</label>
-                            <InputText type="password" class="form-control" id="register-password" required
-                                placeholder="Enter password" @bind-value="userLogin.UserPassword" />
-                        </div>
-                        @if (!string.IsNullOrWhiteSpace(loginMessage))
-                        {
-                            <div class="alert alert-warning mt-3">
-                                @loginMessage
-                            </div>
-                        }
-                        <div class="mb-3">
-                            <label for="register-password" class="form-label">Conform Password</label>
-                            <input type="password" class="form-control" placeholder="Enter password"
-                                @bind="conformPassword" />
-                        </div>
-                        <ValidationSummary />
-                        <button type="submit" class="btn btn-dark w-100 py-2"> Sign Up</button>
-                    </EditForm>
-                    <div class="text-center mt-3">
-                        <p class="text-white">Already have an account? <label for="login"
-                                class="text-warning toggle-btn" @onclick="ClearInputsOnChange">Login here</label></p>
-                    </div>
-                </div>
+                    else
+                    {
+                        <span>Login</span>
+                    }
+                </button>
             </div>
         </div>
     </div>

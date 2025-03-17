@@ -1,10 +1,39 @@
-﻿@page "/LestShop"
-@rendermode InteractiveServer
+﻿@page "/letshop"
 @inject NavigationManager NavigationManager
 
 <head>
     <link rel="stylesheet" href="css/rotate.css">
 </head>
+
+<h3>Let's Shop!</h3>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-info text-white">
+                <h3 class="mb-0">Beauty Products</h3>
+            </div>
+            <div class="card-body d-flex flex-column">
+                <img src="/images/beauty-category.jpg" class="img-fluid mb-3" alt="Beauty Products">
+                <p>Discover a wide range of beauty products for your skincare and makeup needs</p>
+                <a href="/beauty" class="btn btn-info mt-auto">Shop Beauty</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header bg-success text-white">
+                <h3 class="mb-0">Kitchen Products</h3>
+            </div>
+            <div class="card-body d-flex flex-column">
+                <img src="/images/kitchen-category.jpg" class="img-fluid mb-3" alt="Kitchen Products">
+                <p>Explore kitchen tools and appliances to make your cooking experience better</p>
+                <a href="/kitchen" class="btn btn-success mt-auto">Shop Kitchen</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <section class="shop-container">
     <div class="shop-wrapper @(showOptions ? "show-options" : "")">

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using OnlineStore.Models;
+using OnlineStore.Shared.Models; // Add this line
 
 namespace OnlineStore.Data;
 
@@ -13,7 +14,6 @@ public class UserData
             UserName="MasterCCNSamma",
             UserEmail="ccn106@gmail.com",
             UserPassword="ccnSamma@106",
-            DateTime=new DateTime(),
             DidUserLogIn=false
         }
     ];
@@ -26,7 +26,6 @@ public class UserData
             UserName = username,
             UserEmail = email,
             UserPassword = password,
-            DateTime = DateTime.Now,
             DidUserLogIn = false
         });
 

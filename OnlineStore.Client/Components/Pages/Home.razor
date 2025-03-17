@@ -1,8 +1,35 @@
-﻿@page "/Home"
+﻿@page "/"
+@page "/home"
 @using OnlineStore.Models
-@rendermode InteractiveServer
 
-<PageTitle> KuramaCart🦊 - Home</PageTitle>
+<PageTitle>Home</PageTitle>
+
+<h1>Welcome to Online Store</h1>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5>Beauty Products</h5>
+            </div>
+            <div class="card-body">
+                <p>Explore our range of beauty products for your self-care needs.</p>
+                <a href="/beauty" class="btn btn-primary">Shop Beauty</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card h-100">
+            <div class="card-header">
+                <h5>Kitchen Products</h5>
+            </div>
+            <div class="card-body">
+                <p>Discover kitchen tools and appliances to make your cooking experience better.</p>
+                <a href="/kitchen" class="btn btn-primary">Shop Kitchen</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="loginToast" class="toast align-items-center position-fixed top-0 end-0 m-4 visible opacity-100" role="alert"
     aria-live="assertive" aria-atomic="true">

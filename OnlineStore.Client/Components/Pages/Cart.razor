@@ -1,119 +1,113 @@
-@page "/Cart"
-@implements IDisposable
-@rendermode InteractiveServer
+@page "/kitchen"
+<PageTitle>KuramaCart🦊 - Kitchen Items 🧑🏻‍🍳</PageTitle>
+<h3>Shopping Cart</h3>
 
-<header>
-    <h1 class="cart-title extraTextGlow">🦊 Products Added to Cart: @NumberOfItemInCart</h1>
-</header>
-
-@if (authService.IsUserLoggedIn)
+<div class="container">
+    <div class="page-header">
+        <h1 class="page-title">Kitchen Products 💄</h1>
+        <div class="product-count">
+            Showing @beauty.kitchenProducts.Count() Products 👀
+        </div> Your cart is empty.
+    </div>
+</div>
+}
+<h3>Kitchen Products</h3>
 {
-<article class="cart-page">
-
-    @if (cartData.GetBeautyCart().Count > 0)
-    {
-        <section>
-            <div class="beauty-products">
-                <h2 class="cart-title">💄 Beauty Products</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
-                    @foreach (var product in cartData.GetBeautyCart().Reverse())
-                    {
-                        <div class="col">
-                            <div class="glass-card">
-                                <i type=" button" class="cross btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    @onclick="() => PassTORemoveFromCart(product)">
-                                    <strong>X</strong>
-                                </i>
-                                <div class="card-img-container">
-                                    <img src="@product.ImagePath" class="card-img-top lazy-load"
-                                        alt="@product.ProductName picture" loading="lazy">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">@product.ProductName</h5>
-                                    <div class="price">Rs @product.Price</div>
-                                </div>
-                            </div>
+@if (products == null) ms.Any())
+{ {
+<p><em>Loading...</em></p>b-4">
+} <div class="card-header">
+    else if (!products.Any())y Products
+    { </div>
+<p>No kitchen products found.</p>">
+} <table class="table">
+    else <thead>
+        { <tr>
+            <div class="row">
+                <th>Product</th>
+                @foreach (var product in products)/ th >
+                { <th>Action</th>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@product.ImagePath" class="card-img-top" alt="@product.ProductName">
+                        <div class="card-body">tem in beautyItems)
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text">₹@product.Price</p>
+                            <button @onclick="@(() => AddToCart(product))" class="btn btn-primary">Add to Cart</button>
                         </div>
-                    }
-                </div>
+                        <td>₹@item.Price</td>
+                    </div>
+                    <td>
+                </div> <button class="btn btn-sm btn-danger" @onclick="@(() => RemoveBeautyItem(item))">Remove</button>
+                } </td>
             </div>
-        </section>
-    }
-
-
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel"><strong>remove from Cart</strong> 🦊</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                        @onclick="Clear"></button>
+</tr>
+        } }
+</div>
+</tbody>
+</table>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add to Cart 🛒</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                    @onclick="Clear"></button>
+            </div>
+            <div class="card-header">
+                <div class="modal-body">ucts
+                    <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
+                        @if (!isOutOfStock) dy">
+                        {
+                    <table class="table">
+                        <span>head>
+                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
+                        </span>
+                        <th>Product</th>
+                        } <th>Price</th>
+                        else <th>Action</th>
+                        { </tr>
+                        <span>thead>
+                            🦊 @productDetailsUIMessage 🤧
+                        </span> @foreach (var item in kitchenItems)
+                        } {
+                        </p>
+                        <tr>
                 </div>
-                <div class="modal-body">
-                    @if (OnlineStore.Data.CartData.cartDataDEtail == string.Empty)
-                    {
-                        <span> 🦊 Sure wanna remove <strong> @selectedProductInCart?.ProductName </strong>🥺? </span>
-                    }
-                    else
-                    {
-                        <span>🦊 @OnlineStore.Data.CartData.cartDataDEtail</span>
-                    }
-                </div>
+                <td>@item.ProductName</td>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                        @onclick="Clear">Close</button>
-                    @if (Data.CartData.cartDataDEtail == string.Empty)
-                    {
-                        @if (selectedProductInCart?.ProductType == "beauty")
-                        {
-                            <button type="button" class="btn btn-primary" @onclick="RemoveBeautyItemFromCart">remove 🫣</button>
-                        }
-                        @if (selectedProductInCart?.ProductType == "kitchen")
-                        {
-                            <button type="button" class="btn btn-primary" @onclick="RemoveKitchenItemFromCart">remove
-                                🫣</button>
-                        }
-                    }
-                </div>
-            </div>
+                    <td>₹@item.Price</td>
+                    @if (isOutOfStock)
+                        <td>
+                            { <button class="btn btn-sm btn-danger"
+                                @onclick="@(() => RemoveKitchenItem(item))">Remove</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
+                                Okii 🥲 </tr>
+                    
+                            </button> }
+                            } </tbody>
+                            else </table>
+                            {
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
+                        Yes, Add to Cart! 🦊
+                    </button>
+                    }s="card">
+                </div>lass="card-header">
+            </div> Order Summary
         </div>
     </div>
-
-    @if (cartData.GetKitchenCart().Count > 0)
-    {
-
-        <section>
-            <div class="beauty-products">
-                <h2 class="cart-title extraTextGlow">🧑🏻‍🍳 Kitchen Products</h2>
-                <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
-                    @foreach (var product in cartData.GetKitchenCart().Reverse())
-                    {
-                        <div class="col">
-                            <div class="glass-card">
-                                <i type=" button" class="cross btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-                                    @onclick="() => PassTORemoveFromCart(product)">
-                                    <strong>X</strong>
-                                </i>
-                                <div class="card-img-container">
-                                    <img src="@product.ImagePath" class="card-img-top lazy-load"
-                                        alt="@product.ProductName picture" loading="lazy">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title">@product.ProductName</h5>
-                                    <div class="price">Rs @product.Price</div>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
-        </section>
-    }
-
-</article>
-}
-else
-{
-<LoginPage />
-}
+    </div>
+    <div class="card-body">
+        <p>Total: ₹@totalAmount</p>
+        <button class="btn btn-primary w-100" @onclick="GoToCheckout"
+            disabled="@(!kitchenItems.Any() && !beautyItems.Any())">
+            Checkout
+        </button>
+    </div>
+    </div>
+    </div>
+    </div>

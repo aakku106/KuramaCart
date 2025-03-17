@@ -3,24 +3,13 @@
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
-@using static Microsoft.AspNetCore.Components.Web.RenderMode
 @using Microsoft.AspNetCore.Components.Web.Virtualization
 @using Microsoft.JSInterop
-@using OnlineStore
-@using OnlineStore.Components
-@using OnlineStore.Models
-@using OnlineStore.Data
-@using OnlineStore.Data.ProductData
-
-
-
-@inject OnlineStore.Data.ProductData.ProductData beauty
-@inject OnlineStore.Data.CartData cartData
+@using OnlineStore.Client
+@using OnlineStore.Client.Components
+@using OnlineStore.Client.Components.Layout
+@using OnlineStore.Client.Services
+@using OnlineStore.Shared.Models
+@using OnlineStore.Shared.DTOs
 
 @inject NavigationManager Navigation
-
-@inject OnlineStore.Models.User userDetails
-@inject OnlineStore.Data.UserData userData
-
-// Authentication
-@inject OnlineStore.Services.UserServices authService

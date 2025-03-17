@@ -1,57 +1,34 @@
-// using Internal;
-using System;
-using System.Linq;
 using Microsoft.AspNetCore.Components;
-using OnlineStore.Data;
-using OnlineStore.Models;
+using OnlineStore.Client.Services;
+using OnlineStore.Shared.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace OnlineStore.Components.Pages
+namespace OnlineStore.Client.Components.Pages
 {
-    public partial class Beauty : IDisposable
+    public partial class Beauty
     {
-        private Product? selectedProduct;
-        private string productDetailsUIMessage = string.Empty;
-        private bool isOutOfStock = false;
+        private List<Product>? products;
 
-        protected override void OnInitialized()
+        [Inject]
+        private ProductService ProductService { get; set; } = default!;
+
+        [Inject]
+        private CartService CartService { get; set; } = default!;
+
+        protected override async Task OnInitializedAsync()
         {
-            cartData.OnChange += StateHasChanged;
+            await LoadProducts();
         }
 
-        private void passToCart(Product product)
+        private async Task LoadProducts()
         {
-            if (product.HowManyProduct > 0)
-            {
-                selectedProduct = product;
-                Console.WriteLine(@$"{selectedProduct.ProductName} passed");
-            }
-            else
-            {
-                isOutOfStock = true;
-                productDetailsUIMessage = @$"{product?.ProductName} is out of stock, sorry for inConvenance";
-            }
+            products = await ProductService.GetBeautyProductsAsync();
         }
 
-        private void AddToCart()
+        private async Task AddToCart(Product product)
         {
-            if (selectedProduct != null)
-            {
-                cartData.AddToBeautyCart(selectedProduct);
-                selectedProduct.HowManyProduct--;
-                OnlineStore.Components.Pages.Cart.NumberOfItemInCart++;
-                Clear();
-            }
-        }
-        private void Clear()
-        {
-            selectedProduct = null;
-            productDetailsUIMessage = string.Empty;
-            isOutOfStock = false;
-        }
-
-        public void Dispose()
-        {
-            cartData.OnChange -= StateHasChanged;
+            await CartService.AddToBeautyCartAsync(product);
         }
     }
 }

@@ -1,0 +1,12 @@
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/bin/Debug/net9.0/OnlineStore.Shared.deps.json
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/bin/Debug/net9.0/OnlineStore.Shared.dll
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/bin/Debug/net9.0/OnlineStore.Shared.pdb
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.AssemblyInfoInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.AssemblyInfo.cs
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.csproj.CoreCompileInputs.cache
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.sourcelink.json
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.dll
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/refint/OnlineStore.Shared.dll
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/OnlineStore.Shared.pdb
+/Users/aakku/Documents/onlineStore/OnlineStore.Shared/obj/Debug/net9.0/ref/OnlineStore.Shared.dll

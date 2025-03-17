@@ -3,6 +3,7 @@ using System;
 using Microsoft.AspNetCore.Components;
 using OnlineStore.Models;
 using System.Linq;
+using OnlineStore.Shared.Models; // Add this line
 
 namespace OnlineStore.Data;
 

@@ -1,96 +1,40 @@
-@page "/KitchenWares"
-@rendermode InteractiveServer
+@page "/kitchen"
 <PageTitle>KuramaCart🦊 - Kitchen Items 🧑🏻‍🍳</PageTitle>
 
-
-<div class="container">
+<head>
+    <link rel="stylesheet" href="css/rotate.css">
     <div class="page-header">
         <h1 class="page-title">Kitchen Products 💄</h1>
         <div class="product-count">
             Showing @beauty.kitchenProducts.Count() Products 👀
-        </div>
-    </div>
-
-    @if (beauty.kitchenProducts == null || beauty == null)
-    {
-        <div class="text-center p-5">
-            <div class="spinner-border text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-    }
-    else
-    {
-        <article class="container">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                @foreach (var KitchenProducts in beauty.kitchenProducts)
-                {
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-img-container">
-                                <img src="@KitchenProducts.ImagePath" class="card-img-top lazy-load"
-                                    alt="@KitchenProducts.ProductName picture" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">@KitchenProducts.ProductName</h5>
-                                <div class="price">
-                                    <i class="bi bi-tags"></i>
-                                    रू @KitchenProducts.Price-/
-                                </div>
-                                <button class="add-to-cart-btn" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal" @onclick="() => passToCart(KitchenProducts)">
-                                    Add to Cart 🛒
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                }
-            </div>
-        </article>
-    }
-</div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Add to Cart 🛒</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                    @onclick="Clear"></button>
-            </div>
-            <div class="modal-body">
-                <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
-                    @if (!isOutOfStock)
-                    {
-                        <span>
-                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
-                        </span>
-                    }
-                    else
-                    {
-                        <span>
-                            🦊 @productDetailsUIMessage 🤧
-                        </span>
-                    }
-                </p>
-            </div>
-            <div class="modal-footer">
-                @if (isOutOfStock)
-                {
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
-                        Okii 🥲
-                    </button>
-                }
-                else
-                {
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
-                        Cancel
-                    </button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">
-                        Yes, Add to Cart! 🦊
-                    </button>
-                }
-            </div>
-        </div>
-    </div>
-</div>
+        </div>w">
+    </div>lass="col-md-6">
+        <div class="card h-100">
+    <h3>Kitchen Products</h3>header bg-info text-white">
+                <h3 class="mb-0">Beauty Products</h3>
+    @if (products == null)
+    {       <div class="card-body d-flex flex-column">
+        <p><em>Loading...</em></p>beauty-category.jpg" class="img-fluid mb-3" alt="Beauty Products">
+    }           <p>Discover a wide range of beauty products for your skincare and makeup needs</p>
+    else if (!products.Any())uty" class="btn btn-info mt-auto">Shop Beauty</a>
+    {       </div>
+        <p>No kitchen products found.</p>
+    }/div>
+    elseelse
+    {div class="col-md-6">
+        <div class="row">h-100">
+            <div class="card-header bg-success text-white">
+                <h3 class="mb-0">Kitchen Products</h3>
+            </div>iv class="col-md-4 mb-4">
+            <div class="card-body d-flex flex-column">
+                <img src="/images/kitchen-category.jpg" class="img-fluid mb-3" alt="Kitchen Products">
+                <p>Explore kitchen tools and appliances to make your cooking experience better</p>
+                <a href="/kitchen" class="btn btn-success mt-auto">Shop Kitchen</a>
+            </div>          <p class="card-text">₹@product.Price</p>
+        </div>              <button @onclick="@(() => AddToCart(product))" class="btn btn-primary">Add to Cart</button>
+    </div>              </div>
+</div>              </div>
+                </div>
+@code {
+    // Remove navigation methods since we're using <a> tags
+}                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"                    @onclick="Clear"></button>            </div>            <div class="modal-body">                <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">                    @if (!isOutOfStock)                    {                        <span>                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔                        </span>                    }                    else                    {                        <span>                            🦊 @productDetailsUIMessage 🤧                        </span>                    }                </p>            </div>            <div class="modal-footer">                @if (isOutOfStock)                {                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">                        Okii 🥲                    </button>                }                else                {                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">                        Cancel                    </button>                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="AddToCart">                        Yes, Add to Cart! 🦊                    </button>                }            </div>        </div>    </div></div>

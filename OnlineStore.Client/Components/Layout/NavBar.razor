@@ -1,4 +1,3 @@
-@rendermode InteractiveServer
 @implements IDisposable
 
 <nav class="navbar navbar-expand-lg sticky-top customController mb-3 shadow-lg z-3">
@@ -29,7 +28,7 @@
       </ul>
 
       <div class="d-flex position-relative">
-        @if (!authService.IsUserLoggedIn)
+        @if (!isLoggedIn)
         {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -71,7 +70,7 @@
           }
         </div>
         <button class="btn" type="submit">🔍</button>
-        @if (authService.IsUserLoggedIn)
+        @if (isLoggedIn)
         {
           <div class="dropdown ms-3">
             <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown"
@@ -84,7 +83,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><button class="dropdown-item text-danger" @onclick="Logout">Logout</button></li>
+              <li><button class="dropdown-item text-danger" @onclick="LogoutAsync">Logout</button></li>
             </ul>
           </div>
         }
@@ -92,7 +91,6 @@
     </div>
   </div>
 </nav>
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

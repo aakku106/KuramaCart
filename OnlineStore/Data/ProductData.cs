@@ -1,6 +1,7 @@
 using System;
-using OnlineStore.Components.Pages;
+// using OnlineStore.Components.Pages;
 using OnlineStore.Models;
+using OnlineStore.Shared.Models; // Add this line
 
 namespace OnlineStore.Data.ProductData;
 

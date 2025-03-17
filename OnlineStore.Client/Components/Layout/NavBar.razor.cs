@@ -1,74 +1,98 @@
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using System.Threading;
 using Microsoft.AspNetCore.Components;
-using OnlineStore.Models;
-using OnlineStore.Data;
+using OnlineStore.Client.Services;
+using OnlineStore.Shared.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace OnlineStore.Components.Layout
+namespace OnlineStore.Client.Components.Layout
 {
-    public partial class NavBar
+    public partial class NavBar : IDisposable
     {
-        [Inject]
-        private OnlineStore.Data.ProductData.ProductData? ProductData { get; set; }
-
-        private string searchQuery = "";
+        private bool isLoggedIn = false;
+        private string? userName;
         private List<Product> searchResults = new();
+        private string searchQuery = "";
         private bool showResults = false;
-        private Timer? searchDebounceTimer;
-        private const int DEBOUNCE_DELAY = 300;
+        private string UserProfilePic = "/images/default-profile.png"; // Default profile pic
 
-        private void HandleSearch(ChangeEventArgs e)
+        [Inject]
+        private AuthService AuthService { get; set; } = default!;
+
+        [Inject]
+        private ProductService ProductService { get; set; } = default!;
+
+        [Inject]
+        private NavigationManager NavigationManager { get; set; } = default!;
+
+        protected override async Task OnInitializedAsync()
+        {
+            await CheckLoginState();
+        }
+
+        private async Task CheckLoginState()
+        {
+            var user = await AuthService.GetCurrentUserAsync();
+            isLoggedIn = user != null;
+            userName = user?.UserName;
+
+            // If user profile picture exists, use it
+            if (user != null && !string.IsNullOrEmpty(user.ProfilePicture))
+            {
+                UserProfilePic = user.ProfilePicture;
+            }
+        }
+
+        private async Task LogoutAsync()
+        {
+            await AuthService.LogoutAsync();
+            await CheckLoginState();
+            NavigationManager.NavigateTo("/");
+        }
+
+        private async Task HandleSearch(ChangeEventArgs e)
         {
             searchQuery = e.Value?.ToString() ?? "";
 
-            searchDebounceTimer?.Dispose();
-
-            searchDebounceTimer = new Timer(_ =>
+            if (string.IsNullOrWhiteSpace(searchQuery))
             {
-                if (string.IsNullOrWhiteSpace(searchQuery))
-                {
-                    searchResults.Clear();
-                    showResults = false;
-                }
-                else
-                {
-                    var allProducts = new List<Product>();
-                    allProducts?.AddRange(ProductData.beautyPublic);
+                searchResults.Clear();
+                showResults = false;
+                return;
+            }
 
-                    searchResults = allProducts
-                        .Where(p => p.ProductName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
-                        .ToList();
+            // In real implementation, call API to search products
+            var kitchenProducts = await ProductService.GetKitchenProductsAsync() ?? new List<Product>();
+            var beautyProducts = await ProductService.GetBeautyProductsAsync() ?? new List<Product>();
 
-                    showResults = searchResults.Any();
-                }
+            searchResults = kitchenProducts.Concat(beautyProducts)
+                .Where(p => p.ProductName != null &&
+                       p.ProductName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
+                .ToList();
 
-                InvokeAsync(StateHasChanged);
-            }, null, DEBOUNCE_DELAY, Timeout.Infinite);
-        }
-
-        private void HideResults()
-        {
-            showResults = false;
+            showResults = searchResults.Any();
         }
 
         private void NavigateToProduct(Product product)
         {
             showResults = false;
-        }
-        private string UserProfilePic { get; set; } = "/images/naruto-kurama-bg.png";
-        
-        private void Logout()
-        {
-            Console.WriteLine("User logged out!");
-            authService.Logout();
+            NavigationManager.NavigateTo($"/product/{product.ProductId}");
         }
 
+        private void HideResults()
+        {
+            // Short delay to allow click handling before hiding results
+            Task.Delay(200).ContinueWith(_ =>
+            {
+                showResults = false;
+                StateHasChanged();
+            });
+        }
 
         public void Dispose()
         {
-            searchDebounceTimer?.Dispose();
+            // Add any cleanup code here
         }
     }
 }
