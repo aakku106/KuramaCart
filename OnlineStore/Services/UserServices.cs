@@ -7,7 +7,6 @@ public class UserServices
 
     public bool IsUserLoggedIn { get; private set; } = false;
     public string? UserName { get; private set; }
-
     public void Login(string userName)
     {
         IsUserLoggedIn = true;
@@ -19,5 +18,4 @@ public class UserServices
         IsUserLoggedIn = false;
         UserName = null;
     }
-
 }
