@@ -23,10 +23,8 @@ namespace OnlineStore.Components.Layout
         {
             searchQuery = e.Value?.ToString() ?? "";
 
-            // Reset the timer on each keystroke
             searchDebounceTimer?.Dispose();
 
-            // Use debounce to avoid excessive searches while typing
             searchDebounceTimer = new Timer(_ =>
             {
                 if (string.IsNullOrWhiteSpace(searchQuery))
@@ -36,10 +34,8 @@ namespace OnlineStore.Components.Layout
                 }
                 else
                 {
-                    // Combine all product types for search
                     var allProducts = new List<Product>();
-                    allProducts.AddRange(ProductData.beautyPublic);
-                    // Add other product types as needed: allProducts.AddRange(ProductData.kitchenProducts);
+                    allProducts?.AddRange(ProductData.beautyPublic);
 
                     searchResults = allProducts
                         .Where(p => p.ProductName.Contains(searchQuery, StringComparison.OrdinalIgnoreCase))
@@ -59,7 +55,6 @@ namespace OnlineStore.Components.Layout
 
         private void NavigateToProduct(Product product)
         {
-            // Handle navigation logic here
             showResults = false;
         }
 
