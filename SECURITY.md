@@ -6,7 +6,7 @@ Currently, as KuramaCart is in its initial development phase, only the latest ve
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 0.0.1   | :white_check_mark: |
+| 0.0.2   | :white_check_mark: |
 
 As the project matures, this table will be updated to reflect support for different versions.
 
