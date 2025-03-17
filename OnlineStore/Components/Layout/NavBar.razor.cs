@@ -57,6 +57,14 @@ namespace OnlineStore.Components.Layout
         {
             showResults = false;
         }
+        private string UserProfilePic { get; set; } = "/images/naruto-kurama-bg.png";
+        
+        private void Logout()
+        {
+            Console.WriteLine("User logged out!");
+            authService.Logout();
+        }
+
 
         public void Dispose()
         {
