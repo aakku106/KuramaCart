@@ -68,7 +68,6 @@
             <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button" id="userDropdown"
                     data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="@UserProfilePic" alt="Profile" class="rounded-circle me-2" style="width: 35px; height: 35px; object-fit: cover;">
-                <span>@UserName</span>
             </button>
             <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="userDropdown">
                 <li><a class="dropdown-item" href="/UserSettings">Settings</a></li>
@@ -83,11 +82,9 @@
 
 @code {
   private string UserProfilePic { get; set; } = "/images/naruto-kurama-bg.png";
-    private string UserName { get; set; } = "CCN"; // Placeholder name
 
     private void Logout()
     {
-        // Implement logout logic (e.g., clear authentication, redirect)
         Console.WriteLine("User logged out!");
     }
 }

@@ -1,5 +1,6 @@
 using OnlineStore.Components;
 using OnlineStore.Models;
+using OnlineStore.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddScoped<OnlineStore.Models.Product>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
 builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<OnlineStore.Data.CartData>();
+builder.Services.AddSingleton<UserServices>();
 
 var app = builder.Build();
 

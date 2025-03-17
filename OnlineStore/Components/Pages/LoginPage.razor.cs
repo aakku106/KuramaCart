@@ -1,10 +1,14 @@
 using System;
+using Microsoft.AspNetCore.Components;
 using OnlineStore.Models;
+using OnlineStore.Services;
 
 namespace OnlineStore.Components.Pages;
 
 public partial class LoginPage
 {
+    [Inject] private UserServices? authService { get; set; } 
+
     private string conformPassword = string.Empty;
     private string? loginMessage;
     private int ID = 0;
@@ -19,7 +23,7 @@ public partial class LoginPage
         DidUserLogIn = false,
     };
 
-    private void Login()
+    private async Task Login()
     {
         var user = userData.AuthenticateUser(userLogin.UserName, userLogin.UserEmail, userLogin.UserPassword);
 
@@ -27,13 +31,14 @@ public partial class LoginPage
         {
             loginMessage = $"🎉 Login successful! Welcome, {user.UserName}";
             user.DidUserLogIn = true;
-            userDetails.DidUserLogIn = true;
+            authService?.Login(user.UserName);
+            await Task.Delay(2000);// dui second
             Navigation.NavigateTo("/Home");
+            ClearInputs(); ClearInputsOnChange();
         }
         else
         {
             loginMessage = "❌ Invalid username or password. Please try again.";
-            ClearInputs();
         }
     }
     private void SignUp()
