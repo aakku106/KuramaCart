@@ -1,6 +1,7 @@
 using OnlineStore.Components;
 using OnlineStore.Models;
 using OnlineStore.Services;
+using OnlineStore.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +11,11 @@ builder.Services.AddRazorComponents()
 
 // Register your services
 builder.Services.AddScoped<User, User>();
-builder.Services.AddScoped<OnlineStore.Data.UserData>();
+builder.Services.AddScoped<UserData>();
 builder.Services.AddScoped<Product>();
-builder.Services.AddScoped<OnlineStore.Data.CartData>();
+builder.Services.AddScoped<CartData>();
 builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
-builder.Services.AddScoped<OnlineStore.Data.CartData>();
+builder.Services.AddScoped<CartData>();
 builder.Services.AddSingleton<UserServices>();
 
 var app = builder.Build();
