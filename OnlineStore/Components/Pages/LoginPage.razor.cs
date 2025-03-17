@@ -7,7 +7,7 @@ namespace OnlineStore.Components.Pages;
 
 public partial class LoginPage
 {
-    [Inject] private UserServices? authService { get; set; } 
+    [Inject] private UserServices? authEntry { get; set; } 
 
     private string conformPassword = string.Empty;
     private string? loginMessage;
@@ -31,7 +31,7 @@ public partial class LoginPage
         {
             loginMessage = $"🎉 Login successful! Welcome, {user.UserName}";
             user.DidUserLogIn = true;
-            authService?.Login(user.UserName);
+            authEntry?.Login(user.UserName);
             await Task.Delay(2000);// dui second
             Navigation.NavigateTo("/Home");
             ClearInputs(); ClearInputsOnChange();
