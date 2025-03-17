@@ -33,7 +33,7 @@ public partial class LoginPage
             user.DidUserLogIn = true;
             authEntry?.Login(user.UserName);
             await Task.Delay(2000);// dui second
-            Navigation.NavigateTo("/Home");
+            Navigation.NavigateTo("/Home",true);
             ClearInputs(); ClearInputsOnChange();
         }
         else
