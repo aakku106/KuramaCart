@@ -71,7 +71,18 @@
                         @if (!string.IsNullOrWhiteSpace(loginMessage))
                         {
                             <div class="alert alert-warning mt-3">
-                                @loginMessage
+                                @if (SignUpSuccess)
+                                {
+                                    <p class="text-center mb-0" style="color: #2821e4; font-size: 1.1rem;">
+                                        @loginMessage
+                                    </p>
+                                }
+                                else
+                                {
+                                    <p class="text-center mb-0" style="color: #f40333; font-size: 1.1rem;">
+                                        @loginMessage
+                                    </p>
+                                }
                             </div>
                         }
                         <div class="mb-3">

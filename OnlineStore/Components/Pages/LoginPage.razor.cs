@@ -7,11 +7,12 @@ namespace OnlineStore.Components.Pages;
 
 public partial class LoginPage
 {
-    [Inject] private UserServices? authEntry { get; set; } 
+    [Inject] private UserServices? authEntry { get; set; }
 
     private string conformPassword = string.Empty;
     private string? loginMessage;
     private int ID = 0;
+    private bool SignUpSuccess = false;
 
     private User userLogin { get; set; } = new()
     {
@@ -33,7 +34,7 @@ public partial class LoginPage
             user.DidUserLogIn = true;
             authEntry?.Login(user.UserName);
             await Task.Delay(2000);// dui second
-            Navigation.NavigateTo("/Home",true);
+            Navigation.NavigateTo("/Home", true);
             ClearInputs(); ClearInputsOnChange();
         }
         else
@@ -51,6 +52,7 @@ public partial class LoginPage
         {
             userData.AddUser(ID.ToString(), userLogin.UserName, userLogin.UserEmail, conformPassword);
             ID += 106;
+            SignUpSuccess = true;
             loginMessage = $"User {userLogin.UserName} is created on {DateTime.Now} with id \t{ID + "A76Z"} ";
             ClearInputs();
             return;
