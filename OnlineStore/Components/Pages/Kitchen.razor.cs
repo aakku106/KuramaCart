@@ -18,21 +18,24 @@ public partial class Kitchen
 
     private void passToCart(Product product)
     {
-        if (product.HowManyProduct > 0)
+        if (authService.IsUserLoggedIn)
         {
-            selectedProduct = product;
-            Console.WriteLine(@$"{selectedProduct.ProductName} passed");
-        }
-        else
-        {
-            isOutOfStock = true;
-            productDetailsUIMessage = @$"{product?.ProductName} is out of stock, sorry for inConvenance 🥺";
+            if (product.HowManyProduct > 0)
+            {
+                selectedProduct = product;
+                Console.WriteLine(@$"{selectedProduct.ProductName} passed");
+            }
+            else
+            {
+                isOutOfStock = true;
+                productDetailsUIMessage = @$"{product?.ProductName} is out of stock, sorry for inConvenance 🥺";
+            }
         }
     }
 
     private void AddToCart()
     {
-        if (selectedProduct != null)
+        if (selectedProduct != null && authService.IsUserLoggedIn)
         {
             cartData.AddToKitchenCart(selectedProduct);
             selectedProduct.HowManyProduct--;

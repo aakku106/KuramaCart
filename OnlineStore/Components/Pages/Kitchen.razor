@@ -59,23 +59,32 @@
                     @onclick="Clear"></button>
             </div>
             <div class="modal-body">
-                <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
-                    @if (!isOutOfStock)
-                    {
-                        <span>
-                            Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
-                        </span>
-                    }
-                    else
-                    {
-                        <span>
-                            🦊 @productDetailsUIMessage 🤧
-                        </span>
-                    }
-                </p>
+                @if (authService.IsUserLoggedIn)
+                {
+                    <p class="text-center mb-0" style="color: #2d3436; font-size: 1.1rem;">
+                        @if (!isOutOfStock)
+                        {
+                            <span>
+                                Are you sure you want to add "@selectedProduct?.ProductName" to your cart? 🤔
+                            </span>
+                        }
+                        else
+                        {
+                            <span>
+                                🦊 @productDetailsUIMessage 🤧
+                            </span>
+                        }
+                    </p>
+                }
+                else
+                {
+                    <p class="text-center mb-0" style="color: #f40333; font-size: 1.1rem;"> User Authentication is required
+                        for this action
+                    </p>
+                }
             </div>
             <div class="modal-footer">
-                @if (isOutOfStock)
+                @if (isOutOfStock || !authService.IsUserLoggedIn)
                 {
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" @onclick="Clear">
                         Okii 🥲
