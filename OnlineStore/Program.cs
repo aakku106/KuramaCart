@@ -10,10 +10,10 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // Register your services
-builder.Services.AddScoped<User, User>();
+builder.Services.AddScoped<User>();
 builder.Services.AddScoped<UserData>();
 builder.Services.AddScoped<Product>();
-builder.Services.AddScoped<OnlineStore.Data.ProductData.ProductData>();
+builder.Services.AddSingleton<OnlineStore.Data.ProductData.ProductData>();
 builder.Services.AddScoped<CartData>();
 builder.Services.AddSingleton<UserServices>();
 
