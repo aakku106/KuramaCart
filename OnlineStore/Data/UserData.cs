@@ -13,7 +13,7 @@ public class UserData
             UserName="MasterCCNSamma",
             UserEmail="ccn106@gmail.com",
             UserPassword="ccnSamma@106",
-            DateTime=new DateTime(),
+            DateTime=DateTime.Now,
             DidUserLogIn=false
         }
     ];
@@ -26,7 +26,7 @@ public class UserData
             UserName = username,
             UserEmail = email,
             UserPassword = password,
-            DateTime = DateTime.Now,
+            DateTime = DateTime.UtcNow,
             DidUserLogIn = false
         });
 
