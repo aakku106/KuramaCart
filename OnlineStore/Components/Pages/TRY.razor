@@ -1,0 +1,93 @@
+﻿@page "/try"
+@rendermode InteractiveServer
+<PageTitle>CCN's Magical World hehe</PageTitle>
+<style>
+    .c {
+        width: 200px;
+        height: 200px;
+        background-color:
+            @boxColor
+        ;
+        transition: all .3s ease-in-out;
+    }
+</style>
+<div class="c" @onmouseover="MouseEntered" @onmouseout="MouseLeft">
+    Hover Me!
+</div>
+
+@code {
+    string boxColor = "lightgray";
+
+    void MouseEntered()
+    {
+        boxColor = "red";
+        Console.WriteLine("weeeeeee");
+    }
+    void MouseLeft()
+    {
+        Console.WriteLine("noooooo`");
+        boxColor = "lightgray";
+    }
+}
+@* // another exampleModal of onclick *@
+
+<button @onclick="Toggle">Show/Hide Info</button>
+
+@if (isVisible)
+{
+    <p>This is some hidden info you can toggle!</p>
+}
+
+@code {
+    bool isVisible = false;
+
+    void Toggle()
+    {
+        isVisible = !isVisible;
+    }
+}
+
+@* // for double click *@
+
+<div class="c" @ondblclick="DoubleClicked">
+    Double-click me!
+</div>
+
+@code {
+    void DoubleClicked()
+    {
+        Console.WriteLine("You double-clicked!");
+        boxColor="pink";
+    }
+}
+
+@* // sus button simple and easy mouse move consrol  *@
+
+<div @onmousemove="MouseMove" style="width: 300px; height: 300px; background-color: lightyellow;">
+    Mouse Position: X:@x Y:@y
+</div>
+
+@code {
+    int x, y;
+
+    void MouseMove(MouseEventArgs e)
+    {
+        x = (int)e.ClientX;
+        y = (int)e.ClientY;
+    }
+}
+
+@* // same as Mouse we can show key presses  *@
+
+<input @onkeydown="KeyDown" placeholder="Press any key..." />
+
+<p>You pressed: <strong>@key</strong></p>
+
+@code {
+    string? key;
+
+    void KeyDown(KeyboardEventArgs e)
+    {
+        key = e.Key;
+    }
+}
