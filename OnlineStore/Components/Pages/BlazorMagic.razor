@@ -55,7 +55,7 @@
 <div class="drag-box" draggable="true" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
     Drag me
 </div>
-<div class="drop-zone" @ondragover="OnDragOver" @ondrop="OnDrop">
+<div class="drop-zone" @ondragover:preventDefault="true" @ondragover="OnDragOver" @ondrop="OnDrop">
     Drop here
 </div>
 <p><strong>Drag Event:</strong> @DragEvent</p>
@@ -64,7 +64,7 @@
 
 <!-- Context Menu -->
 <h2>🖱️ Right Click</h2>
-<div @oncontextmenu="PreventContextMenu" class="event-box">
+<div @oncontextmenu:preventDefault="true" @oncontextmenu="PreventContextMenu" class="event-box">
     Right click on me (blocked)
 </div>
 <p><strong>Context Menu:</strong> @ContextEvent</p>
@@ -182,7 +182,7 @@
 
     void OnDragOver(DragEventArgs e)
     {
-        e.PreventDefault();
+        DragEvent = "Dragging Over";
     }
 
     void OnDrop()
@@ -193,6 +193,5 @@
     void PreventContextMenu(MouseEventArgs e)
     {
         ContextEvent = "Blocked";
-        e.PreventDefault();
     }
 }
