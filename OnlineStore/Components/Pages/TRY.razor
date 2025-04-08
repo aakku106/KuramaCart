@@ -97,16 +97,12 @@
     <button @onclick="FocusInput">Focus Input</button>
 </div>
 
-<!-- @key Example -->
+<!-- Color Picker -->
 <div class="interactive-section">
-    <label class="label">🔑 Using @key for DOM Stability</label>
-    <button @onclick="Shuffle">Shuffle Names</button>
-    @foreach (var name in Names)
-    {
-        <input @key="name" value="@name" class="form-control mt-1" />
-    }
+    <label class="label">🟣 Pick a Color (Chakra Style)</label>
+    <input type="color" @bind="boxColor" />
+    <p>You picked: <code>@boxColor</code></p>
 </div>
-
 @code {
     string boxColor = "lightgray";
     bool isVisible = false;
@@ -135,11 +131,5 @@
     async Task FocusInput()
     {
         await myInput.FocusAsync();
-    }
-
-    void Shuffle()
-    {
-        var rng = new Random();
-        Names = Names.OrderBy(n => rng.Next()).ToList();
     }
 }
