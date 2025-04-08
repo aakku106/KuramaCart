@@ -1,0 +1,198 @@
+﻿@page "/blazorMagic"
+@rendermode InteractiveServer
+<PageTitle>Blazor Magic Playground</PageTitle>
+
+<h1>🧙 Blazor Magic Playground</h1>
+<p>Try interacting with these elements to see Blazor's event powers in action!</p>
+
+<hr />
+
+<!-- Mouse Events -->
+<h2>🖱️ Mouse Events</h2>
+<div class="event-box" @onmouseover="OnMouseOver" @onmouseout="OnMouseOut">
+    Hover over me
+</div>
+<p><strong>Mouse Event:</strong> @MouseEvent</p>
+
+<hr />
+
+<!-- Clicks -->
+<h2>🖲️ Click & Double Click</h2>
+<div class="event-box" @onclick="OnClick" @ondblclick="OnDoubleClick">
+    Click or Double Click
+</div>
+<p><strong>Click Event:</strong> @ClickEvent</p>
+
+<hr />
+
+<!-- Keyboard Events -->
+<h2>⌨️ Keyboard Events</h2>
+<input placeholder="Type here..." @onkeydown="HandleKeyDown" class="form-control" />
+<p><strong>Last Key Pressed:</strong> @KeyPressed</p>
+
+<hr />
+
+<!-- Input Binding -->
+<h2>📝 Input Events</h2>
+<input @oninput="HandleInput" placeholder="Input updates instantly" class="form-control" />
+<p><strong>Input Value:</strong> @LiveInput</p>
+
+<input @onchange="HandleChange" placeholder="Change triggers on blur or Enter" class="form-control mt-2" />
+<p><strong>Changed Value:</strong> @ChangedInput</p>
+
+<hr />
+
+<!-- Clipboard Events -->
+<h2>📋 Clipboard Events</h2>
+<textarea placeholder="Try paste/copy/cut here..." @onpaste="OnPaste" @oncopy="OnCopy" @oncut="OnCut"
+    class="form-control"></textarea>
+<p><strong>Clipboard Event:</strong> @ClipboardEvent</p>
+
+<hr />
+
+<!-- Drag Events -->
+<h2>🧲 Drag & Drop</h2>
+<div class="drag-box" draggable="true" @ondragstart="OnDragStart" @ondragend="OnDragEnd">
+    Drag me
+</div>
+<div class="drop-zone" @ondragover="OnDragOver" @ondrop="OnDrop">
+    Drop here
+</div>
+<p><strong>Drag Event:</strong> @DragEvent</p>
+
+<hr />
+
+<!-- Context Menu -->
+<h2>🖱️ Right Click</h2>
+<div @oncontextmenu="PreventContextMenu" class="event-box">
+    Right click on me (blocked)
+</div>
+<p><strong>Context Menu:</strong> @ContextEvent</p>
+
+<hr />
+
+<style>
+    .event-box {
+        width: 300px;
+        height: 100px;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .drag-box {
+        width: 150px;
+        height: 50px;
+        background-color: lightcoral;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed black;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+        cursor: grab;
+    }
+
+    .drop-zone {
+        width: 300px;
+        height: 100px;
+        background-color: lightgreen;
+        border: 2px dashed gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+</style>
+
+@code {
+    string MouseEvent = "None";
+    string ClickEvent = "None";
+    string KeyPressed = "None";
+    string LiveInput = "";
+    string ChangedInput = "";
+    string ClipboardEvent = "None";
+    string DragEvent = "None";
+    string ContextEvent = "Allowed";
+
+    void OnMouseOver()
+    {
+        MouseEvent = "Mouse Over";
+    }
+
+    void OnMouseOut()
+    {
+        MouseEvent = "Mouse Out";
+    }
+
+    void OnClick()
+    {
+        ClickEvent = "Clicked!";
+    }
+
+    void OnDoubleClick()
+    {
+        ClickEvent = "Double Clicked!";
+    }
+
+    void HandleKeyDown(KeyboardEventArgs e)
+    {
+        KeyPressed = e.Key;
+    }
+
+    void HandleInput(ChangeEventArgs e)
+    {
+        LiveInput = e.Value?.ToString() ?? "";
+    }
+
+    void HandleChange(ChangeEventArgs e)
+    {
+        ChangedInput = e.Value?.ToString() ?? "";
+    }
+
+    void OnPaste()
+    {
+        ClipboardEvent = "Pasted!";
+    }
+
+    void OnCopy()
+    {
+        ClipboardEvent = "Copied!";
+    }
+
+    void OnCut()
+    {
+        ClipboardEvent = "Cut!";
+    }
+
+    void OnDragStart()
+    {
+        DragEvent = "Started Dragging";
+    }
+
+    void OnDragEnd()
+    {
+        DragEvent = "Ended Dragging";
+    }
+
+    void OnDragOver(DragEventArgs e)
+    {
+        e.PreventDefault();
+    }
+
+    void OnDrop()
+    {
+        DragEvent = "Dropped!";
+    }
+
+    void PreventContextMenu(MouseEventArgs e)
+    {
+        ContextEvent = "Blocked";
+        e.PreventDefault();
+    }
+}
