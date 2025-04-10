@@ -15,15 +15,17 @@
             ;
             background-color: rgba(147, 226, 180, 0.098);
             transform: translateX(-50%) translateY(-50%);
-            box-shadow: 0px 0px 10px 10px rgba(1, 59, 73, 0.078);
+            box-shadow: 0px 0px 10px 10px rgba(0, 30, 37, 0.078);
             backdrop-filter: blur(5px);
             width: 50px;
             height: 50px;
             border-radius: 50%;
             border: 10px double rgba(154, 12, 59, 0.317);
+            pointer-events: none !important;
         }
 
-        h1 {
+        h1,
+        button {
             text-align: center;
         }
     }
@@ -31,6 +33,7 @@
 <div class="body" @onmousemove="control">
     <h1>MouseControl</h1>
     <div class="control"></div>
+    <button>Click me</button>
 </div>
 @code {
     int x = 50;
