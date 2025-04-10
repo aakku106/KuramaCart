@@ -1,5 +1,6 @@
 ﻿@page "/MouseControl"
 @rendermode InteractiveServer
+@using System.Security.Cryptography;
 <style>
     .body {
         width: 100vw;
@@ -26,24 +27,54 @@
 
         cursor: none;
 
-        h1,
+
         button {
-            text-align: center;
+            position: absolute;
+            top:
+                @($"{appX}px")
+            ;
+            left:
+                @($"{appY}px")
+            ;
         }
     }
 </style>
-<div class="body" @onmousemove="control">
+<div class="body" @onmousemove="mouseControl" @ontouchmove="touchControl">
     <h1>MouseControl</h1>
     <div class="control"></div>
-    <button>Click me</button>
+    @if (score < 5)
+    {
+        <button @onmousedown="buttonClicked">Click me</button>
+    }
+    else
+    {
+        <h2>Game Over 🎉 Score: @score</h2>
+    }
 </div>
 @code {
     int x = 50;
     int y = 50;
-    private void control(MouseEventArgs m)
+    int score = 0;
+    Random rand = new Random();
+    int appX = 200;
+    int appY = 200;
+    private void mouseControl(MouseEventArgs m)
     {
         x = (int)m.ClientY;
         y = (int)m.ClientX;
+        StateHasChanged();
+    }
+    private void touchControl(TouchEventArgs t)
+    {
+        x = (int)t.Touches[0].ClientY;
+        y = (int)t.Touches[0].ClientX;
+        StateHasChanged();
+    }
+    private void buttonClicked()
+    {
+        score++;
+        appX = rand.Next(0, 800);
+        appY = rand.Next(0, 800);
         StateHasChanged();
     }
 }
