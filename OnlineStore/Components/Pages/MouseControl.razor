@@ -5,6 +5,7 @@
     .body {
         width: 100vw;
         height: 100vh;
+        cursor: none;
 
         .control {
             position: absolute;
@@ -25,39 +26,61 @@
             pointer-events: none !important;
         }
 
-        cursor: none;
-
+        h1,
+        button {
+            text-align: center;
+        }
 
         button {
             position: absolute;
             top:
-                @($"{appX}px")
+                @($"{appX}%")
             ;
             left:
-                @($"{appY}px")
+                @($"{appY}%")
             ;
+            background-color: rgba(130, 198, 42, 0.252);
+            transform: translateX(-50%) translateY(-50%);
+            box-shadow: 0px 0px 100px 15px rgba(5, 91, 110, 0.469);
+            backdrop-filter: blur(10px);
+            border: 10px double rgba(241, 17, 91, 0.694);
+            cursor: none;
+            border-radius: 10px;
         }
     }
 </style>
 <div class="body" @onmousemove="mouseControl" @ontouchmove="touchControl">
-    <h1>MouseControl</h1>
+    <h1>MouseControl Game</h1>
+    <h3>level: @level</h3>
+    <h3>Score: @score</h3>
     <div class="control"></div>
     @if (score < 5)
     {
-        <button @onmousedown="buttonClicked">Click me</button>
+        <button @onmousedown="buttonClicked" @ontouchstart="buttonTouched">Click me</button>
     }
     else
     {
-        <h2>Game Over 🎉 Score: @score</h2>
+        <button @onclick="restart" style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
+                                                ">
+            Game Over 🎉 Score: @score
+        </button>
+        <br>
+        <hr>
+        <button @onclick="next" style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
+                                                ">
+            NEXT LVL!!
+        </button>
     }
+    <button @onclick="resetLVL">RESET LVL ❌</button>
 </div>
 @code {
     int x = 50;
     int y = 50;
     int score = 0;
+    static int level = 1;
     Random rand = new Random();
-    int appX = 200;
-    int appY = 200;
+    int appX = 50;
+    int appY = 50;
     private void mouseControl(MouseEventArgs m)
     {
         x = (int)m.ClientY;
@@ -70,11 +93,32 @@
         y = (int)t.Touches[0].ClientX;
         StateHasChanged();
     }
+    private void next()
+    {
+        score = 0;
+        level++;
+    }
     private void buttonClicked()
     {
         score++;
-        appX = rand.Next(0, 800);
-        appY = rand.Next(0, 800);
+        appX = rand.Next(5, 95);
+        appY = rand.Next(5, 95);
         StateHasChanged();
+    }
+    private void buttonTouched()
+    {
+        score++;
+        appX = rand.Next(5, 95);
+        appY = rand.Next(5, 95);
+        StateHasChanged();
+    }
+    private void restart()
+    {
+        score = 0;
+    }
+    private void resetLVL()
+    {
+        level = 0;
+        score = 0;
     }
 }
