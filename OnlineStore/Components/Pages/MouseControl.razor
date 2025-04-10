@@ -32,20 +32,38 @@
         }
 
         button {
-            position: absolute;
             top:
                 @($"{appX}%")
             ;
             left:
                 @($"{appY}%")
             ;
+            background-color: rgba(71, 42, 198, 0.252);
+            padding: 1vw;
+            margin: 1vw;
+            box-shadow: 0px 0px 30px 1px rgba(5, 47, 98, 0.469);
+            backdrop-filter: blur(10px);
+            border: 10px double rgba(87, 5, 32, 0.694);
+            cursor: none;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+
+            &:active {
+                background-color: rgb(255, 26, 26);
+            }
+        }
+
+        .gameBtn {
+            position: absolute;
+
             background-color: rgba(130, 198, 42, 0.252);
             transform: translateX(-50%) translateY(-50%);
             box-shadow: 0px 0px 100px 15px rgba(5, 91, 110, 0.469);
-            backdrop-filter: blur(10px);
             border: 10px double rgba(241, 17, 91, 0.694);
-            cursor: none;
-            border-radius: 10px;
+
+            &:active {
+                background-color: rgb(24, 224, 24);
+            }
         }
     }
 </style>
@@ -56,27 +74,26 @@
     <div class="control"></div>
     @if (score < 5)
     {
-        <button @onmousedown="buttonClicked" @ontouchstart="buttonTouched">Click me</button>
+        <button class="gameBtn" @onmousedown="buttonClicked" @ontouchstart="buttonTouched">Click me</button>
     }
     else
     {
-        <button @onclick="restart" style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
-                                                ">
-            Game Over 🎉 Score: @score
+        <button class="gameBtn" @onclick="restart" style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
+                                                                ">
+            RESTART
         </button>
-        <br>
         <hr>
         <button @onclick="next" style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
-                                                ">
+                                                                ">
             NEXT LVL!!
         </button>
     }
     <button @onclick="resetLVL">RESET LVL ❌</button>
 </div>
 @code {
-    int x = 50;
-    int y = 50;
-    int score = 0;
+    int x = 50,
+    y = 50,
+    score = 0;
     static int level = 1;
     Random rand = new Random();
     int appX = 50;
