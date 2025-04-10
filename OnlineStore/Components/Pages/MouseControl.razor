@@ -1,0 +1,43 @@
+﻿@page "/MouseControl"
+@rendermode InteractiveServer
+<style>
+    .body {
+        width: 100vw;
+        height: 100vw;
+
+        .control {
+            position: absolute;
+            top:
+                @($"{x}px")
+            ;
+            left:
+                @($"{y}px")
+            ;
+            background-color: rgba(147, 226, 180, 0.098);
+            transform: translateX(-50%) translateY(-50%);
+            @* box-shadow: 0px 0px 10px 10px rgba(47, 231, 173, 0.193); *@
+            backdrop-filter: blur(5px);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            @* border: 10px double rgba(154, 12, 60, 0.532); *@
+        }
+
+        h1 {
+            text-align: center;
+        }
+    }
+</style>
+<div class="body" @onmousemove="control">
+    <h1>MouseControl</h1>
+    <div class="control"></div>
+</div>
+@code {
+    int x = 50;
+    int y = 50;
+    private void control(MouseEventArgs m)
+    {
+        x = (int)m.ClientY;
+        y = (int)m.ClientX;
+    }
+}
