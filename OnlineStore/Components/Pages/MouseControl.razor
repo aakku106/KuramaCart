@@ -17,7 +17,7 @@
             ;
             background-color: rgba(147, 226, 180, 0.098);
             transform: translateX(-50%) translateY(-50%);
-            box-shadow: 0px 0px 10px 10px rgba(0, 30, 37, 0.078);
+            box-shadow: 0px 0px 10px 10px rgba(0, 50, 37, 0.078);
             backdrop-filter: blur(5px);
             width: 50px;
             height: 50px;
@@ -55,7 +55,12 @@
 
         .gameBtn {
             position: absolute;
-
+            width:
+                @($"{GameBoxWidth}px")
+            ;
+            height:
+                @($"{GameBoxHeight}px")
+            ;
             background-color: rgba(130, 198, 42, 0.252);
             transform: translateX(-50%) translateY(-50%);
             box-shadow: 0px 0px 100px 15px rgba(5, 91, 110, 0.469);
@@ -78,13 +83,15 @@
     }
     else
     {
-        <button class="gameBtn" @onclick="restart" style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                    ">
+        <button class="gameBtn" @onclick="restart"
+            style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
+                                                                                                                                    ">
             RESTART
         </button>
         <hr>
-        <button @onclick="next" style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                    ">
+        <button @onclick="next"
+            style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
+                                                                                                                                    ">
             NEXT LVL!!
         </button>
     }
@@ -92,7 +99,7 @@
 </div>
 @code {
     int x = 50,
-    y = 50,
+    y = 50, GameBoxHeight = 80, GameBoxWidth = 120,
     score = 0;
     static int level = 1;
     Random rand = new Random();
@@ -113,13 +120,29 @@
     private void next()
     {
         score = 0;
-        level++;
+        level += 2;// for dev lest only
+        @* level++; *@
     }
     private void buttonClicked()
     {
         score++;
         appX = rand.Next(5, 95);
         appY = rand.Next(5, 95);
+        if (level == 5 && score == 1)
+        {
+            GameBoxHeight -= 10;
+            GameBoxWidth -= 10;
+        }
+        if (level > 6 && level < 10 && score == 1)
+        {
+            GameBoxHeight -= 8;
+            GameBoxWidth -= 10;
+        }
+        if (level > 10 && level < 15 && score == 1)
+        {
+            GameBoxHeight += 5;
+            GameBoxWidth -= 1;
+        }
         StateHasChanged();
     }
     private void buttonTouched()
@@ -127,6 +150,21 @@
         score++;
         appX = rand.Next(5, 95);
         appY = rand.Next(5, 95);
+        if (level == 5 && score == 1)
+        {
+            GameBoxHeight -= 10;
+            GameBoxWidth -= 10;
+        }
+        if (level > 6 && level < 10 && score == 1)
+        {
+            GameBoxHeight -= 8;
+            GameBoxWidth -= 10;
+        }
+        if (level > 10 && level < 15 && score == 1)
+        {
+            GameBoxHeight += 5;
+            GameBoxWidth -= 1;
+        }
         StateHasChanged();
     }
     private void restart()
