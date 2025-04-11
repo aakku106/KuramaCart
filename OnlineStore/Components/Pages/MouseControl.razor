@@ -68,6 +68,8 @@
 
             &:active {
                 background-color: rgb(24, 224, 24);
+                box-shadow: 0px 0px 100px 50px rgba(220, 242, 17, 0.684);
+                border: 3px dotted rgba(241, 17, 92, 0.825);
             }
         }
     }
@@ -79,25 +81,27 @@
     <div class="control"></div>
     @if (soundEnabled)
     {
-        <audio autoplay hidden>
-            <source src="/sounds/clickSound" type="audio/mpeg" />
+        <audio autoplay hidden >
+            <source src="/sounds/clickSound.wav" type="audio/wav" />
         </audio>
     }
     @if (score < 5)
     {
-        <button class="gameBtn" @onmousedown="buttonClicked" @ontouchstart="buttonTouched">Click me</button>
+        <button class="gameBtn" @onmousedown="buttonClicked" @ontouchstart="buttonTouched" @onmouseleave="mouseLeaved">
+            Click me
+        </button>
     }
     else
     {
-        <button class="gameBtn" @onclick="restart"
+        <button class=" gameBtn" @onclick="restart"
             style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                                                                                                                            ">
+                                                                                                                                                                                                                        ">
             RESTART
         </button>
         <hr>
         <button @onclick="next"
             style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                                                                                                                            ">
+                                                                                                                                                                                                                        ">
             NEXT LVL!!
         </button>
     }
@@ -129,6 +133,7 @@
     {
         score = 0;
         level++;
+        soundEnabled = false;
     }
     private void buttonClicked()
     {
@@ -176,14 +181,20 @@
         }
         StateHasChanged();
     }
+    private void mouseLeaved()
+    {
+        soundEnabled = false;
+    }
     private void restart()
     {
         score = 0;
+        soundEnabled = false;
     }
     private void resetLVL()
     {
         level = 1;
         score = 0;
+        soundEnabled = false;
     }
 }
 @* Next day goal is to add sound with C# <Say no to js 🤣> *@
