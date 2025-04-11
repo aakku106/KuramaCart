@@ -91,18 +91,27 @@
             <source src="/sounds/arraarra.mp3" type="audio/mp3" />
         </audio>
     }
-    @* @if (lvlUpSoundEnable)
+    @if (BGMSoundEnable)
+    {
+        @if (level > 6 && level < 12)
+        {
+            <audio autoplay hidden>
+                <source src="/sounds/long2.mp3" type="audio/mp3" />
+            </audio>
+        }
+        else
+        {
+            <audio autoplay hidden>
+                <source src="/sounds/long1.mp3" type="audio/mp3" />
+            </audio>
+        }
+    }
+    @if (lvlResetSoundEnable)
     {
         <audio autoplay hidden>
-            <source src="/sounds/clickSound.wav" type="audio/wav" />
+            <source src="/sounds/LvlRestartSound.mp3" type="audio/mp3" />
         </audio>
     }
-    @if (lvlUpSoundEnable)
-    {
-        <audio autoplay hidden>
-            <source src="/sounds/clickSound.wav" type="audio/wav" />
-        </audio>
-    } *@
     @if (score < 5)
     {
         <button class="gameBtn" @onmousedown="buttonClicked" @ontouchstart="buttonTouched" @onmouseleave="mouseLeaved">
@@ -113,13 +122,13 @@
     {
         <button class=" gameBtn" @onclick="restart"
             style="background-color: rgba(214, 47, 86, 0.355);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                                                                                                                                                                                            ">
+                                                                                                                                                                                                                                                                                            ">
             RESTART
         </button>
         <hr>
         <button @onclick="next"
             style="background-color: rgba(47, 214, 55, 0.215);border: 5px double rgba(239, 12, 88, 0.919));
-                                                                                                                                                                                                                                            ">
+                                                                                                                                                                                                                                                                                            ">
             NEXT LVL!!
         </button>
     }
@@ -135,7 +144,9 @@
     private int appX = 50;
     private int appY = 50;
     private bool clickSoundEnabled = false,
-    lvlUpSoundEnable = false
+    lvlUpSoundEnable = false,
+    BGMSoundEnable = true,
+    lvlResetSoundEnable = false
     ;
     private void mouseControl(MouseEventArgs m)
     {
@@ -162,6 +173,7 @@
         score++;
         clickSoundEnabled = true;
         lvlUpSoundEnable = false;
+        lvlResetSoundEnable = false;
         appX = rand.Next(5, 95);
         appY = rand.Next(5, 95);
         if (level == 5 && score == 1)
@@ -186,6 +198,7 @@
         score++;
         clickSoundEnabled = true;
         lvlUpSoundEnable = false;
+        lvlResetSoundEnable = false;
         appX = rand.Next(5, 95);
         appY = rand.Next(5, 95);
         if (level == 5 && score == 1)
@@ -213,14 +226,18 @@
     private void restart()
     {
         score = 0;
+        lvlResetSoundEnable = true;
         clickSoundEnabled = false;
+        lvlUpSoundEnable = false;
         StateHasChanged();
     }
     private void resetLVL()
     {
         level = 1;
         score = 0;
+        lvlResetSoundEnable = true;
         clickSoundEnabled = false;
+        lvlUpSoundEnable = false;
         StateHasChanged();
     }
 }
