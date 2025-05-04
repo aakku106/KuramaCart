@@ -7,16 +7,23 @@ namespace OnlineStore.Models
     public class User
     {
         public required string UserId { get; set; }
-        [Required(ErrorMessage ="User name is compulsory")]
+
+        [Required(ErrorMessage = "User name is compulsory")]
+        [StringLength(MinimumLength = 4, ErrorMessage = "User Name shall be minimum of 4 Alfa-numeric Combination")]
         public required string UserName { get; set; }
-        [Required(ErrorMessage ="Unique address is required")]
-        [EmailAddress(ErrorMessage ="Invalid address")]
+
+        [Required(ErrorMessage = "Unique address is required")]
+        [EmailAddress(ErrorMessage = "Invalid address")]
+
         public required string UserEmail { get; set; }
 
-        [PasswordPropertyText][Required(ErrorMessage ="PassWord is required at any cost HeHeHe..😈")]
+        [PasswordPropertyText]
+        [Required(ErrorMessage = "PassWord is required at any cost HeHeHe..😈")]
         [StringLength(100, MinimumLength = 8, ErrorMessage = "Password must be at least 8 characters long.")]
         public required string UserPassword { get; set; }
+
         public DateTime DateTime { get; set; } //Id creation time
+
         public bool DidUserLogIn { get; set; } = false;
     }
 }
