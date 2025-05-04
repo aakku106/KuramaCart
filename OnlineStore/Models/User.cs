@@ -9,7 +9,7 @@ namespace OnlineStore.Models
         public required string UserId { get; set; }
 
         [Required(ErrorMessage = "User name is compulsory")]
-        [StringLength(MinimumLength = 4, ErrorMessage = "User Name shall be minimum of 4 Alfa-numeric Combination")]
+        [StringLength(50, MinimumLength = 4, ErrorMessage = "User Name shall be minimum of 4 Alfa-numeric Combination")]
         public required string UserName { get; set; }
 
         [Required(ErrorMessage = "Unique address is required")]
